@@ -1,0 +1,25 @@
+# QA / iteration artifacts — not for production
+_qa/
+_qa.py
+_qa_*.py
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node (in case)
+node_modules/
