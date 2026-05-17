@@ -207,6 +207,38 @@ TOOL_ICONS = [
 # Industry page renderer
 # ----------------------------------------------------------------------------
 
+def _impact_stat(impact: str) -> tuple[str, str]:
+    """Pull a headline figure + label out of an impact sentence.
+
+    Returns (value, label). Falls back to a generic pairing when no number
+    is found, so every case row gets a clean mini-stat.
+    """
+    text = impact.replace("Representative result:", "").strip()
+    # money amount, e.g. ~$11,000/month  or  $40k
+    m = re.search(r"~?\$[\d,]+(?:\.\d+)?\s*(?:k|/month|/mo|/yr|a month|a year)?", text)
+    if m:
+        val = m.group(0).lstrip("~").strip()
+        label = "monthly impact" if any(x in val for x in ("month", "mo")) else "recovered"
+        val = val.replace("/month", "").replace("/mo", "").replace("/yr", "")
+        return val + ("/mo" if label == "monthly impact" else ""), label
+    # hours, e.g. ~6 hours a week / 8-10 hours
+    m = re.search(r"~?\d+(?:[–-]\d+)?\s*(?:hrs?|hours?)", text)
+    if m:
+        num = re.search(r"\d+(?:[–-]\d+)?", m.group(0)).group(0)
+        return num + " hrs", "reclaimed weekly"
+    # percentage
+    m = re.search(r"~?\d+%", text)
+    if m:
+        return m.group(0).lstrip("~"), "measured lift"
+    # plain count, e.g. "+53 reviews"
+    m = re.search(r"[+]?\d+", text)
+    if m:
+        return m.group(0), "the measured change"
+    # no figure in the impact text — use a qualitative stat that does not
+    # collide with the build-time / price columns next to it.
+    return "Owner-led", "built with you, not at you"
+
+
 def render_industry(ind: dict) -> str:
     slug = ind["slug"]
     name = ind["name"]
@@ -219,33 +251,45 @@ def render_industry(ind: dict) -> str:
                 <span class="who-check">
                   <svg viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </span>
-                <div><p>{esc(d)}</p></div>
+                <div><h3>{esc(d)}</h3></div>
               </div>"""
         for d in ind["drains"]
     )
 
-    # --- tool cards ---
+    # --- tool cards (footer micro-line keeps parity with the home cap-cards) ---
+    CAP_FOOTS = [
+        "Built on the tools you already run &mdash; you own it at launch.",
+        "Live in 1&ndash;2 weeks, with 30 days of tuning included.",
+        "A real person walks your team through it &mdash; no manual to read.",
+        "Quietly pays for itself, then runs without you watching it.",
+    ]
     tool_cards = []
     for i, t in enumerate(ind["tools"]):
         icon = TOOL_ICONS[i % len(TOOL_ICONS)]
+        foot = CAP_FOOTS[i % len(CAP_FOOTS)]
         tool_cards.append(f"""            <article class="cap-card">
               <div class="cap-icon">{icon}</div>
               <p class="cap-tag">{esc(t['tag'])}</p>
               <h3>{esc(t['title'])}</h3>
               <p class="cap-body">{esc(t['body'])}</p>
+              <p class="cap-foot"><span class="cap-foot-dot" aria-hidden="true"></span> {foot}</p>
             </article>""")
     tools_html = "\n".join(tool_cards)
 
-    # --- case rows ---
+    # --- case rows: headline derived from the matching tool, plus a mini-stat ---
     case_rows = []
     for i, c in enumerate(ind["cases"], 1):
+        tool = ind["tools"][(i - 1) % len(ind["tools"])]
+        stat_val, stat_label = _impact_stat(c["impact"])
         case_rows.append(f"""            <article class="system-row">
               <div class="system-meta">
                 <span class="system-num">{i:02d}</span>
+                <span class="system-meta-label">The situation</span>
                 <span class="system-tag">{esc(c['context'])}</span>
-                <span class="system-revenue">Representative example</span>
+                <span class="system-revenue">Representative example &mdash; not a named client</span>
               </div>
               <div class="system-body">
+                <h3>{esc(tool['title'])}</h3>
                 <div class="ba-flow">
                   <div class="ba-step ba-before">
                     <span class="ba-label">Before</span>
@@ -261,6 +305,11 @@ def render_industry(ind: dict) -> str:
                     <span class="ba-label">Impact</span>
                     <p>{esc(c['impact'])}</p>
                   </div>
+                </div>
+                <div class="system-stats">
+                  <div><strong>{esc(stat_val)}</strong><span>{esc(stat_label)}</span></div>
+                  <div><strong>2 wks</strong><span>typical build time</span></div>
+                  <div><strong>From $1,500</strong><span>one-time, you own it</span></div>
                 </div>
               </div>
             </article>""")
@@ -395,6 +444,12 @@ def render_industry(ind: dict) -> str:
               </a>
               <a href="#tools" class="button button-ghost">See the tools</a>
             </div>
+            <div class="fact-row">
+              <div><strong>2 wks</strong><span>from first call to live</span></div>
+              <div><strong>$1,500</strong><span>starting price</span></div>
+              <div><strong>90-day</strong><span>earns-its-keep promise</span></div>
+              <div><strong>0</strong><span>long-term contracts</span></div>
+            </div>
             <p class="hero-note">Built in two weeks. $1,500 to $6,000. No retainers, no long contracts &mdash; and a real person who knows your world.</p>
           </div>
         </div>
@@ -441,6 +496,59 @@ def render_industry(ind: dict) -> str:
           </div>
           <div class="systems-list reveal">
 {cases_html}
+          </div>
+        </div>
+      </section>
+
+      <!-- MID-PAGE CTA BAND -->
+      <section class="cta-band">
+        <div class="container">
+          <div class="cta-band-inner reveal">
+            <div class="cta-band-copy">
+              <h2>See your {esc(name)} business in any of this?</h2>
+              <p>Book a free 15-minute call. We'll talk through your specific situation &mdash; no deck, no pressure.</p>
+            </div>
+            <a href="{CALENDLY}" target="_blank" rel="noreferrer" class="button button-electric button-lg">
+              <span>Book a free call</span>
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h10M8 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="square"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section class="section" style="padding-top:48px;">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="kicker">How it works</p>
+            <h2>From first call to <span class="grad-text">working tool</span> in two weeks.</h2>
+            <p>No long discovery process, no 80-page proposals. We talk, we agree on a small first project, and we build it.</p>
+          </div>
+          <div class="process-rail reveal">
+            <div class="process-step">
+              <div class="step-marker"><span>01</span><div class="step-line"></div></div>
+              <h3>We talk</h3>
+              <p>A free 15-minute call. You tell us what's eating your {esc(name)} week. We tell you honestly whether AI is the right answer.</p>
+              <p class="step-time">Day 1 &middot; free</p>
+            </div>
+            <div class="process-step">
+              <div class="step-marker"><span>02</span><div class="step-line"></div></div>
+              <h3>We scope it</h3>
+              <p>If there's a fit, you get a one-page proposal: what we'll build, what it costs, when it's done. No deck, no upsell.</p>
+              <p class="step-time">Days 2&ndash;3</p>
+            </div>
+            <div class="process-step">
+              <div class="step-marker"><span>03</span><div class="step-line"></div></div>
+              <h3>We build it</h3>
+              <p>You'll see progress every few days. We test it on your real data and walk you through it in plain English.</p>
+              <p class="step-time">Days 4&ndash;12</p>
+            </div>
+            <div class="process-step">
+              <div class="step-marker"><span>04</span><div class="step-line"></div></div>
+              <h3>It runs</h3>
+              <p>We hand you the keys and stay close for 30 days while it gets real-world testing. Then you decide what's next.</p>
+              <p class="step-time">Day 13 &rarr; onward</p>
+            </div>
           </div>
         </div>
       </section>
@@ -1027,7 +1135,64 @@ EXTRA_CSS = EXTRA_CSS_MARKER + """
 .breadcrumb span[aria-hidden] { color: var(--text-faint); }
 
 .industry-hero { padding: 56px 0 64px; }
-.industry-hero .hero-copy { max-width: 820px; }
+.industry-hero .hero-copy { max-width: 880px; }
+/* Industry hero fact-row sits a touch tighter than the home hero */
+.industry-hero .fact-row { margin-top: 8px; margin-bottom: 22px; }
+
+/* Drains rows on industry pages use an h3-weight statement (no body copy) */
+.industry-hero ~ .section-position .who-row { align-items: center; }
+.section-position .who-row h3 {
+  font-size: 16.5px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  line-height: 1.5;
+  color: var(--text);
+  margin-bottom: 0;
+}
+
+/* Industry case meta column — a labelled "situation" block so the
+   left rail reads as intentional, not empty whitespace. */
+.system-meta-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+}
+.systems-list .system-row .system-tag {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--text);
+}
+.systems-list .system-row .system-revenue {
+  font-size: 12px;
+  color: var(--text-mute);
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+/* Tool-card footer micro-line — parity with the home cap-card list */
+.cap-foot {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-mute);
+  line-height: 1.45;
+}
+.cap-foot-dot {
+  flex-shrink: 0;
+  width: 7px;
+  height: 7px;
+  margin-top: 5px;
+  border-radius: 50%;
+  background: var(--electric);
+}
 
 /* Industry hub — grouped card grid */
 .industry-hub {
@@ -1091,6 +1256,13 @@ EXTRA_CSS = EXTRA_CSS_MARKER + """
 
 @media (max-width: 1100px) {
   .industry-card-grid { grid-template-columns: repeat(2, 1fr); }
+  /* Industry case rows carry a 240px meta sidebar — the 3-col before/after
+     /impact flow gets too tight below 1100px, so stack it here (earlier
+     than the home page's 720px breakpoint, which has no sidebar). */
+  .systems-list .system-row .ba-flow {
+    grid-template-columns: 1fr;
+  }
+  .systems-list .system-row .ba-arrow { transform: rotate(90deg); padding: 4px 0; }
 }
 @media (max-width: 720px) {
   .industry-card-grid { grid-template-columns: 1fr; }

@@ -616,6 +616,19 @@ img { max-width: 100%; display: block; }
 /* Hide the Spline watermark/logo overlay if present */
 .spline-scene::part(logo) { display: none; }
 
+/* Spline viewer ships a fixed "Built with Spline" badge in its shadow DOM
+   that ::part() cannot reach — cover it with a chip matching the dark card. */
+.spline-watermark-cover {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 152px;
+  height: 44px;
+  background: linear-gradient(135deg, transparent 0%, #0A1220 38%, #0A1220 100%);
+  pointer-events: none;
+  z-index: 3;
+}
+
 /* ============================================================
    SECTIONS — foundation
    ============================================================ */
@@ -1850,10 +1863,22 @@ img { max-width: 100%; display: block; }
   .cta-band-inner { flex-direction: column; align-items: flex-start; gap: 20px; padding: 28px 32px; }
 }
 
+@media (max-width: 860px) {
+  /* The text nav links no longer fit alongside the brand + CTA button
+     below ~860px — collapse them so the header never overflows. */
+  .desktop-nav { gap: 18px; flex-shrink: 1; min-width: 0; }
+  .desktop-nav > a:not(.button) { display: none; }
+  .topbar-inner { gap: 12px; }
+  .brand-lockup { flex-shrink: 0; }
+  .desktop-nav .button {
+    padding: 11px 16px;
+    font-size: 13px;
+    gap: 7px;
+  }
+}
+
 @media (max-width: 720px) {
   .container { padding: 0 20px; }
-  .desktop-nav { gap: 18px; }
-  .desktop-nav > a:not(.button) { display: none; }
   .hero { padding: 56px 0 48px; }
   .fact-row { grid-template-columns: repeat(2, 1fr); gap: 20px; }
   .section { padding: 72px 0; }
@@ -1865,6 +1890,14 @@ img { max-width: 100%; display: block; }
   .cta-card { padding: 40px 24px; }
   .contrast-col { padding: 32px 24px; }
   .footer-bar { flex-direction: column; gap: 12px; }
+}
+
+@media (max-width: 430px) {
+  /* Very narrow phones — compact the header CTA so it never collides
+     with the brand lockup or runs off-screen. */
+  .desktop-nav .button { padding: 10px 13px; font-size: 12px; }
+  .desktop-nav .button svg { display: none; }
+  .brand-name { font-size: 16px; letter-spacing: 0.18em; }
 }
 
 /* === INDUSTRY-BUILDER GENERATED STYLES === */
@@ -1889,7 +1922,64 @@ img { max-width: 100%; display: block; }
 .breadcrumb span[aria-hidden] { color: var(--text-faint); }
 
 .industry-hero { padding: 56px 0 64px; }
-.industry-hero .hero-copy { max-width: 820px; }
+.industry-hero .hero-copy { max-width: 880px; }
+/* Industry hero fact-row sits a touch tighter than the home hero */
+.industry-hero .fact-row { margin-top: 8px; margin-bottom: 22px; }
+
+/* Drains rows on industry pages use an h3-weight statement (no body copy) */
+.industry-hero ~ .section-position .who-row { align-items: center; }
+.section-position .who-row h3 {
+  font-size: 16.5px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  line-height: 1.5;
+  color: var(--text);
+  margin-bottom: 0;
+}
+
+/* Industry case meta column — a labelled "situation" block so the
+   left rail reads as intentional, not empty whitespace. */
+.system-meta-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+}
+.systems-list .system-row .system-tag {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--text);
+}
+.systems-list .system-row .system-revenue {
+  font-size: 12px;
+  color: var(--text-mute);
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+/* Tool-card footer micro-line — parity with the home cap-card list */
+.cap-foot {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-mute);
+  line-height: 1.45;
+}
+.cap-foot-dot {
+  flex-shrink: 0;
+  width: 7px;
+  height: 7px;
+  margin-top: 5px;
+  border-radius: 50%;
+  background: var(--electric);
+}
 
 /* Industry hub — grouped card grid */
 .industry-hub {
@@ -1953,6 +2043,13 @@ img { max-width: 100%; display: block; }
 
 @media (max-width: 1100px) {
   .industry-card-grid { grid-template-columns: repeat(2, 1fr); }
+  /* Industry case rows carry a 240px meta sidebar — the 3-col before/after
+     /impact flow gets too tight below 1100px, so stack it here (earlier
+     than the home page's 720px breakpoint, which has no sidebar). */
+  .systems-list .system-row .ba-flow {
+    grid-template-columns: 1fr;
+  }
+  .systems-list .system-row .ba-arrow { transform: rotate(90deg); padding: 4px 0; }
 }
 @media (max-width: 720px) {
   .industry-card-grid { grid-template-columns: 1fr; }
