@@ -1,0 +1,67 @@
+{
+  "slug": "med-spa",
+  "name": "Med Spa",
+  "name_plural": "med spas",
+  "group": "Personal Care & Wellness",
+  "title": "AI Tools for Med Spas | Turnkey AI",
+  "meta_description": "Custom AI tools for med spas — convert consultations, drive rebooking and memberships, and follow up on every lead. Built in two weeks from $1,500.",
+  "h1_lead": "AI for med spas —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "Med spa treatments are higher-ticket and consultation-led, and most need a series to deliver results. We build the tools that convert the lead, book the series, and keep members coming back.",
+  "drains": [
+    "Consultation inquiries that need a fast, confident reply",
+    "Treatment series and memberships that need consistent rebooking",
+    "Leads that go quiet after the first inquiry",
+    "The front desk balancing high-value bookings with everything else"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Consultation assistant",
+      "body": "Every inquiry gets an instant, informed reply about treatments and a consultation booked — so high-intent leads don't drift to whichever med spa answered first."
+    },
+    {
+      "tag": "Sales follow-up",
+      "title": "Lead follow-up assistant",
+      "body": "Leads who inquire but don't book get a well-timed, tactful follow-up — the difference between a lead lost and a consultation on the calendar."
+    },
+    {
+      "tag": "Recurring revenue",
+      "title": "Rebooking & membership assistant",
+      "body": "It keeps treatment series on schedule and introduces memberships at the right moment, protecting the recurring revenue that makes a med spa stable."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Daily clinic brief",
+      "body": "One text each morning: today's consultations and treatments by provider, open slots, and yesterday's numbers."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A med spa with high-intent leads going cold.",
+      "before": "Inquiries that didn't book right away got no structured follow-up.",
+      "after": "Every lead followed up tactfully until they book or opt out.",
+      "impact": "Representative result: more consultations booked from the same lead volume."
+    },
+    {
+      "context": "A med spa with inconsistent series rebooking.",
+      "before": "Treatment-series appointments slipped because rebooking wasn't tracked.",
+      "after": "Series kept on schedule with automatic, well-timed nudges.",
+      "impact": "Representative result: better treatment outcomes and steadier recurring revenue."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it answer treatment questions accurately?",
+      "a": "We train it on your treatment menu and the questions you choose to let it answer. Anything clinical or sensitive is routed to your staff — it informs and books, it doesn't give medical advice."
+    },
+    {
+      "q": "How does it protect recurring revenue?",
+      "a": "It keeps treatment series on schedule and introduces memberships at natural moments, so the recurring side of the business stays strong."
+    },
+    {
+      "q": "Will it work with my med spa software?",
+      "a": "Yes. We build on top of Mindbody, Boulevard, Aesthetic Record, or whatever you already use."
+    }
+  ]
+}

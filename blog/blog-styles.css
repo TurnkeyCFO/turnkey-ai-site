@@ -1,0 +1,159 @@
+/* ============================================================
+   TURNKEY AI — Blog styles
+   Layered on top of styles.css. Used by /blog/ and /blog/<slug>/.
+   ============================================================ */
+
+/* ---- Blog list / empty state ---- */
+.blog-list {
+  max-width: 880px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blog-empty {
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 64px 48px 56px;
+  box-shadow: var(--shadow-card);
+}
+.blog-empty-mark {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 24px;
+  padding: 12px;
+  background: var(--icy-soft);
+  border: 1px solid rgba(0, 82, 255, 0.14);
+  border-radius: 12px;
+}
+.blog-empty-mark svg { width: 100%; height: 100%; }
+.blog-empty h2 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 14px;
+}
+.blog-empty p {
+  font-size: 16px;
+  color: var(--text-soft);
+  line-height: 1.6;
+  max-width: 540px;
+  margin: 0 auto 12px;
+}
+.blog-empty-cta {
+  margin-top: 8px !important;
+  margin-bottom: 24px !important;
+  font-weight: 500;
+  color: var(--text) !important;
+}
+
+/* ---- Post cards (the SEO engine renders these once articles exist) ---- */
+.post-card {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 28px 30px;
+  box-shadow: var(--shadow-card);
+  transition: all 280ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.post-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 82, 255, 0.22);
+  box-shadow: 0 1px 2px rgba(10, 18, 32, 0.04), 0 24px 60px rgba(0, 82, 255, 0.14);
+}
+.post-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-mute);
+  margin-bottom: 12px;
+}
+.post-card-tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--electric);
+}
+.post-card h2 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+.post-card p {
+  font-size: 15px;
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+
+/* ---- Article body (for /blog/<slug>/index.html) ---- */
+.article {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.article-header {
+  margin-bottom: 40px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--line);
+}
+.article-header h1 {
+  font-size: clamp(32px, 4.4vw, 48px);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  color: var(--text);
+  margin-bottom: 18px;
+}
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-mute);
+}
+.article-body { font-size: 17px; line-height: 1.72; color: var(--text-soft); }
+.article-body h2 {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.018em;
+  color: var(--text);
+  margin: 40px 0 16px;
+}
+.article-body h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 28px 0 12px;
+}
+.article-body p { margin-bottom: 18px; }
+.article-body ul, .article-body ol { margin: 0 0 18px 22px; }
+.article-body li { margin-bottom: 8px; }
+.article-body a {
+  color: var(--electric);
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 82, 255, 0.35);
+}
+.article-body a:hover { text-decoration-color: var(--electric); }
+.article-body blockquote {
+  border-left: 3px solid var(--electric);
+  background: var(--icy-soft);
+  padding: 16px 22px;
+  border-radius: 0 8px 8px 0;
+  margin: 0 0 18px;
+  color: var(--text);
+}
+
+@media (max-width: 720px) {
+  .blog-empty { padding: 48px 24px 40px; }
+}

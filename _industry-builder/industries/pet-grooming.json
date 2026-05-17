@@ -1,0 +1,67 @@
+{
+  "slug": "pet-grooming",
+  "name": "Pet Grooming",
+  "name_plural": "pet grooming businesses",
+  "group": "Personal Care & Wellness",
+  "title": "AI Tools for Pet Grooming Businesses | Turnkey AI",
+  "meta_description": "Custom AI tools for pet grooming — fill the schedule, cut no-shows, and keep pets on a regular grooming cycle. Built in two weeks from $1,500.",
+  "h1_lead": "AI for pet grooming businesses —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "Grooming runs on a full schedule and pets who come back on a cycle. Missed booking messages and no-shows quietly cost real money. We build the tools that keep the table busy.",
+  "drains": [
+    "Booking messages coming in while groomers are with pets",
+    "No-shows and cancellations leaving gaps in the day",
+    "Pets who fall off their regular grooming cycle",
+    "The owner answering scheduling texts between dogs"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Booking assistant",
+      "body": "Every call, text, and message gets an instant reply, the pet and service captured, and a slot booked — so a busy day never costs you a client."
+    },
+    {
+      "tag": "Customer experience",
+      "title": "No-show reducer",
+      "body": "Confirmations and reminders go out before every appointment, and cancellations get offered to your waitlist so gaps fill themselves."
+    },
+    {
+      "tag": "Recurring revenue",
+      "title": "Grooming-cycle assistant",
+      "body": "It nudges clients when their pet is due for the next groom, keeping pets on a steady cycle instead of leaving it to the owner to remember."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Daily table brief",
+      "body": "One text each morning: today's appointments, special handling notes, open slots, and yesterday's numbers."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A pet grooming business booking through texts and calls.",
+      "before": "Messages waited while groomers worked; some clients booked elsewhere.",
+      "after": "Every booking message answered instantly and a slot booked.",
+      "impact": "Representative result: a fuller schedule with no extra owner effort."
+    },
+    {
+      "context": "A groomer with pets drifting off-cycle.",
+      "before": "Rebooking depended on pet owners remembering to call.",
+      "after": "Clients nudged automatically when their pet is due again.",
+      "impact": "Representative result: more pets kept on a regular grooming cycle."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it capture pet details when booking?",
+      "a": "Yes. It captures the pet, breed, service, and any handling notes you want, so the groomer is prepared before the pet arrives."
+    },
+    {
+      "q": "How does it keep pets on a cycle?",
+      "a": "It tracks when each pet is due for the next groom and nudges the owner at the right time, so the recurring schedule fills itself."
+    },
+    {
+      "q": "Will it work with my booking software?",
+      "a": "Yes. We build on top of MoeGo, Gingr, Square, or whatever you already use."
+    }
+  ]
+}

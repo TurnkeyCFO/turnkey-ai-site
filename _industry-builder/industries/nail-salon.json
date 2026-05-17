@@ -1,0 +1,67 @@
+{
+  "slug": "nail-salon",
+  "name": "Nail Salon",
+  "name_plural": "nail salons",
+  "group": "Personal Care & Wellness",
+  "title": "AI Tools for Nail Salons | Turnkey AI",
+  "meta_description": "Custom AI tools for nail salons — fill appointments, cut no-shows, and keep clients rebooking. Built in two weeks, starting at $1,500.",
+  "h1_lead": "AI for nail salons —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "Nail salons run on a full appointment book and steady regulars. Missed messages, no-shows, and clients who drift away cost real money. We build the tools that keep the book full.",
+  "drains": [
+    "Booking messages and DMs coming in while techs are with clients",
+    "No-shows and last-minute cancellations leaving gaps",
+    "Clients who don't rebook for their next fill or set",
+    "Open mid-week slots that never get filled"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Booking assistant",
+      "body": "Every call, text, and DM gets an instant reply, the service matched to the right tech, and a slot booked — so a busy salon never loses a client to a slow reply."
+    },
+    {
+      "tag": "Customer experience",
+      "title": "No-show reducer",
+      "body": "Confirmations and reminders go out before every appointment, and cancellations get offered to your waitlist so gaps fill themselves."
+    },
+    {
+      "tag": "Recurring revenue",
+      "title": "Rebooking assistant",
+      "body": "It nudges clients when they're due for their next fill or set, keeping the rebooking rhythm steady instead of leaving it to memory."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Daily salon brief",
+      "body": "One text each morning: today's appointments by tech, open slots to fill, and yesterday's numbers."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A nail salon taking bookings through DMs and texts.",
+      "before": "Messages waited while techs worked; some clients booked elsewhere.",
+      "after": "Every message answered instantly and booked with the right tech.",
+      "impact": "Representative result: a fuller book with less front-desk scramble."
+    },
+    {
+      "context": "A salon with inconsistent rebooking.",
+      "before": "Clients came in once and weren't reminded for their next fill.",
+      "after": "Clients nudged automatically when they're due to come back.",
+      "impact": "Representative result: a steadier, more predictable weekly schedule."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it take bookings from Instagram DMs?",
+      "a": "Yes. It can answer DMs, texts, and calls, match the service to the right tech, and book the slot — wherever your clients reach out."
+    },
+    {
+      "q": "How does it cut no-shows?",
+      "a": "Well-timed confirmations and reminders make a real difference, and any cancellation gets offered to your waitlist so the gap fills itself."
+    },
+    {
+      "q": "Will it work with my booking software?",
+      "a": "Yes. We build on top of Vagaro, GlossGenius, Square, or whatever you already use."
+    }
+  ]
+}

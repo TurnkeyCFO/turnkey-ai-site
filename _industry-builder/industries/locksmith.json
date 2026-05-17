@@ -1,0 +1,67 @@
+{
+  "slug": "locksmith",
+  "name": "Locksmith",
+  "name_plural": "locksmith businesses",
+  "group": "Trades & Specialty",
+  "title": "AI Tools for Locksmith Businesses | Turnkey AI",
+  "meta_description": "Custom AI tools for locksmiths — catch lockout calls 24/7, dispatch fast, and follow up. Built in two weeks, starting at $1,500. No long contracts.",
+  "h1_lead": "AI for locksmith businesses —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "A lockout is an urgent call — the customer is stranded and will call the next number in seconds. We build the tools that answer instantly, dispatch fast, and never let that call slip away.",
+  "drains": [
+    "Lockout calls coming in around the clock that must be answered now",
+    "Dispatch scramble when calls land while you're on a job",
+    "Commercial and rekey quotes that go quiet with no follow-up",
+    "The owner answering every call personally, day and night"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "24/7 lockout line",
+      "body": "An AI assistant answers every call instantly, gets the location and situation, gives an honest arrival estimate, and dispatches your nearest tech — so a stranded customer becomes your job, not the next listing's."
+    },
+    {
+      "tag": "Sales follow-up",
+      "title": "Commercial-quote follow-up",
+      "body": "Rekey, master-key, and access-control quotes get tracked and followed up, so higher-ticket commercial work doesn't slip away after the first call."
+    },
+    {
+      "tag": "Customer experience",
+      "title": "Arrival & review assistant",
+      "body": "Customers get a confirmed arrival window and, after the job, a personalized review request — the reviews that drive locksmith leads."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning job brief",
+      "body": "One text each morning: today's scheduled jobs, tech assignments, commercial quotes open, and yesterday's numbers."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A locksmith business with the owner answering every call.",
+      "before": "Calls came in around the clock; missed ones went straight to a competitor.",
+      "after": "An AI assistant answers every call instantly and dispatches the nearest tech.",
+      "impact": "Representative result: far fewer lockout calls lost to voicemail and faster dispatch."
+    },
+    {
+      "context": "A locksmith with no follow-up on commercial quotes.",
+      "before": "Rekey and access-control quotes went quiet after the first conversation.",
+      "after": "Every commercial quote tracked and followed up automatically.",
+      "impact": "Representative result: more higher-ticket commercial jobs closed."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it handle lockout calls at 3 AM?",
+      "a": "That's exactly what it's built for. The assistant answers instantly, gets the location, gives an honest ETA, and dispatches your nearest available tech — day or night."
+    },
+    {
+      "q": "Does it help with commercial work?",
+      "a": "Yes. Commercial quotes — rekeys, master-key systems, access control — get tracked and followed up so higher-value jobs don't slip away."
+    },
+    {
+      "q": "Will it work with my software?",
+      "a": "Yes. We build on top of whatever scheduling and dispatch tools you already use."
+    }
+  ]
+}

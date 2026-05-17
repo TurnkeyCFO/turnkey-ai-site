@@ -1,0 +1,67 @@
+{
+  "slug": "painting",
+  "name": "Painting",
+  "name_plural": "painting companies",
+  "group": "Trades & Specialty",
+  "title": "AI Tools for Painting Companies | Turnkey AI",
+  "meta_description": "Custom AI tools for painting companies — quote jobs fast, follow up on estimates, and keep crews scheduled. Built in two weeks, starting at $1,500.",
+  "h1_lead": "AI for painting companies —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "Painting is a quoting business — lots of estimates, lots of follow-up, a short window when the customer is deciding. We build the tools that quote fast and follow up so more of those decisions go your way.",
+  "drains": [
+    "A steady stream of estimate requests to schedule and walk",
+    "Quotes that go quiet with no structured follow-up",
+    "Crew scheduling that shifts with weather and job length",
+    "The owner walking estimates all day, then doing admin all night"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Estimate-request assistant",
+      "body": "Every inquiry gets an instant reply, the job scoped — interior or exterior, square footage, surfaces — and a walk-through booked, so the estimate pipeline stays full."
+    },
+    {
+      "tag": "Sales follow-up",
+      "title": "Quote follow-up assistant",
+      "body": "Every estimate gets a polite, well-timed follow-up while the customer is still deciding — the difference between a 30% and a 50% close rate."
+    },
+    {
+      "tag": "Back-office",
+      "title": "Estimate drafter",
+      "body": "From your walk-through notes, it drafts a clean estimate — prep, coats, materials, labor — so quotes go out the same day instead of two days later."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning crew brief",
+      "body": "One text each morning: today's jobs, crew assignments, materials to load, and yesterday's numbers."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A residential painting company.",
+      "before": "Estimates went out and then sat; no one tracked which prospects had gone cold.",
+      "after": "Every open quote followed up automatically while the customer was still deciding.",
+      "impact": "Representative result: a meaningful lift in quote-to-close rate with no extra owner effort."
+    },
+    {
+      "context": "A painting company with slow quote turnaround.",
+      "before": "Quotes were written after-hours and often went out two days late.",
+      "after": "Drafts ready for a quick review right after the walk-through.",
+      "impact": "Representative result: same-day quotes and more jobs won on speed."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it follow up without sounding pushy?",
+      "a": "Yes. The follow-ups are polite, well-timed, and written in your voice. Most owners review the cadence once and let it run — it just makes sure no quote is forgotten."
+    },
+    {
+      "q": "Does it handle interior and exterior jobs?",
+      "a": "Yes. It scopes each inquiry by job type, square footage, and surfaces, and drafts estimates accordingly."
+    },
+    {
+      "q": "Will it work with my CRM?",
+      "a": "Yes. We build on top of whatever you use to track leads and estimates."
+    }
+  ]
+}

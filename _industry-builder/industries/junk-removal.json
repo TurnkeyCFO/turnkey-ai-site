@@ -1,0 +1,67 @@
+{
+  "slug": "junk-removal",
+  "name": "Junk Removal",
+  "name_plural": "junk removal companies",
+  "group": "Home Services",
+  "title": "AI Tools for Junk Removal Companies | Turnkey AI",
+  "meta_description": "Custom AI tools for junk removal — quote jobs from photos, book fast, and fill your trucks' schedule. Built in two weeks, starting at $1,500.",
+  "h1_lead": "AI for junk removal companies —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "Junk removal is a same-day decision business. The customer wants a price and a pickup window now. We build the tools that give them both before they call anyone else.",
+  "drains": [
+    "Quote requests that need a fast price or the customer books elsewhere",
+    "Estimating loads from vague descriptions over the phone",
+    "Trucks running with empty time between jobs",
+    "Review requests that depend on the crew remembering"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Photo-quote assistant",
+      "body": "Customers send photos of the haul; the assistant estimates the load, gives a price range from your pricing, and books the pickup window — a price and a slot in one conversation."
+    },
+    {
+      "tag": "Back-office",
+      "title": "Route & schedule filler",
+      "body": "It books pickups into efficient windows and offers open slots to waiting customers, so trucks run full instead of idling between jobs."
+    },
+    {
+      "tag": "Customer experience",
+      "title": "Review-request follow-up",
+      "body": "After each haul, a personalized text asks happy customers for a Google review — every time, automatically."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning route brief",
+      "body": "One text each morning: today's pickups in route order, truck assignments, and yesterday's revenue."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A 3-truck junk removal company.",
+      "before": "Phone quotes were slow and inconsistent; customers often booked whoever priced first.",
+      "after": "Customers send photos and get a price range plus a booked window in minutes.",
+      "impact": "Representative result: faster quotes and more jobs won from the same lead volume."
+    },
+    {
+      "context": "A junk removal company with gaps between jobs.",
+      "before": "Trucks ran with idle time because the schedule wasn't tightly filled.",
+      "after": "Open windows offered to waiting customers automatically.",
+      "impact": "Representative result: fuller truck schedules and better revenue per route."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it really quote from photos?",
+      "a": "Yes. Customers send photos of the items; the tool estimates the load against your pricing and gives a range. Anything ambiguous gets flagged for a person to confirm."
+    },
+    {
+      "q": "How does it keep trucks full?",
+      "a": "It books pickups into tight windows and offers any open slots to customers on the waitlist, so you run fewer half-empty routes."
+    },
+    {
+      "q": "Will it work with my booking system?",
+      "a": "Yes. We build on top of whatever you use to schedule trucks and dispatch crews."
+    }
+  ]
+}

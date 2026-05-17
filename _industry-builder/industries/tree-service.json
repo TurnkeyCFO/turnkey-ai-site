@@ -1,0 +1,67 @@
+{
+  "slug": "tree-service",
+  "name": "Tree Service",
+  "name_plural": "tree service companies",
+  "group": "Trades & Specialty",
+  "title": "AI Tools for Tree Service Companies | Turnkey AI",
+  "meta_description": "Custom AI tools for tree services — capture storm-season calls, quote from photos, and follow up on every estimate. Built in two weeks from $1,500.",
+  "h1_lead": "AI for tree service companies —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "A storm drops a tree on a roof and the phone doesn't stop. Routine trimming gets quoted between emergencies. We build the tools that catch the surge and keep the regular work moving.",
+  "drains": [
+    "Storm-driven emergency calls flooding in faster than you can answer",
+    "Trimming and removal estimates from vague phone descriptions",
+    "Quotes that go quiet with no follow-up",
+    "The owner doing dispatch, quoting, and climbing all at once"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Storm-surge call catcher",
+      "body": "When a storm drives a flood of calls, the assistant answers every one, flags true emergencies — a tree on a structure — for immediate dispatch, and books the rest."
+    },
+    {
+      "tag": "Estimating",
+      "title": "Photo-quote assistant",
+      "body": "Customers send photos of the tree; the assistant gives a price range from your pricing for trimming or removal and books the job or a site visit."
+    },
+    {
+      "tag": "Sales follow-up",
+      "title": "Estimate follow-up assistant",
+      "body": "Every open estimate gets a well-timed nudge, so larger removal and lot-clearing jobs don't slip away."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning crew brief",
+      "body": "One text each morning: today's jobs in route order, crew and equipment assignments, and yesterday's numbers."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A tree service company after a regional windstorm.",
+      "before": "A surge of emergency calls overwhelmed the office; many never got a call back.",
+      "after": "Every storm call answered and triaged — emergencies dispatched, the rest booked.",
+      "impact": "Representative result: a far higher share of storm-week calls converted into jobs."
+    },
+    {
+      "context": "A tree service with no estimate follow-up.",
+      "before": "Removal quotes went out and were forgotten if the customer didn't reply.",
+      "after": "Every open estimate followed up automatically until the customer decides.",
+      "impact": "Representative result: more higher-ticket removal jobs closed from the same leads."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it handle a storm surge of calls?",
+      "a": "Yes — that's a primary reason tree services come to us. The call catcher scales instantly and flags true emergencies, like a tree on a house, for immediate dispatch."
+    },
+    {
+      "q": "Can it quote from photos?",
+      "a": "For trimming and straightforward removals, yes — customers send photos and get a price range from your pricing. Complex or hazardous jobs get a site visit booked."
+    },
+    {
+      "q": "Will it work with my software?",
+      "a": "Yes. We build on top of whatever you use to schedule crews and track jobs."
+    }
+  ]
+}

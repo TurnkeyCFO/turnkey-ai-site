@@ -1,0 +1,67 @@
+{
+  "slug": "handyman",
+  "name": "Handyman",
+  "name_plural": "handyman businesses",
+  "group": "Home Services",
+  "title": "AI Tools for Handyman Businesses | Turnkey AI",
+  "meta_description": "Custom AI tools for handyman businesses — answer every inquiry, quote small jobs fast, and keep your schedule full. Built in two weeks from $1,500.",
+  "h1_lead": "AI for handyman businesses —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "A handyman business lives on volume — lots of small jobs, lots of inquiries, lots of scheduling. We build the tools that handle the back-and-forth so you stay on the tools, not the phone.",
+  "drains": [
+    "A constant stream of small-job inquiries to answer and quote",
+    "Scheduling Tetris across dozens of short jobs",
+    "Quotes that go unanswered with no follow-up",
+    "The owner choosing between doing the work and booking the work"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Inquiry assistant",
+      "body": "Every call, text, and form gets an instant reply, the job scoped with the right questions, and a slot booked — so you stop losing small jobs to slow response."
+    },
+    {
+      "tag": "Estimating",
+      "title": "Quick-quote drafter",
+      "body": "It drafts ballpark quotes for common jobs from your standard rates, so a customer gets a number fast instead of waiting for you to get off a ladder."
+    },
+    {
+      "tag": "Sales follow-up",
+      "title": "Quote follow-up assistant",
+      "body": "Open quotes get a friendly nudge if the customer goes quiet, so the small jobs that add up don't quietly disappear."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Daily schedule brief",
+      "body": "One morning text: today's stops in route order, materials to grab, and what's still open to fill."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A solo handyman turning away work he couldn't schedule.",
+      "before": "Inquiries piled up while he was on jobs; many callers booked someone else.",
+      "after": "An assistant answers, scopes, and books every inquiry while he works.",
+      "impact": "Representative result: a consistently full schedule without the owner touching the phone mid-job."
+    },
+    {
+      "context": "A small handyman crew with no quote follow-up.",
+      "before": "Quotes went out and were forgotten if the customer didn't reply right away.",
+      "after": "Every open quote followed up automatically until the customer decides.",
+      "impact": "Representative result: more small jobs closed from the same lead volume."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it quote small jobs without me?",
+      "a": "For common, well-defined jobs, yes — it gives a ballpark from your standard rates. Anything unusual gets flagged for you to price personally."
+    },
+    {
+      "q": "I'm a one-person business. Is this overkill?",
+      "a": "It's the opposite. When you're the whole company, the phone is your biggest bottleneck. Handing the booking back-and-forth to a tool is what lets a solo operator actually grow."
+    },
+    {
+      "q": "Will it work with my scheduling app?",
+      "a": "Yes. We build on top of Jobber, Housecall Pro, or whatever you already use — or set up something simple if you're running on a notebook."
+    }
+  ]
+}

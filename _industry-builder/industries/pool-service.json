@@ -1,0 +1,67 @@
+{
+  "slug": "pool-service",
+  "name": "Pool Service",
+  "name_plural": "pool service companies",
+  "group": "Home Services",
+  "title": "AI Tools for Pool Service Companies | Turnkey AI",
+  "meta_description": "Custom AI tools for pool service — keep recurring routes on schedule, book new accounts, and chase renewals. Built in two weeks from $1,500.",
+  "h1_lead": "AI for pool service companies —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "Recurring routes are the backbone of pool service, and they need steady contact. We build the tools that keep every account on schedule and the season's new customers coming in.",
+  "drains": [
+    "New-account inquiries spiking every spring and summer",
+    "Recurring service accounts needing reliable, steady contact",
+    "Renewals and seasonal openings/closings slipping off schedule",
+    "Repair quotes that go quiet with no follow-up"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "New-account assistant",
+      "body": "Every inquiry gets an instant reply with your pricing, a service plan recommended, and the first visit booked — turning the spring rush into signed weekly accounts."
+    },
+    {
+      "tag": "Recurring revenue",
+      "title": "Route & renewal manager",
+      "body": "It keeps recurring service accounts on schedule, sends seasonal opening and closing reminders, and nudges renewals before they lapse."
+    },
+    {
+      "tag": "Sales follow-up",
+      "title": "Repair-quote follow-up",
+      "body": "Equipment repair and upgrade quotes get tracked and followed up, so pump and heater jobs don't slip away after the first conversation."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning route brief",
+      "body": "One text each morning: today's stops in route order, tech assignments, repairs scheduled, and yesterday's numbers."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A pool service company built on weekly maintenance routes.",
+      "before": "Seasonal openings and renewals slipped because no one tracked the dates closely.",
+      "after": "Every account's schedule and renewal tracked and nudged automatically.",
+      "impact": "Representative result: fewer lapsed accounts and a steadier recurring base."
+    },
+    {
+      "context": "A company overwhelmed by spring new-account inquiries.",
+      "before": "The spring rush outpaced the office; many inquiries went cold.",
+      "after": "Every inquiry answered instantly with pricing and a booked first visit.",
+      "impact": "Representative result: more spring inquiries converted into year-round accounts."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it handle seasonal openings and closings?",
+      "a": "Yes. It tracks each account and sends opening and closing reminders on schedule, so seasonal service work gets booked instead of forgotten."
+    },
+    {
+      "q": "Does it help with equipment-repair sales?",
+      "a": "Yes. Repair and upgrade quotes — pumps, heaters, filters — get tracked and followed up so they don't go quiet after the first chat."
+    },
+    {
+      "q": "Will it work with my routing software?",
+      "a": "Yes. We build on top of Skimmer, Pool Office Manager, or whatever you use to manage routes."
+    }
+  ]
+}

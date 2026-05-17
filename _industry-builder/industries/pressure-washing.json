@@ -1,0 +1,67 @@
+{
+  "slug": "pressure-washing",
+  "name": "Pressure Washing",
+  "name_plural": "pressure washing companies",
+  "group": "Home Services",
+  "title": "AI Tools for Pressure Washing Companies | Turnkey AI",
+  "meta_description": "Custom AI tools for pressure washing — quote from photos, book fast, and follow up on every estimate. Built in two weeks, starting at $1,500.",
+  "h1_lead": "AI for pressure washing companies —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "Customers want a price for the driveway, the siding, the deck — and they want it fast. We build the tools that quote, book, and follow up so the warm-season rush turns into booked work.",
+  "drains": [
+    "Quote requests needing a fast price before the customer moves on",
+    "Estimating surfaces from vague phone descriptions",
+    "Estimates that go quiet with no follow-up",
+    "A short busy season with no time to chase leads manually"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Photo-quote assistant",
+      "body": "Customers send photos of the driveway or siding; the assistant estimates the surface, gives a price from your pricing, and books the job — a quote and a slot in one conversation."
+    },
+    {
+      "tag": "Sales follow-up",
+      "title": "Estimate follow-up assistant",
+      "body": "Every open estimate gets a well-timed nudge if the customer goes quiet — so larger house-wash and commercial jobs don't slip away."
+    },
+    {
+      "tag": "Recurring revenue",
+      "title": "Seasonal re-book assistant",
+      "body": "It reaches back out to past customers when their surfaces are due again, turning one-time jobs into a yearly recurring base."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning job brief",
+      "body": "One text each morning: today's jobs in route order, equipment and supplies to load, and yesterday's revenue."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A pressure washing company in a short, intense busy season.",
+      "before": "Quotes were slow during the rush; customers booked whoever answered first.",
+      "after": "Photo quotes answered in minutes with a price and a booked slot.",
+      "impact": "Representative result: more of the season's leads converted before competitors replied."
+    },
+    {
+      "context": "A company with no system to win repeat work.",
+      "before": "One-time jobs stayed one-time; no one reached back out.",
+      "after": "Past customers re-contacted automatically when surfaces are due again.",
+      "impact": "Representative result: a growing base of repeat seasonal customers."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it quote from customer photos?",
+      "a": "Yes. Customers send photos; the tool estimates the surface area and gives a price from your pricing. Unusual jobs get flagged for you to confirm."
+    },
+    {
+      "q": "How does it create repeat business?",
+      "a": "It tracks when past customers' surfaces are due for another wash and reaches out at the right time, turning one-off jobs into a yearly recurring base."
+    },
+    {
+      "q": "Will it work during my short busy season?",
+      "a": "That's exactly when it earns its keep. It handles the rush of quotes and bookings so you can stay in the field instead of on the phone."
+    }
+  ]
+}

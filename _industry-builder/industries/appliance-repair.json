@@ -1,0 +1,67 @@
+{
+  "slug": "appliance-repair",
+  "name": "Appliance Repair",
+  "name_plural": "appliance repair companies",
+  "group": "Trades & Specialty",
+  "title": "AI Tools for Appliance Repair Companies | Turnkey AI",
+  "meta_description": "Custom AI tools for appliance repair — book service calls fast, manage parts and scheduling, and follow up. Built in two weeks, starting at $1,500.",
+  "h1_lead": "AI for appliance repair companies —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "A dead fridge or a broken washer is an urgent call — the customer needs it fixed today. We build the tools that book that call fast and keep your service routes running tight.",
+  "drains": [
+    "Service calls that need fast booking before the customer calls elsewhere",
+    "Diagnosing the appliance and likely parts from a phone description",
+    "Scheduling that scatters across town with idle time between calls",
+    "Customers asking for arrival windows and status updates"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Service-call assistant",
+      "body": "Every call and form gets an instant reply, the appliance and symptom captured, the likely fix flagged, and a service window booked — fast, before the customer moves on."
+    },
+    {
+      "tag": "Back-office",
+      "title": "Route & schedule filler",
+      "body": "It books service calls into efficient windows and offers open slots to waiting customers, so technicians run tight routes instead of idling."
+    },
+    {
+      "tag": "Customer experience",
+      "title": "Arrival-window assistant",
+      "body": "Customers get a confirmed window, a heads-up before the tech arrives, and a summary after — fewer 'where are you?' calls, more reviews."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning route brief",
+      "body": "One text each morning: today's calls in route order, parts to load, and yesterday's numbers."
+    }
+  ],
+  "cases": [
+    {
+      "context": "An appliance repair company with scattered scheduling.",
+      "before": "Technicians ran loose routes with idle time between calls.",
+      "after": "Calls booked into tight windows; open slots filled from the waitlist.",
+      "impact": "Representative result: more calls completed per technician per day."
+    },
+    {
+      "context": "A company fielding constant status calls.",
+      "before": "The office spent the day answering 'when will the tech arrive?'",
+      "after": "Customers get a confirmed window and an automatic heads-up before arrival.",
+      "impact": "Representative result: far fewer inbound status calls and a smoother customer experience."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it identify the appliance problem from a description?",
+      "a": "It captures the appliance, brand, and symptom and flags the likely fix and parts, so your tech rolls up prepared. It won't replace a diagnosis — it makes the visit more efficient."
+    },
+    {
+      "q": "How does it keep routes tight?",
+      "a": "It books calls into efficient windows by location and fills open slots from the waitlist, so technicians spend more time fixing and less time driving."
+    },
+    {
+      "q": "Will it work with my scheduling software?",
+      "a": "Yes. We build on top of whatever dispatch and CRM tools you already use."
+    }
+  ]
+}

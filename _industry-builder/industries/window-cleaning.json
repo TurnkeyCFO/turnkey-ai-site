@@ -1,0 +1,67 @@
+{
+  "slug": "window-cleaning",
+  "name": "Window Cleaning",
+  "name_plural": "window cleaning companies",
+  "group": "Home Services",
+  "title": "AI Tools for Window Cleaning Companies | Turnkey AI",
+  "meta_description": "Custom AI tools for window cleaning — quote jobs fast, book recurring routes, and grow your reviews. Built in two weeks, starting at $1,500.",
+  "h1_lead": "AI for window cleaning companies —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "Window cleaning runs on volume and repeat work — lots of quotes, lots of routes, lots of customers who should be on a schedule. We build the tools that keep it all moving.",
+  "drains": [
+    "Quote requests that need a fast reply before the customer books elsewhere",
+    "Recurring residential and commercial routes to keep on schedule",
+    "One-time customers who never get put on a recurring plan",
+    "Review requests that depend on the crew remembering"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Quote & booking assistant",
+      "body": "Every inquiry gets an instant reply with pricing from your rates and a booked slot — so prospects don't drift to whoever answered first."
+    },
+    {
+      "tag": "Recurring revenue",
+      "title": "Recurring-plan assistant",
+      "body": "It invites one-time customers onto a recurring schedule and keeps existing residential and commercial routes booked and on time."
+    },
+    {
+      "tag": "Customer experience",
+      "title": "Review-request follow-up",
+      "body": "After every job, a personalized text asks happy customers for a Google review — every time, automatically."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning route brief",
+      "body": "One text each morning: today's stops in route order, crew assignments, and yesterday's revenue."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A window cleaning company doing mostly one-time jobs.",
+      "before": "Customers were cleaned once and never re-contacted; repeat work was luck.",
+      "after": "Every customer invited onto a recurring schedule automatically.",
+      "impact": "Representative result: a growing base of recurring residential and commercial accounts."
+    },
+    {
+      "context": "A company with inconsistent review collection.",
+      "before": "Reviews came in only when a crew member remembered to ask.",
+      "after": "A personalized review request fires after every completed job.",
+      "impact": "Representative result: a steady climb in review count and local ranking."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it quote both homes and commercial buildings?",
+      "a": "Yes. We train it on your pricing for both — by pane count, stories, frequency — so it quotes accurately for a house or a storefront."
+    },
+    {
+      "q": "How does it build recurring revenue?",
+      "a": "It invites one-time customers onto a recurring plan and keeps existing routes booked on schedule, so the recurring base grows steadily."
+    },
+    {
+      "q": "Will it work with my scheduling software?",
+      "a": "Yes. We build on top of whatever you already use to schedule routes and crews."
+    }
+  ]
+}

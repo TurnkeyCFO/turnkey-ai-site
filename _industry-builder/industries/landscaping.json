@@ -1,0 +1,67 @@
+{
+  "slug": "landscaping",
+  "name": "Landscaping",
+  "name_plural": "landscaping companies",
+  "group": "Home Services",
+  "title": "AI Tools for Landscaping Companies | Turnkey AI",
+  "meta_description": "Custom AI tools for landscapers — quote new work fast, manage crew dispatch, and keep recurring maintenance contracts on track. Built from $1,500.",
+  "h1_lead": "AI for landscaping companies —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "Spring buries you in quote requests, crews scatter across town, and the maintenance accounts need attention every week. We build the tools that keep all of it moving.",
+  "drains": [
+    "A spring flood of design and quote requests you can't keep up with",
+    "Crews spread across town with no clear daily picture",
+    "Recurring maintenance accounts that need steady, reliable contact",
+    "The owner checking five tools just to see what the day looks like"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Quote-request assistant",
+      "body": "Every design and maintenance inquiry gets an instant reply, the right questions asked, and a site visit booked — so the spring rush turns into a full schedule instead of a backlog."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning operations brief",
+      "body": "One text before 8 AM: today's jobs, which crew goes where, callbacks owed, and yesterday's revenue. No more opening five apps in bed to see the day."
+    },
+    {
+      "tag": "Recurring revenue",
+      "title": "Maintenance-account assistant",
+      "body": "It keeps recurring maintenance clients informed — visit reminders, seasonal upsell prompts, renewal nudges — so the contract base stays steady and grows."
+    },
+    {
+      "tag": "Customer experience",
+      "title": "Review & referral follow-up",
+      "body": "After a finished install, a personalized message asks happy clients for a review or a referral — the channel that quietly drives most landscaping leads."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A 22-crew landscaping company in Central Texas.",
+      "before": "The owner spent 30+ minutes every morning across five tools before he could see the day.",
+      "after": "One text at 6 AM: jobs, crew assignments, callbacks, yesterday's revenue.",
+      "impact": "The owner described it as the single biggest quality-of-life change in five years of running the business."
+    },
+    {
+      "context": "A design-build landscaper overwhelmed each spring.",
+      "before": "Quote requests piled up faster than the office could respond; many went cold.",
+      "after": "Every inquiry answered instantly and a site visit booked automatically.",
+      "impact": "Representative result: a fuller spring schedule with fewer leads lost to slow response."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it handle both one-off projects and maintenance accounts?",
+      "a": "Yes. Design-build inquiries get a site visit booked; recurring maintenance accounts get steady contact, visit reminders, and renewal nudges. The tools treat them differently because they are different."
+    },
+    {
+      "q": "Will it work with my scheduling software?",
+      "a": "Yes. We build on top of LMN, Jobber, Aspire, or whatever you already use to schedule crews."
+    },
+    {
+      "q": "Is the morning brief really just one text?",
+      "a": "Yes. It pulls from your CRM, scheduling, and accounting tools and sends one clear summary. You read it over coffee instead of opening five apps."
+    }
+  ]
+}

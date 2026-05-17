@@ -1,0 +1,67 @@
+{
+  "slug": "day-spa",
+  "name": "Day Spa",
+  "name_plural": "day spas",
+  "group": "Personal Care & Wellness",
+  "title": "AI Tools for Day Spas | Turnkey AI",
+  "meta_description": "Custom AI tools for day spas — fill the schedule, sell memberships and packages, and keep clients rebooking. Built in two weeks from $1,500.",
+  "h1_lead": "AI for day spas —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "A day spa runs on a full treatment schedule, repeat visits, and packages that sell. Missed inquiries and clients who don't rebook quietly drain the week. We build the tools that fix that.",
+  "drains": [
+    "Booking inquiries coming in while the front desk is with guests",
+    "No-shows and cancellations leaving treatment rooms idle",
+    "Packages and memberships that need a consistent, soft sell",
+    "Clients who don't rebook their next treatment"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Booking assistant",
+      "body": "Every call, form, and message gets an instant reply, the treatment matched to the right provider and room, and a slot booked — so a busy front desk never costs you a guest."
+    },
+    {
+      "tag": "Recurring revenue",
+      "title": "Membership & package assistant",
+      "body": "It introduces memberships and packages at the right moment — after a great first visit, when a package is running low — in your spa's voice, with zero pressure."
+    },
+    {
+      "tag": "Customer experience",
+      "title": "Rebooking & reminder assistant",
+      "body": "Confirmations and reminders cut no-shows, and clients get a gentle nudge to rebook their next treatment before they drift away."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Daily spa brief",
+      "body": "One text each morning: today's appointments by provider and room, open slots, and yesterday's numbers."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A day spa with idle treatment rooms.",
+      "before": "No-shows and cancellations left rooms empty with no fast way to fill them.",
+      "after": "Reminders cut no-shows; cancellations get offered to the waitlist.",
+      "impact": "Representative result: fewer idle rooms and steadier daily revenue."
+    },
+    {
+      "context": "A spa under-selling its membership program.",
+      "before": "Memberships were mentioned inconsistently, only when staff remembered.",
+      "after": "Memberships introduced automatically at the right moment, in the spa's voice.",
+      "impact": "Representative result: a steadier flow of new memberships and packages."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it help sell memberships without being pushy?",
+      "a": "Yes. It introduces memberships and packages at natural moments — after a great visit, when a package runs low — in your voice. The tone is warm, never salesy."
+    },
+    {
+      "q": "Can it match a treatment to the right provider and room?",
+      "a": "Yes. We train it on your providers, treatments, and rooms so every booking lands correctly."
+    },
+    {
+      "q": "Will it work with my spa software?",
+      "a": "Yes. We build on top of Mindbody, Vagaro, Boulevard, or whatever you already use."
+    }
+  ]
+}

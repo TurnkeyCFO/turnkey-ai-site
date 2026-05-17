@@ -1,0 +1,67 @@
+{
+  "slug": "general-contractor",
+  "name": "General Contracting",
+  "name_plural": "general contractors",
+  "group": "Trades & Specialty",
+  "title": "AI Tools for General Contractors | Turnkey AI",
+  "meta_description": "Custom AI tools for general contractors — qualify leads, draft estimates, and keep clients updated on every project. Built in two weeks from $1,500.",
+  "h1_lead": "AI for general contractors —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "Remodels and builds run for weeks, and the admin runs constant — qualifying leads, building estimates, and keeping clients in the loop. We build the tools that carry that weight.",
+  "drains": [
+    "Tire-kicker leads mixed in with serious project inquiries",
+    "Detailed estimates and proposals eating the owner's nights",
+    "Clients asking for status updates the office struggles to keep up with",
+    "The owner pulled between the field, the bids, and the phone"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Lead-qualifying assistant",
+      "body": "Every inquiry gets an instant reply and the right questions — scope, budget range, timeline — so serious projects get a consult booked and tire-kickers get filtered before they eat your week."
+    },
+    {
+      "tag": "Estimating",
+      "title": "Estimate & proposal drafter",
+      "body": "From your scope notes, it drafts a clean estimate and a professional proposal — line items, phases, your standard terms. Hours of evening admin become a short review."
+    },
+    {
+      "tag": "Customer experience",
+      "title": "Client update assistant",
+      "body": "It sends clients a clear, regular project update — what's done, what's next, what needs a decision — so the office isn't fielding 'where are we?' calls all day."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning project brief",
+      "body": "One text each morning: active jobsites, crew and sub assignments, inspections and deliveries due, and yesterday's numbers."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A residential remodeling contractor.",
+      "before": "Serious leads and tire-kickers got the same attention; the owner's time leaked into bad-fit consults.",
+      "after": "An assistant qualifies every lead on scope, budget, and timeline before a consult is booked.",
+      "impact": "Representative result: the owner's consult time spent almost entirely on real projects."
+    },
+    {
+      "context": "A general contractor whose clients felt out of the loop.",
+      "before": "Update calls and emails piled up; clients chased the office for status.",
+      "after": "Clients get a clear, regular project update automatically.",
+      "impact": "Representative result: fewer status calls and a noticeably better client experience."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it filter out tire-kickers?",
+      "a": "Yes. It asks about scope, budget range, and timeline up front. Serious projects get a consult booked; weak-fit inquiries get a polite response without burning your calendar."
+    },
+    {
+      "q": "Does it draft full proposals?",
+      "a": "It drafts the estimate and a professional proposal from your scope notes — line items, phases, your terms. You review and finalize."
+    },
+    {
+      "q": "Will it work with my project software?",
+      "a": "Yes. We build on top of Buildertrend, CoConstruct, or whatever you use to run projects."
+    }
+  ]
+}

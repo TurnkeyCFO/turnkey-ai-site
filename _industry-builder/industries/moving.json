@@ -1,0 +1,67 @@
+{
+  "slug": "moving",
+  "name": "Moving",
+  "name_plural": "moving companies",
+  "group": "Trades & Specialty",
+  "title": "AI Tools for Moving Companies | Turnkey AI",
+  "meta_description": "Custom AI tools for moving companies — quote moves fast, follow up on every estimate, and keep the calendar full. Built in two weeks from $1,500.",
+  "h1_lead": "AI for moving companies —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "Moving is a quoting race — customers gather three estimates and book fast. We build the tools that quote quickly, follow up well, and keep your trucks booked through the season.",
+  "drains": [
+    "Quote requests that need a fast estimate before the customer books",
+    "Estimating move size from inventory descriptions",
+    "Estimates that go quiet while the customer compares movers",
+    "Seasonal spikes overwhelming the office every summer"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Move-quote assistant",
+      "body": "Every inquiry gets an instant reply, the move scoped — home size, distance, inventory, date — and an estimate or a survey booked, so prospects don't drift to whoever quoted first."
+    },
+    {
+      "tag": "Sales follow-up",
+      "title": "Estimate follow-up assistant",
+      "body": "Every open estimate gets a well-timed follow-up while the customer compares movers, so you win jobs on attentiveness, not just the lowest bid."
+    },
+    {
+      "tag": "Customer experience",
+      "title": "Move-day prep assistant",
+      "body": "Booked customers get clear prep reminders and a confirmation; after the move, a review request. Smoother moves, more reviews."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning dispatch brief",
+      "body": "One text each morning: today's moves, crew and truck assignments, and yesterday's numbers."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A moving company in a busy summer season.",
+      "before": "The summer rush outpaced the office; quotes were slow and leads went cold.",
+      "after": "Every inquiry answered instantly with an estimate or a booked survey.",
+      "impact": "Representative result: more of the seasonal rush converted before competitors replied."
+    },
+    {
+      "context": "A mover losing jobs to comparison shoppers.",
+      "before": "Estimates went out and the company lost track during the customer's comparison phase.",
+      "after": "Every open estimate followed up automatically while the customer decided.",
+      "impact": "Representative result: a meaningful lift in close rate against other movers."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it quote a move?",
+      "a": "Yes. It scopes the move — home size, distance, inventory, date — and gives an estimate from your pricing, or books an in-home or video survey for larger moves."
+    },
+    {
+      "q": "How does it help against comparison shoppers?",
+      "a": "Moving customers gather multiple quotes. The follow-up tool keeps your estimate in front of them with a friendly, well-timed nudge, so you win on responsiveness."
+    },
+    {
+      "q": "Will it work with my software?",
+      "a": "Yes. We build on top of whatever you use to manage leads, estimates, and dispatch."
+    }
+  ]
+}

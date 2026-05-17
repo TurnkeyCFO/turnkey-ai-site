@@ -1,0 +1,67 @@
+{
+  "slug": "pest-control",
+  "name": "Pest Control",
+  "name_plural": "pest control companies",
+  "group": "Home Services",
+  "title": "AI Tools for Pest Control Companies | Turnkey AI",
+  "meta_description": "Custom AI tools for pest control — book service fast, keep recurring plans on schedule, and chase renewals. Built in two weeks, starting at $1,500.",
+  "h1_lead": "AI for pest control companies —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "Recurring service plans are the heart of the business — and they need steady, reliable contact. We build the tools that keep every account on schedule and every renewal on track.",
+  "drains": [
+    "New-service calls that need a fast, confident reply",
+    "Recurring quarterly plans slipping off schedule",
+    "Renewals lapsing because no one tracked the dates",
+    "Seasonal spikes — ants, mosquitoes, rodents — overwhelming the office"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "New-service assistant",
+      "body": "Every call and form gets an instant reply, the pest identified, the plan recommended, and the first visit booked — so seasonal spikes turn into signed accounts."
+    },
+    {
+      "tag": "Recurring revenue",
+      "title": "Plan & renewal manager",
+      "body": "It tracks every recurring plan, schedules the next visit, and reaches out before a contract lapses — protecting the recurring revenue that keeps the business stable."
+    },
+    {
+      "tag": "Customer experience",
+      "title": "Service-update assistant",
+      "body": "Before each visit, customers get a friendly reminder; after, a summary and a review prompt. Fewer missed appointments, more reviews."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning route brief",
+      "body": "One text each morning: today's stops, technician routing, renewals due, and yesterday's numbers."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A pest control company built on quarterly service plans.",
+      "before": "Renewals slipped because dates weren't tracked closely; some accounts lapsed silently.",
+      "after": "Every plan tracked, every renewal nudged before it expired.",
+      "impact": "Representative result: a measurable drop in silent plan cancellations."
+    },
+    {
+      "context": "A company overwhelmed by seasonal mosquito-season calls.",
+      "before": "The summer spike buried the office; callers waited or gave up.",
+      "after": "Every spike call answered instantly, the plan recommended, the visit booked.",
+      "impact": "Representative result: more seasonal calls converted into year-round accounts."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it recommend the right plan from a customer's description?",
+      "a": "Yes. We train it on your service plans and pricing so it can identify the pest, recommend the right plan, and book the first visit — all in one conversation."
+    },
+    {
+      "q": "How does it protect recurring revenue?",
+      "a": "It tracks every plan's schedule and renewal date and reaches out before anything lapses. Quarterly and annual plans stop slipping through the cracks."
+    },
+    {
+      "q": "Will it work with PestPac or FieldRoutes?",
+      "a": "Yes. We build on top of the routing and CRM software you already run."
+    }
+  ]
+}

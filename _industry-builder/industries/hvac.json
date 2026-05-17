@@ -1,0 +1,67 @@
+{
+  "slug": "hvac",
+  "name": "HVAC",
+  "name_plural": "HVAC businesses",
+  "group": "Home Services",
+  "title": "AI Tools for HVAC Businesses | Turnkey AI",
+  "meta_description": "Custom AI tools for HVAC contractors — catch after-hours calls, draft estimates, and chase maintenance renewals. Built in two weeks from $1,500.",
+  "h1_lead": "AI for HVAC contractors —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "Heat waves and cold snaps don't wait for business hours. The calls pile up, estimates get written at 10 PM, and maintenance contracts quietly lapse. We build the tools that catch all of it.",
+  "drains": [
+    "After-hours emergency calls going to voicemail during a heat wave",
+    "Estimates typed from scratch in the truck, late at night",
+    "Maintenance agreements lapsing because no one chased the renewal",
+    "Techs juggling dispatch, parts, and the next call all at once"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "After-hours call catcher",
+      "body": "When the AC dies at 9 PM, the customer calls the next number if you don't pick up. An AI assistant answers every call and form, books the service window, and flags true emergencies for your on-call tech."
+    },
+    {
+      "tag": "Estimating",
+      "title": "Estimate drafter",
+      "body": "Feed it the job notes and it drafts a clean estimate — equipment, labor, your standard line items — ready for you to review and send. No more writing quotes after the kids are asleep."
+    },
+    {
+      "tag": "Recurring revenue",
+      "title": "Maintenance renewal chaser",
+      "body": "It watches every maintenance agreement and reaches out before it lapses — personalized, on schedule — so seasonal tune-up revenue stops slipping through the cracks."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning dispatch brief",
+      "body": "One text before 7 AM: today's calls, which trucks go where, parts that need ordering, and yesterday's revenue. You start the day ahead of it, not chasing it."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A 9-truck residential HVAC shop, no after-hours dispatcher.",
+      "before": "Roughly a third of after-hours calls during peak season went to voicemail and never called back.",
+      "after": "Every call answered and triaged 24/7 — emergencies routed to the on-call tech, the rest booked for morning.",
+      "impact": "Representative result: ~$11,000/month in jobs recovered that used to go to whoever picked up first."
+    },
+    {
+      "context": "An owner-operator writing every estimate himself.",
+      "before": "8–10 hours a week writing quotes after-hours; quotes often went out two days late.",
+      "after": "Drafts ready for a 5-minute review each morning; quotes out same day.",
+      "impact": "Representative result: ~6 hours a week reclaimed and a noticeably higher quote-to-close rate."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Will it work with ServiceTitan or Housecall Pro?",
+      "a": "Yes. We build on top of the dispatch and CRM software you already run — ServiceTitan, Housecall Pro, Jobber, or whatever you use. The goal is to make your existing stack smarter, not replace it."
+    },
+    {
+      "q": "Can the call catcher tell a real emergency from a routine call?",
+      "a": "Yes. We train it on your definition of an emergency — no heat in winter, no cooling in a heat wave, a gas smell. True emergencies get routed to your on-call tech immediately; everything else is booked for the next available window."
+    },
+    {
+      "q": "How fast can this be running before summer?",
+      "a": "Most first projects go live in one to two weeks. If you call us in spring, the after-hours catcher will be running well before your peak season hits."
+    }
+  ]
+}

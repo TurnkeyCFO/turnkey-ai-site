@@ -1,0 +1,67 @@
+{
+  "slug": "concrete",
+  "name": "Concrete",
+  "name_plural": "concrete companies",
+  "group": "Trades & Specialty",
+  "title": "AI Tools for Concrete Companies | Turnkey AI",
+  "meta_description": "Custom AI tools for concrete companies — qualify leads, draft estimates, and follow up on bids. Built in two weeks, starting at $1,500. No contracts.",
+  "h1_lead": "AI for concrete companies —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "Driveways, patios, foundations — concrete jobs are higher-ticket and weather-bound. We build the tools that qualify the lead, draft the estimate, and keep the bid warm until the pour is scheduled.",
+  "drains": [
+    "Project inquiries that need scoping before they're worth a site visit",
+    "Estimates for pours, flatwork, and decorative jobs built from scratch",
+    "Bids that go quiet with no follow-up",
+    "Scheduling that shifts constantly with weather"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Lead-qualifying assistant",
+      "body": "Every inquiry gets an instant reply and the right questions — job type, square footage, timeline, budget range — so site visits go to real projects, not tire-kickers."
+    },
+    {
+      "tag": "Estimating",
+      "title": "Estimate drafter",
+      "body": "From your site-visit notes, it drafts a clean estimate — materials, labor, prep, finishing — so higher-ticket quotes go out the same day."
+    },
+    {
+      "tag": "Sales follow-up",
+      "title": "Bid follow-up assistant",
+      "body": "Every open bid gets tracked and followed up on a schedule you set, so larger flatwork and decorative jobs don't slip away."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning job brief",
+      "body": "One text each morning: today's pours and jobs, crew assignments, materials due, and yesterday's numbers."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A concrete company doing driveways, patios, and flatwork.",
+      "before": "Site visits went to every inquiry; the owner's time leaked into bad-fit estimates.",
+      "after": "An assistant qualifies each lead before a site visit is booked.",
+      "impact": "Representative result: site-visit time spent almost entirely on real projects."
+    },
+    {
+      "context": "A concrete contractor with no bid follow-up.",
+      "before": "Bids went out and sat; no one tracked which had gone cold.",
+      "after": "Every open bid followed up automatically until the customer decides.",
+      "impact": "Representative result: more higher-ticket jobs closed from the same lead volume."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it qualify a concrete lead before a site visit?",
+      "a": "Yes. It asks about job type, square footage, timeline, and budget range, so your site visits go to projects worth driving out for."
+    },
+    {
+      "q": "Does it handle decorative and structural work?",
+      "a": "Yes. It scopes flatwork, decorative finishes, and foundation work differently and drafts estimates accordingly."
+    },
+    {
+      "q": "Will it work with my software?",
+      "a": "Yes. We build on top of whatever you use to track leads, estimates, and schedules."
+    }
+  ]
+}

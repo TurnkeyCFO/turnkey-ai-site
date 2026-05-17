@@ -1,0 +1,67 @@
+{
+  "slug": "gutter",
+  "name": "Gutter",
+  "name_plural": "gutter companies",
+  "group": "Home Services",
+  "title": "AI Tools for Gutter Companies | Turnkey AI",
+  "meta_description": "Custom AI tools for gutter companies — quote installs and cleanings fast, book seasonal work, and follow up on every estimate. Built from $1,500.",
+  "h1_lead": "AI for gutter companies —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "Gutter work is seasonal and fast-moving — cleanings before the rains, installs and guard upgrades all year. We build the tools that quote it, book it, and bring customers back next season.",
+  "drains": [
+    "Seasonal cleaning requests spiking faster than the office can answer",
+    "Install and gutter-guard quotes that go quiet",
+    "Estimating linear footage from vague phone descriptions",
+    "One-time cleaning customers who never get re-contacted"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Quote-request assistant",
+      "body": "Every cleaning and install inquiry gets an instant reply, the right questions asked, and a job or site visit booked — so the seasonal rush turns into a full schedule."
+    },
+    {
+      "tag": "Sales follow-up",
+      "title": "Estimate follow-up assistant",
+      "body": "Install and gutter-guard quotes get tracked and followed up, so higher-ticket upgrade jobs don't slip away after the first conversation."
+    },
+    {
+      "tag": "Recurring revenue",
+      "title": "Seasonal re-book assistant",
+      "body": "It reaches back out to past cleaning customers before each rainy season, turning one-time cleanings into a yearly recurring base."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning job brief",
+      "body": "One text each morning: today's jobs in route order, materials to load, and yesterday's revenue."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A gutter company with a sharp seasonal rush.",
+      "before": "Pre-rain cleaning requests outpaced the office; many callers booked elsewhere.",
+      "after": "Every inquiry answered instantly and a job booked in minutes.",
+      "impact": "Representative result: more of the seasonal rush converted into booked work."
+    },
+    {
+      "context": "A company doing mostly one-time cleanings.",
+      "before": "Cleaning customers were never re-contacted; repeat work was random.",
+      "after": "Past customers reached out to automatically before each rainy season.",
+      "impact": "Representative result: a steady, growing base of repeat seasonal customers."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it quote a gutter cleaning or install?",
+      "a": "Yes. We train it on your pricing — by linear footage, stories, guard type — so it can give an accurate quote and book the job or a site visit."
+    },
+    {
+      "q": "How does it create repeat business?",
+      "a": "It tracks past cleaning customers and reaches out before each rainy season, turning one-time work into a predictable recurring base."
+    },
+    {
+      "q": "Will it work with my software?",
+      "a": "Yes. We build on top of whatever scheduling and CRM tools you already use."
+    }
+  ]
+}

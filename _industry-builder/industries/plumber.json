@@ -1,0 +1,67 @@
+{
+  "slug": "plumber",
+  "name": "Plumbing",
+  "name_plural": "plumbing companies",
+  "group": "Home Services",
+  "title": "AI Tools for Plumbing Companies | Turnkey AI",
+  "meta_description": "Custom AI tools for plumbers — catch emergency calls 24/7, draft estimates, and follow up on every quote. Built in two weeks, starting at $1,500.",
+  "h1_lead": "AI for plumbing companies —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "A burst pipe at midnight doesn't leave a voicemail and wait. It calls the next plumber. We build the tools that make sure that plumber is you.",
+  "drains": [
+    "Emergency calls coming in after hours and on weekends",
+    "Quotes that never get a follow-up when the customer goes quiet",
+    "Dispatch scramble when two emergencies land at once",
+    "The owner answering the phone from under a sink"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "24/7 emergency line",
+      "body": "An AI receptionist picks up every call, day or night. It books routine work, gathers the details on emergencies, and pages your on-call tech for the real ones — so a 2 AM burst pipe becomes your job, not the next guy's."
+    },
+    {
+      "tag": "Sales follow-up",
+      "title": "Quote follow-up assistant",
+      "body": "Every estimate gets a polite, well-timed nudge if the customer goes quiet. No more $4k repipe jobs lost because everyone got busy and forgot to circle back."
+    },
+    {
+      "tag": "Estimating",
+      "title": "Estimate drafter",
+      "body": "Job notes in, a clean draft estimate out — fixtures, labor, your standard markups. You review and send in minutes instead of building each one from a blank page."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning job brief",
+      "body": "A single text each morning: today's calls, crew assignments, callbacks owed, and yesterday's numbers. The whole day in one glance."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A 7-truck plumbing shop with no after-hours dispatcher.",
+      "before": "Around 30% of after-hours leads went to faster competitors; mornings started with a queue of cold leads.",
+      "after": "Every form and missed call answered in under two minutes — booked or held warm, 24/7.",
+      "impact": "Representative result: ~$14,000/month in recovered jobs that used to go to whoever called back first."
+    },
+    {
+      "context": "A residential plumber whose quotes rarely got followed up.",
+      "before": "Estimates went out and then sat — no one tracked which prospects had gone cold.",
+      "after": "Automatic, friendly follow-ups on every open quote until the customer decides.",
+      "impact": "Representative result: a meaningful lift in quote-to-close rate with zero extra owner effort."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Does the AI sound like a real person on the phone?",
+      "a": "Yes. The voice receptionist is trained on your business and your tone. It handles the easy questions, books appointments, and routes anything urgent or unusual to a real person right away."
+    },
+    {
+      "q": "What about emergency calls in the middle of the night?",
+      "a": "That's exactly what it's built for. The assistant gathers the key details, decides whether it's a true emergency, and pages your on-call tech — so you stop losing high-value emergency work to voicemail."
+    },
+    {
+      "q": "Will it work with Jobber or ServiceTitan?",
+      "a": "Yes. We build on top of the scheduling and CRM tools you already use. You won't have a new platform to learn — your existing one just gets smarter."
+    }
+  ]
+}

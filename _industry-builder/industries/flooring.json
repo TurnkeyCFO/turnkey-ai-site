@@ -1,0 +1,67 @@
+{
+  "slug": "flooring",
+  "name": "Flooring",
+  "name_plural": "flooring companies",
+  "group": "Trades & Specialty",
+  "title": "AI Tools for Flooring Companies | Turnkey AI",
+  "meta_description": "Custom AI tools for flooring companies — quote jobs fast, follow up on estimates, and keep installs scheduled. Built in two weeks, starting at $1,500.",
+  "h1_lead": "AI for flooring companies —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "Flooring customers are comparison shoppers — they want a quote, samples, and a timeline. We build the tools that quote fast, follow up well, and keep your install schedule full.",
+  "drains": [
+    "Quote requests that need fast pricing across many material options",
+    "Estimates that go quiet while the customer compares bids",
+    "Measuring and material math eating the owner's time",
+    "Install scheduling that shifts with material lead times"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Quote-request assistant",
+      "body": "Every inquiry gets an instant reply, the job scoped — room count, square footage, material type — and a measure appointment booked, so the pipeline stays full."
+    },
+    {
+      "tag": "Sales follow-up",
+      "title": "Estimate follow-up assistant",
+      "body": "Every open estimate gets a well-timed follow-up while the customer compares options, so you don't lose jobs to the contractor who simply circled back."
+    },
+    {
+      "tag": "Estimating",
+      "title": "Estimate drafter",
+      "body": "From your measure notes, it drafts a clean estimate — material, underlayment, labor, removal — across the options the customer is weighing."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning install brief",
+      "body": "One text each morning: today's installs, crew assignments, material deliveries due, and yesterday's numbers."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A flooring company whose customers shopped multiple bids.",
+      "before": "Estimates went out and the company lost track during the customer's comparison phase.",
+      "after": "Every open estimate followed up automatically while the customer decided.",
+      "impact": "Representative result: a meaningful lift in close rate against comparison shoppers."
+    },
+    {
+      "context": "A flooring company with slow quote turnaround.",
+      "before": "Quotes took days because of measuring and material math.",
+      "after": "Drafts ready for a quick review right after the measure.",
+      "impact": "Representative result: faster quotes and more jobs won on responsiveness."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it quote across material types?",
+      "a": "Yes. It drafts estimates across the options a customer is comparing — hardwood, LVP, tile, carpet — from your pricing."
+    },
+    {
+      "q": "How does it help against comparison shoppers?",
+      "a": "Flooring customers shop bids. The follow-up tool keeps your quote in front of them with a well-timed, friendly nudge, so you win on attentiveness, not just price."
+    },
+    {
+      "q": "Will it work with my software?",
+      "a": "Yes. We build on top of whatever you use to track leads, measures, and installs."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "slug": "auto-repair",
+  "name": "Auto Repair",
+  "name_plural": "auto repair shops",
+  "group": "Auto",
+  "title": "AI Tools for Auto Repair Shops | Turnkey AI",
+  "meta_description": "Custom AI tools for auto repair shops — book appointments, send status updates, and bring customers back for service. Built in two weeks from $1,500.",
+  "h1_lead": "AI for auto repair shops —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "The phone rings while you're under a car, customers want status updates, and last visit's customers forget to come back. We build the tools that handle the front desk so the bays stay productive.",
+  "drains": [
+    "The phone ringing constantly while the team is in the bays",
+    "Customers calling all day asking 'is my car ready?'",
+    "Past customers who never come back for the next service",
+    "Approval delays on repairs holding up the work"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Appointment assistant",
+      "body": "Every call and form gets an instant reply and a booked appointment — service type, vehicle, drop-off time — so the phone stops pulling techs out of the bays."
+    },
+    {
+      "tag": "Customer experience",
+      "title": "Repair-status assistant",
+      "body": "Customers get automatic updates — vehicle received, diagnosis ready, repair approved, ready for pickup — so the front desk isn't fielding status calls all day."
+    },
+    {
+      "tag": "Recurring revenue",
+      "title": "Service-reminder assistant",
+      "body": "It reaches back out when a customer is due for an oil change, inspection, or seasonal service — turning one-time visits into a steady repeat base."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning shop brief",
+      "body": "One text each morning: today's appointments, bay load, parts due, and yesterday's numbers."
+    }
+  ],
+  "cases": [
+    {
+      "context": "An independent auto repair shop.",
+      "before": "The phone constantly pulled techs out of the bays to answer status calls.",
+      "after": "Customers get automatic status updates; bookings handled by an assistant.",
+      "impact": "Representative result: more productive bay time and a calmer front desk."
+    },
+    {
+      "context": "A repair shop with weak repeat business.",
+      "before": "Customers came in once and were never reminded to return.",
+      "after": "Service reminders go out automatically when a vehicle is due.",
+      "impact": "Representative result: a steadier base of returning customers."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it book appointments without the front desk?",
+      "a": "Yes. It captures the service type, vehicle, and drop-off time and books the appointment, so the phone stops pulling your techs off the work."
+    },
+    {
+      "q": "How does it bring customers back?",
+      "a": "It tracks when each customer is due for routine service and reaches out at the right time, turning one-time visits into a predictable repeat base."
+    },
+    {
+      "q": "Will it work with my shop software?",
+      "a": "Yes. We build on top of Shopmonkey, Tekmetric, Mitchell 1, or whatever you already run."
+    }
+  ]
+}

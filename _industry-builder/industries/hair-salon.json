@@ -1,0 +1,67 @@
+{
+  "slug": "hair-salon",
+  "name": "Hair Salon",
+  "name_plural": "hair salons",
+  "group": "Personal Care & Wellness",
+  "title": "AI Tools for Hair Salons | Turnkey AI",
+  "meta_description": "Custom AI tools for hair salons — fill the books, cut no-shows, and keep clients rebooking. Built in two weeks, starting at $1,500. No contracts.",
+  "h1_lead": "AI for hair salons —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "Open chairs, no-shows, and clients who drift away quietly drain a salon's revenue. We build the tools that keep the books full, the reminders going out, and the regulars coming back.",
+  "drains": [
+    "Booking requests coming in while stylists are with clients",
+    "No-shows and late cancellations leaving gaps in the day",
+    "Clients who don't rebook and slowly drift away",
+    "The front desk juggling phones, check-in, and product all at once"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Booking assistant",
+      "body": "Every call, text, and DM gets an instant reply, the service matched to the right stylist, and a slot booked — so a busy front desk never costs you a client."
+    },
+    {
+      "tag": "Customer experience",
+      "title": "No-show reducer",
+      "body": "Well-timed confirmations and reminders go out before every appointment, and cancellations get offered to your waitlist to fill the gap."
+    },
+    {
+      "tag": "Recurring revenue",
+      "title": "Rebooking assistant",
+      "body": "It reaches out to clients who haven't rebooked, in your salon's voice, so regulars don't quietly drift to another chair."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Daily front-desk brief",
+      "body": "One text each morning: today's appointments by stylist, open slots to fill, and yesterday's numbers."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A hair salon with a busy, stretched front desk.",
+      "before": "Booking messages waited; some clients gave up and booked elsewhere.",
+      "after": "Every call, text, and DM answered instantly and booked with the right stylist.",
+      "impact": "Representative result: a fuller book with no extra front-desk strain."
+    },
+    {
+      "context": "A salon losing clients who never rebooked.",
+      "before": "Clients drifted away with no one reaching out.",
+      "after": "Lapsed clients nudged automatically in the salon's voice.",
+      "impact": "Representative result: more regulars retained and a steadier book."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it match a service to the right stylist?",
+      "a": "Yes. We train it on your stylists, their specialties, and their availability, so it books color with a colorist and a cut with the right chair."
+    },
+    {
+      "q": "Will it sound like our salon?",
+      "a": "Yes. Every message is written in your salon's voice. Many owners review the first batch to fine-tune the tone, then let it run."
+    },
+    {
+      "q": "Will it work with my booking software?",
+      "a": "Yes. We build on top of Vagaro, Boulevard, Square, or whatever you already use."
+    }
+  ]
+}

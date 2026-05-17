@@ -1,0 +1,67 @@
+{
+  "slug": "roofing",
+  "name": "Roofing",
+  "name_plural": "roofing companies",
+  "group": "Home Services",
+  "title": "AI Tools for Roofing Companies | Turnkey AI",
+  "meta_description": "Custom AI tools for roofers — capture storm-season lead surges, draft estimates, and follow up on every inspection. Built in two weeks from $1,500.",
+  "h1_lead": "AI for roofing companies —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "When a hailstorm hits, the leads come in faster than you can answer the phone. The week after a storm decides your year. We build the tools that catch every one of them.",
+  "drains": [
+    "A storm hits and 80 leads land in two days you can't all call back",
+    "Free-inspection requests that never get scheduled",
+    "Estimates and insurance-scope paperwork eating the owner's nights",
+    "Inspections done but no follow-up to turn them into signed jobs"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Storm-surge lead catcher",
+      "body": "When a storm drives a flood of calls and forms, the assistant answers every one, books inspections, and keeps prospects warm — so the surge becomes signed jobs instead of a missed-call list."
+    },
+    {
+      "tag": "Sales follow-up",
+      "title": "Inspection follow-up assistant",
+      "body": "Every free inspection gets a structured follow-up: the findings, the quote, and a clear next step. Inspections stop ending in silence and start turning into contracts."
+    },
+    {
+      "tag": "Back-office",
+      "title": "Estimate & scope drafter",
+      "body": "It drafts estimates and helps assemble the insurance-scope paperwork from your notes and photos — turning hours of evening admin into a short review."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning crew brief",
+      "body": "One text each morning: today's installs and inspections, crew assignments, materials due, and yesterday's revenue."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A residential roofing company after a regional hailstorm.",
+      "before": "A two-day lead surge overwhelmed the office; many callers never got a call back.",
+      "after": "Every storm lead answered and booked for an inspection within minutes, around the clock.",
+      "impact": "Representative result: a far higher share of storm-week leads converted into booked inspections."
+    },
+    {
+      "context": "A roofer whose free inspections rarely got followed up.",
+      "before": "Inspections happened, then the lead went cold with no structured follow-up.",
+      "after": "Each inspection triggers an automatic, well-timed follow-up with the quote and next step.",
+      "impact": "Representative result: a meaningful lift in inspection-to-contract rate."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it handle a sudden surge after a storm?",
+      "a": "Yes — that's the main reason roofers come to us. The lead catcher scales instantly. Whether 5 leads come in or 150, every one gets answered and booked in minutes."
+    },
+    {
+      "q": "Does it help with insurance-scope paperwork?",
+      "a": "It drafts the estimate and assembles the scope documentation from your notes and photos. You review and finalize — the hours of evening paperwork become a short check."
+    },
+    {
+      "q": "Will it work with my CRM?",
+      "a": "Yes. We build on top of AccuLynx, JobNimbus, or whatever roofing CRM you already use."
+    }
+  ]
+}

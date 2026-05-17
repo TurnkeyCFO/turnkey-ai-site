@@ -1,0 +1,67 @@
+{
+  "slug": "house-cleaning",
+  "name": "House Cleaning",
+  "name_plural": "house cleaning companies",
+  "group": "Home Services",
+  "title": "AI Tools for House Cleaning Companies | Turnkey AI",
+  "meta_description": "Custom AI tools for cleaning companies — book new clients fast, fill last-minute cancellations, and grow your Google reviews. Built from $1,500.",
+  "h1_lead": "AI for house cleaning companies —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "Bookings, reschedules, cancellations, and review requests run all day long. We build the tools that handle the back-and-forth so your team can focus on the homes.",
+  "drains": [
+    "Booking requests that need a fast reply or the customer books elsewhere",
+    "Last-minute cancellations leaving crews with idle time",
+    "Review requests that only fire when someone remembers",
+    "The owner buried in scheduling texts all day"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Booking assistant",
+      "body": "Every inquiry gets an instant reply with pricing, availability, and a booked slot — so prospects don't drift to whichever cleaner answered first."
+    },
+    {
+      "tag": "Back-office",
+      "title": "Cancellation backfill",
+      "body": "When a client cancels, the assistant immediately offers the open slot to your waitlist — turning idle crew time into a paid clean."
+    },
+    {
+      "tag": "Customer experience",
+      "title": "Review-request follow-up",
+      "body": "After every job marked complete, a personalized text asks happy clients for a Google review. It runs every time, not just when someone remembers."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Daily schedule brief",
+      "body": "One morning text: today's homes, crew assignments, special instructions, and any gaps to fill."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A residential cleaning company with 14 employees.",
+      "before": "7 Google reviews total; crews marked customers happy but no one followed up.",
+      "after": "A personalized review request fires automatically after every happy-customer check.",
+      "impact": "Representative result: +53 reviews in 90 days, a 4.9-star average, and a first-page local ranking."
+    },
+    {
+      "context": "A cleaning company losing time to last-minute cancellations.",
+      "before": "Cancellations left crews idle with no fast way to fill the slot.",
+      "after": "Open slots offered to the waitlist within minutes of a cancellation.",
+      "impact": "Representative result: most cancellations rebooked the same day."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it quote a cleaning over text or chat?",
+      "a": "Yes. We train it on your pricing — home size, frequency, add-ons — so it can give an accurate quote and book the job without you touching the phone."
+    },
+    {
+      "q": "How does the review tool stay personal?",
+      "a": "Each message references the actual visit and is written in your voice. Many owners review the first batch monthly to keep the tone right, then let the rest run on rails."
+    },
+    {
+      "q": "Will it work with my booking software?",
+      "a": "Yes. We build on top of Jobber, Launch27, ZenMaid, or whatever you already use."
+    }
+  ]
+}

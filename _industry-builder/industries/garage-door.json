@@ -1,0 +1,67 @@
+{
+  "slug": "garage-door",
+  "name": "Garage Door",
+  "name_plural": "garage door companies",
+  "group": "Home Services",
+  "title": "AI Tools for Garage Door Companies | Turnkey AI",
+  "meta_description": "Custom AI tools for garage door companies — capture repair calls, book installs, and follow up on quotes. Built in two weeks, starting at $1,500.",
+  "h1_lead": "AI for garage door companies —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "A broken garage door is an urgent call — the customer can't get the car out. We build the tools that catch that call fast and book the install and repair work that follows.",
+  "drains": [
+    "Urgent repair calls that need a fast, same-day reply",
+    "Install quotes that go quiet with no follow-up",
+    "Estimating door, opener, and spring jobs from phone descriptions",
+    "The owner handling dispatch, quoting, and field work alone"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Repair-call assistant",
+      "body": "Every call and form gets an instant reply, the problem scoped — broken spring, dead opener, off-track door — and a same-day window booked when it's urgent."
+    },
+    {
+      "tag": "Estimating",
+      "title": "Estimate drafter",
+      "body": "It drafts estimates for repairs and new doors from your standard pricing, so the customer gets a number fast and you skip the blank page."
+    },
+    {
+      "tag": "Sales follow-up",
+      "title": "Install-quote follow-up",
+      "body": "New-door quotes get tracked and followed up, so higher-ticket install jobs don't slip away after the first visit."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning job brief",
+      "body": "One text each morning: today's calls in route order, parts to load, installs scheduled, and yesterday's revenue."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A garage door company handling both repairs and installs.",
+      "before": "Urgent repair calls competed with install quoting for the owner's attention; some slipped.",
+      "after": "An assistant triages every call — urgent repairs booked same-day, install quotes logged and followed up.",
+      "impact": "Representative result: fewer missed repair calls and a fuller install schedule."
+    },
+    {
+      "context": "A company with no follow-up on new-door quotes.",
+      "before": "Install quotes went out and were forgotten if the customer didn't reply.",
+      "after": "Every open install quote followed up automatically until the customer decides.",
+      "impact": "Representative result: more higher-ticket install jobs closed from the same leads."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it tell an urgent repair from a routine one?",
+      "a": "Yes. A door that won't open with a car trapped inside gets a same-day window; routine maintenance gets booked normally. We train it on your definition of urgent."
+    },
+    {
+      "q": "Does it quote new doors and repairs?",
+      "a": "It drafts estimates from your standard pricing for both. You review and send — the customer gets a fast number, you skip the blank page."
+    },
+    {
+      "q": "Will it work with my scheduling software?",
+      "a": "Yes. We build on top of the dispatch and CRM tools you already use."
+    }
+  ]
+}

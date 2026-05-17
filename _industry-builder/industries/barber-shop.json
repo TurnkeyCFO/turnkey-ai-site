@@ -1,0 +1,67 @@
+{
+  "slug": "barber-shop",
+  "name": "Barber Shop",
+  "name_plural": "barber shops",
+  "group": "Auto",
+  "title": "AI Tools for Barber Shops | Turnkey AI",
+  "meta_description": "Custom AI tools for barber shops — fill the chair, cut no-shows, and bring clients back on schedule. Built in two weeks, starting at $1,500.",
+  "h1_lead": "AI for barber shops —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "An empty chair is lost money you can't get back. No-shows and forgotten rebookings quietly drain the week. We build the tools that keep the chairs full and the regulars coming back.",
+  "drains": [
+    "Booking requests and texts coming in while you're cutting",
+    "No-shows leaving gaps in the day's schedule",
+    "Regulars who fall off their rebooking rhythm",
+    "Empty mid-week and mid-day slots that never get filled"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Booking assistant",
+      "body": "Every call, text, and message gets an instant reply and a booked slot, so you're not stopping a cut to answer the phone or losing a client to a slow reply."
+    },
+    {
+      "tag": "Customer experience",
+      "title": "No-show reducer",
+      "body": "Well-timed confirmations and reminders go out before every appointment, and open gaps from cancellations get offered to waiting clients."
+    },
+    {
+      "tag": "Recurring revenue",
+      "title": "Rebooking assistant",
+      "body": "It nudges regulars when they're due for their next cut, keeping the chair-filling rhythm steady instead of leaving it to memory."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Daily chair brief",
+      "body": "One text each morning: today's appointments, any open slots to fill, and yesterday's numbers."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A barber shop losing time to no-shows.",
+      "before": "No-shows left gaps the shop couldn't fill on short notice.",
+      "after": "Reminders cut no-shows; open gaps offered to waiting clients automatically.",
+      "impact": "Representative result: fewer empty chairs and steadier daily revenue."
+    },
+    {
+      "context": "A shop whose regulars drifted off schedule.",
+      "before": "Rebooking depended on the client remembering to come back.",
+      "after": "Regulars nudged automatically when they're due for the next cut.",
+      "impact": "Representative result: a more predictable, fuller weekly schedule."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it book appointments while I'm cutting?",
+      "a": "Yes. The assistant answers calls, texts, and messages and books slots without you putting down the clippers."
+    },
+    {
+      "q": "How much can it really reduce no-shows?",
+      "a": "Well-timed confirmations and reminders make a real dent, and when someone does cancel, the open slot gets offered to waiting clients right away."
+    },
+    {
+      "q": "Will it work with my booking app?",
+      "a": "Yes. We build on top of Booksy, Square Appointments, or whatever you already use."
+    }
+  ]
+}

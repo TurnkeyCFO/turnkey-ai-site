@@ -1,0 +1,67 @@
+{
+  "slug": "fencing",
+  "name": "Fencing",
+  "name_plural": "fencing companies",
+  "group": "Trades & Specialty",
+  "title": "AI Tools for Fencing Companies | Turnkey AI",
+  "meta_description": "Custom AI tools for fencing companies — quote jobs fast, follow up on estimates, and keep installs on schedule. Built in two weeks from $1,500.",
+  "h1_lead": "AI for fencing companies —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "Fence jobs are quoted by the linear foot and decided on price and speed. We build the tools that quote fast, follow up well, and keep your install crews booked solid.",
+  "drains": [
+    "Quote requests that need a fast number before the customer moves on",
+    "Estimating linear footage and materials from phone descriptions",
+    "Estimates that go quiet with no follow-up",
+    "Install scheduling that shifts with weather and permits"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Quote-request assistant",
+      "body": "Every inquiry gets an instant reply, the job scoped — fence type, linear footage, gates, terrain — and a site visit or quote delivered fast."
+    },
+    {
+      "tag": "Sales follow-up",
+      "title": "Estimate follow-up assistant",
+      "body": "Every open estimate gets a well-timed nudge while the customer is deciding, so jobs don't go to whoever followed up first."
+    },
+    {
+      "tag": "Estimating",
+      "title": "Estimate drafter",
+      "body": "From your site-visit notes, it drafts a clean estimate — materials by fence type, labor, gates, removal — ready to send the same day."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning crew brief",
+      "body": "One text each morning: today's installs, crew assignments, materials and permits due, and yesterday's numbers."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A residential fencing company.",
+      "before": "Quotes were slow; customers often booked whoever priced the job first.",
+      "after": "Inquiries answered instantly and estimates delivered fast.",
+      "impact": "Representative result: more jobs won on speed of response."
+    },
+    {
+      "context": "A fencing company with no estimate follow-up.",
+      "before": "Estimates went out and were forgotten if the customer didn't reply.",
+      "after": "Every open estimate followed up automatically until the customer decides.",
+      "impact": "Representative result: a meaningful lift in close rate from the same leads."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it quote a fence job?",
+      "a": "We train it on your pricing by fence type and linear footage, so it can give an accurate quote or book a site visit when the job needs one."
+    },
+    {
+      "q": "Does it handle different fence types?",
+      "a": "Yes. Wood, vinyl, chain-link, ornamental — it scopes and quotes each one against your pricing."
+    },
+    {
+      "q": "Will it work with my scheduling software?",
+      "a": "Yes. We build on top of whatever you already use to schedule installs and crews."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "slug": "electrician",
+  "name": "Electrical",
+  "name_plural": "electrical contractors",
+  "group": "Home Services",
+  "title": "AI Tools for Electrical Contractors | Turnkey AI",
+  "meta_description": "Custom AI tools for electricians — capture service calls, draft estimates, and follow up on bids. Built in two weeks, starting at $1,500. No contracts.",
+  "h1_lead": "AI for electrical contractors —",
+  "h1_grad": "without the headache.",
+  "hero_lede": "Service calls, panel upgrades, and bid requests all land on the same overloaded inbox. We build the tools that sort it, answer it, and keep the work moving.",
+  "drains": [
+    "Service-call requests buried under bid emails",
+    "Panel and rewire estimates written from scratch every time",
+    "Bids that go quiet with no one tracking them",
+    "The owner doing dispatch, quoting, and field work all at once"
+  ],
+  "tools": [
+    {
+      "tag": "Lead capture",
+      "title": "Service-call assistant",
+      "body": "Every call and form gets an instant reply. The assistant books service work, gathers panel and permit details, and flags safety-critical calls — a burning smell, sparking outlet — for immediate routing."
+    },
+    {
+      "tag": "Estimating",
+      "title": "Estimate drafter",
+      "body": "Describe the job and it drafts the estimate — materials, labor hours, your standard rates. Panel upgrades and rewires stop being a blank-page exercise."
+    },
+    {
+      "tag": "Sales follow-up",
+      "title": "Bid follow-up assistant",
+      "body": "Larger bids get tracked and followed up on a schedule you set. Commercial and remodel work stops slipping away just because no one circled back."
+    },
+    {
+      "tag": "Daily brief",
+      "title": "Morning job brief",
+      "body": "One text each morning: today's calls, crew routing, permits and inspections due, and yesterday's revenue."
+    }
+  ],
+  "cases": [
+    {
+      "context": "A residential and light-commercial electrical contractor.",
+      "before": "Service requests and bid emails mixed together; small jobs slipped while big bids got the attention.",
+      "after": "An assistant triages every inbound — service work booked instantly, bids logged and followed up.",
+      "impact": "Representative result: noticeably fewer dropped service calls and a fuller schedule for the field crew."
+    },
+    {
+      "context": "An owner writing every panel-upgrade estimate after-hours.",
+      "before": "Quotes built from a blank page; turnaround often two to three days.",
+      "after": "Drafts ready for a quick morning review; quotes out the same day.",
+      "impact": "Representative result: ~5 hours a week reclaimed and faster quote turnaround."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can it recognize a safety-critical call?",
+      "a": "Yes. We train it on your safety triggers — a burning smell, sparking, a dead panel — and those calls get routed to a real person immediately instead of sitting in a queue."
+    },
+    {
+      "q": "Will this work for both residential and commercial work?",
+      "a": "Yes. The tools handle quick residential service calls and longer commercial bids differently — service work books fast, bids get tracked and followed up over time."
+    },
+    {
+      "q": "Do I need to switch software?",
+      "a": "No. We build on top of the scheduling, estimating, and CRM tools you already use. Your stack just gets smarter."
+    }
+  ]
+}
