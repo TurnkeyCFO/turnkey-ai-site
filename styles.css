@@ -254,7 +254,7 @@ img { max-width: 100%; display: block; }
   display: grid;
   grid-template-columns: 1.15fr 1fr;
   gap: 72px;
-  align-items: start;
+  align-items: center;
 }
 
 .kicker {
@@ -446,22 +446,6 @@ img { max-width: 100%; display: block; }
   flex-shrink: 0;
 }
 
-/* HERO ROBOT — interactive 3D scene in a dark showcase card (right column) */
-.hero-robot {
-  position: relative;
-  height: 100%;
-  min-height: 660px;
-  background: linear-gradient(180deg, #050708 0%, #0A1220 100%);
-  border: 1px solid rgba(125, 224, 255, 0.18);
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow:
-    0 1px 2px rgba(10, 18, 32, 0.06),
-    0 30px 80px rgba(0, 94, 255, 0.18),
-    0 60px 120px rgba(10, 18, 32, 0.12);
-}
-.hero-robot .spline-scene { position: absolute; inset: 0; width: 100%; height: 100%; }
-
 /* ============================================================
    TRUST STRIP (industries served band)
    ============================================================ */
@@ -649,15 +633,6 @@ img { max-width: 100%; display: block; }
   pointer-events: none;
   z-index: 3;
 }
-
-/* Spline-section right column — booking card (the robot moved to the hero) */
-.spline-cta-col {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 48px 56px;
-}
-.spline-cta-col .intro-card { width: 100%; }
 
 /* ============================================================
    SECTIONS — foundation
@@ -1868,8 +1843,7 @@ img { max-width: 100%; display: block; }
    ============================================================ */
 
 @media (max-width: 1100px) {
-  .hero-layout { grid-template-columns: 1fr; gap: 48px; }
-  .hero-robot { min-height: 380px; }
+  .hero-layout { grid-template-columns: 1fr; gap: 56px; }
   .who-grid { grid-template-columns: 1fr; gap: 40px; }
   .capability-grid { grid-template-columns: 1fr; }
   .pricing-grid { grid-template-columns: 1fr; max-width: 520px; margin-left: auto; margin-right: auto; }
@@ -1885,7 +1859,6 @@ img { max-width: 100%; display: block; }
   .spline-grid { grid-template-columns: 1fr; }
   .spline-copy { padding: 48px 36px 24px; }
   .spline-scene-wrap { min-height: 380px; }
-  .spline-cta-col { padding: 8px 28px 44px; }
   .promise-card { padding: 40px 28px 32px; }
   .promise-pillars { grid-template-columns: 1fr; }
   .founder-grid { grid-template-columns: 1fr; gap: 36px; padding: 40px 32px; }
