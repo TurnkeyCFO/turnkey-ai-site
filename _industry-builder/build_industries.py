@@ -315,9 +315,25 @@ def render_industry(ind: dict) -> str:
             </article>""")
     cases_html = "\n".join(case_rows)
 
-    # --- FAQ ---
+    # --- FAQ: trade-specific entries first, then two universal entries so
+    #     every industry page carries a fuller, more reassuring FAQ block. ---
+    UNIVERSAL_FAQ = [
+        {"q": "What if AI isn't the right answer for my problem?",
+         "a": "We'll tell you. Honestly — plenty of our first calls end with us saying "
+              "“you don't need AI for that, you need a better process” or "
+              "“this is a $200 Zapier zap, not a $5k build.” We make our money on "
+              "great fits, not by selling everyone an automation. The 15-minute call is "
+              "free either way."},
+        {"q": "What happens if the tool breaks or makes a mistake?",
+         "a": "Every build has approval gates wherever the stakes are real — sending a "
+              "customer message, processing a payment, booking a job. The tool drafts, you "
+              "approve. For the first 30 days after launch we monitor it daily and fix "
+              "anything that drifts. After that you can keep us on retainer or take it fully "
+              "in-house — your call."},
+    ]
+    all_faq = list(ind["faq"]) + UNIVERSAL_FAQ
     faq_items = []
-    for i, f in enumerate(ind["faq"]):
+    for i, f in enumerate(all_faq):
         open_attr = " open" if i == 0 else ""
         faq_items.append(f"""            <details class="faq-item"{open_attr}>
               <summary>
@@ -366,7 +382,7 @@ def render_industry(ind: dict) -> str:
                 "name": f["q"],
                 "acceptedAnswer": {"@type": "Answer", "text": f["a"]},
             }
-            for f in ind["faq"]
+            for f in all_faq
         ],
     }
 

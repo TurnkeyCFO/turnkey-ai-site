@@ -622,9 +622,9 @@ img { max-width: 100%; display: block; }
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 152px;
-  height: 44px;
-  background: linear-gradient(135deg, transparent 0%, #0A1220 38%, #0A1220 100%);
+  width: 170px;
+  height: 58px;
+  background: linear-gradient(135deg, transparent 0%, #0A1220 30%, #0A1220 100%);
   pointer-events: none;
   z-index: 3;
 }
