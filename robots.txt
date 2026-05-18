@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://turnkeycfo.github.io/turnkey-ai-site/sitemap.xml
+Sitemap: https://turnkeycfo.github.io/ai-site/sitemap.xml
