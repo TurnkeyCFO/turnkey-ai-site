@@ -20,7 +20,10 @@
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <!-- Spline viewer web component — vanilla equivalent of @splinetool/react-spline -->
+  <!-- Spline viewer — preconnect to the script CDN + scene host so the 3D
+       scene starts downloading immediately, not lazily mid-scroll. -->
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <link rel="preconnect" href="https://prod.spline.design" crossorigin>
   <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.48/build/spline-viewer.js"></script>
   <script type="application/ld+json">
 {
@@ -245,7 +248,7 @@
               <div class="spline-scene-wrap">
                 <spline-viewer
                   url="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
-                  loading="lazy"
+                  loading="eager"
                   class="spline-scene"
                   events-target="global">
                 </spline-viewer>
@@ -998,7 +1001,7 @@
               </div>
 
               <div class="cta-right">
-                <div class="calendly-inline-widget" data-url="https://calendly.com/ricky-turnkeycfo/15min-intro-call?hide_event_type_details=1&hide_gdpr_banner=1&background_color=0a1220&text_color=f4f7fb&primary_color=007bff" style="min-width:320px;height:680px;"></div>
+                <div class="calendly-inline-widget" data-url="https://calendly.com/ricky-turnkeycfo/15min-intro-call?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=005eff" style="min-width:320px;height:630px;"></div>
               </div>
             </div>
           </div>

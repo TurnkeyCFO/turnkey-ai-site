@@ -165,12 +165,14 @@ img { max-width: 100%; display: block; }
   align-items: center;
   gap: 36px;
 }
-.desktop-nav > a {
+/* :not(.button) — the "Book a free call" CTA in the nav is a .button and
+   must keep its own white-on-blue color, not the muted nav-link color. */
+.desktop-nav > a:not(.button) {
   font-size: 14px;
   font-weight: 500;
   color: var(--text-soft);
 }
-.desktop-nav > a:hover { color: var(--text); }
+.desktop-nav > a:not(.button):hover { color: var(--text); }
 
 /* ============================================================
    BUTTONS
@@ -376,7 +378,9 @@ img { max-width: 100%; display: block; }
   pointer-events: none;
   filter: blur(20px);
 }
-.intro-card > * { position: relative; }
+/* :not(.intro-card-glow) — the glow stays position:absolute; if this rule
+   catches it, the 300px-tall glow drops into flow and pads the card top. */
+.intro-card > *:not(.intro-card-glow) { position: relative; }
 
 .intro-eyebrow {
   font-size: 12px;
