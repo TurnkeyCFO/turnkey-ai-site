@@ -39,8 +39,8 @@ if CNAME.exists():
     BASE_URL = f"https://{_domain}"
     ROOT = ""                                   # custom domain serves at root
 else:
-    BASE_URL = "https://turnkeycfo.github.io/turnkey-ai-site"
-    ROOT = "/turnkey-ai-site"                   # project-site path prefix
+    BASE_URL = "https://turnkeycfo.github.io/ai-site"
+    ROOT = "/ai-site"                           # project-site path prefix
 
 CALENDLY = "https://calendly.com/ricky-turnkeycfo/15min-intro-call"
 EMAIL = "Ricky@turnkeyservices.com"
@@ -398,6 +398,12 @@ def render_industry(ind: dict) -> str:
   <meta property="og:title" content="{esc(ind['title'])}">
   <meta property="og:description" content="{esc(ind['meta_description'])}">
   <meta property="og:url" content="{canonical}">
+  <meta property="og:site_name" content="Turnkey AI">
+  <meta property="og:image" content="{BASE_URL}/assets/tkai-logo.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{esc(ind['title'])}">
+  <meta name="twitter:description" content="{esc(ind['meta_description'])}">
+  <meta name="twitter:image" content="{BASE_URL}/assets/tkai-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
