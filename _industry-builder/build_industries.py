@@ -18,6 +18,7 @@ Usage:  python build_industries.py
 """
 from __future__ import annotations
 
+import base64
 import html as _html
 import json
 import re
@@ -68,7 +69,7 @@ GRAD_DEFS = """  <svg style="position:absolute;width:0;height:0;overflow:hidden;
       <linearGradient id="tk-electric" x1="0" y1="1" x2="0" y2="0">
         <stop offset="0%" stop-color="#0037C9"/>
         <stop offset="55%" stop-color="#005EFF"/>
-        <stop offset="100%" stop-color="#8CE8FF"/>
+        <stop offset="100%" stop-color="#8EC6FF"/>
       </linearGradient>
       <linearGradient id="tk-electric-h" x1="0" y1="0" x2="1" y2="0">
         <stop offset="0%" stop-color="#0037C9"/>
@@ -78,11 +79,9 @@ GRAD_DEFS = """  <svg style="position:absolute;width:0;height:0;overflow:hidden;
     </defs>
   </svg>"""
 
-BRAND_MARK = """<svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
-            <rect x="8" y="10" width="40" height="6" fill="url(#tk-electric)"/>
-            <rect x="25" y="10" width="6" height="44" fill="url(#tk-electric)"/>
-            <path d="M 36 14 L 56 14 L 36 32 L 56 54 L 36 54 L 22 38 Z" fill="url(#tk-electric)" opacity="0.95"/>
-          </svg>"""
+# Real TK AI lockup — rendered from the .brand-logo data-URI background in
+# styles.css. Path-independent; replaces the legacy hand-drawn inline SVG mark.
+BRAND_MARK = '<span class="brand-logo" aria-hidden="true"></span>'
 
 
 def header(home: str) -> str:
@@ -91,10 +90,6 @@ def header(home: str) -> str:
       <div class="container topbar-inner">
         <a class="brand-lockup" href="{home}" aria-label="Turnkey AI home">
           {BRAND_MARK}
-          <div class="brand-words">
-            <span class="brand-name">TURNKEY</span>
-            <span class="brand-sub">AI</span>
-          </div>
         </a>
         <nav class="desktop-nav" aria-label="Primary">
           <a href="{home}#what-we-do">What we do</a>
@@ -118,10 +113,6 @@ def footer(home: str) -> str:
         <div class="footer-brand">
           <a class="brand-lockup" href="{home}" aria-label="Turnkey AI">
             {BRAND_MARK}
-            <div class="brand-words">
-              <span class="brand-name">TURNKEY</span>
-              <span class="brand-sub">AI</span>
-            </div>
           </a>
           <p>Practical AI for service businesses. Built without the jargon, the long contracts, or the enterprise price tag.</p>
         </div>
@@ -404,9 +395,8 @@ def render_industry(ind: dict) -> str:
   <meta name="twitter:title" content="{esc(ind['title'])}">
   <meta name="twitter:description" content="{esc(ind['meta_description'])}">
   <meta name="twitter:image" content="{BASE_URL}/assets/tkai-logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{ROOT}/styles.css">
   <script type="application/ld+json">
 {org_jsonld()}
@@ -749,9 +739,8 @@ def render_hub(industries: list[dict]) -> str:
   <meta property="og:title" content="Industries We Build AI Tools For | Turnkey AI">
   <meta property="og:description" content="Custom AI tools for 30+ service trades. Built in two weeks, starting at $1,500.">
   <meta property="og:url" content="{canonical}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{ROOT}/styles.css">
   <script type="application/ld+json">
 {org_jsonld()}
@@ -876,9 +865,8 @@ def render_blog_index() -> str:
   <meta property="og:title" content="Blog | Turnkey AI">
   <meta property="og:description" content="Practical, plain-English writing on putting AI to work in a service business.">
   <meta property="og:url" content="{canonical}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{ROOT}/styles.css">
   <link rel="stylesheet" href="{ROOT}/blog/blog-styles.css">
   <script type="application/ld+json">
@@ -996,7 +984,7 @@ BLOG_CSS = """/* ============================================================
   margin: 0 auto 24px;
   padding: 12px;
   background: var(--icy-soft);
-  border: 1px solid rgba(0, 82, 255, 0.14);
+  border: 1px solid rgba(0, 94, 255, 0.14);
   border-radius: 12px;
 }
 .blog-empty-mark svg { width: 100%; height: 100%; }
@@ -1033,8 +1021,8 @@ BLOG_CSS = """/* ============================================================
 }
 .post-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(0, 82, 255, 0.22);
-  box-shadow: 0 1px 2px rgba(10, 18, 32, 0.04), 0 24px 60px rgba(0, 82, 255, 0.14);
+  border-color: rgba(0, 94, 255, 0.22);
+  box-shadow: 0 1px 2px rgba(10, 18, 32, 0.04), 0 24px 60px rgba(0, 94, 255, 0.14);
 }
 .post-card-meta {
   display: flex;
@@ -1112,7 +1100,7 @@ BLOG_CSS = """/* ============================================================
 .article-body a {
   color: var(--electric);
   text-decoration: underline;
-  text-decoration-color: rgba(0, 82, 255, 0.35);
+  text-decoration-color: rgba(0, 94, 255, 0.35);
 }
 .article-body a:hover { text-decoration-color: var(--electric); }
 .article-body blockquote {
@@ -1250,8 +1238,8 @@ EXTRA_CSS = EXTRA_CSS_MARKER + """
 }
 .industry-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(0, 82, 255, 0.25);
-  box-shadow: 0 1px 2px rgba(10, 18, 32, 0.04), 0 16px 40px rgba(0, 82, 255, 0.12);
+  border-color: rgba(0, 94, 255, 0.25);
+  box-shadow: 0 1px 2px rgba(10, 18, 32, 0.04), 0 16px 40px rgba(0, 94, 255, 0.12);
 }
 .industry-card-name {
   font-size: 16px;
@@ -1266,7 +1254,7 @@ EXTRA_CSS = EXTRA_CSS_MARKER + """
   height: 30px;
   border-radius: 8px;
   background: var(--icy-soft);
-  border: 1px solid rgba(0, 82, 255, 0.16);
+  border: 1px solid rgba(0, 94, 255, 0.16);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1293,16 +1281,39 @@ EXTRA_CSS = EXTRA_CSS_MARKER + """
 """
 
 
+def _brand_logo_css() -> str:
+    """The .brand-logo rule — embeds assets/tkai-lockup.png as a path-independent
+    data URI so the TK AI lockup renders regardless of the domain path prefix.
+    (assets/tkai-logo.png is left for the og:image/twitter:image meta.)"""
+    b64 = base64.b64encode((SITE / "assets" / "tkai-lockup.png").read_bytes()).decode("ascii")
+    return (
+        "\n/* === TK AI BRAND LOCKUP ===================================\n"
+        "   Real TK AI logo (TK Brand Files / TK AI, photoroom lockup),\n"
+        "   embedded as a data URI so it is path-independent across the\n"
+        "   apex domain. Replaces the legacy hand-drawn inline SVG mark. */\n"
+        ".brand-logo {\n"
+        "  display: block;\n"
+        "  width: 110px;\n"
+        "  height: 34px;\n"
+        f'  background: url("data:image/png;base64,{b64}")\n'
+        "    left center / contain no-repeat;\n"
+        "}\n"
+        "@media (max-width: 430px) {\n"
+        "  .brand-logo { width: 96px; height: 30px; }\n"
+        "}\n"
+    )
+
+
 def ensure_extra_css() -> None:
-    """Append industry-builder CSS to styles.css once (idempotent)."""
+    """Append industry-builder CSS + brand-logo rule to styles.css (idempotent)."""
     css_path = SITE / "styles.css"
     text = css_path.read_text(encoding="utf-8")
     if EXTRA_CSS_MARKER in text:
         # replace existing block (everything from the marker to EOF)
         text = text[: text.index(EXTRA_CSS_MARKER)].rstrip() + "\n\n"
-    text = text.rstrip() + "\n\n" + EXTRA_CSS + "\n"
+    text = text.rstrip() + "\n\n" + EXTRA_CSS + "\n" + _brand_logo_css()
     css_path.write_text(text, encoding="utf-8")
-    print("  styles.css : industry-builder CSS block in place")
+    print("  styles.css : industry-builder CSS + brand-logo block in place")
 
 
 def patch_home_nav() -> None:

@@ -26,7 +26,7 @@
   margin: 0 auto 24px;
   padding: 12px;
   background: var(--icy-soft);
-  border: 1px solid rgba(0, 82, 255, 0.14);
+  border: 1px solid rgba(0, 94, 255, 0.14);
   border-radius: 12px;
 }
 .blog-empty-mark svg { width: 100%; height: 100%; }
@@ -63,8 +63,8 @@
 }
 .post-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(0, 82, 255, 0.22);
-  box-shadow: 0 1px 2px rgba(10, 18, 32, 0.04), 0 24px 60px rgba(0, 82, 255, 0.14);
+  border-color: rgba(0, 94, 255, 0.22);
+  box-shadow: 0 1px 2px rgba(10, 18, 32, 0.04), 0 24px 60px rgba(0, 94, 255, 0.14);
 }
 .post-card-meta {
   display: flex;
@@ -142,7 +142,7 @@
 .article-body a {
   color: var(--electric);
   text-decoration: underline;
-  text-decoration-color: rgba(0, 82, 255, 0.35);
+  text-decoration-color: rgba(0, 94, 255, 0.35);
 }
 .article-body a:hover { text-decoration-color: var(--electric); }
 .article-body blockquote {
