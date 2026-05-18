@@ -300,7 +300,7 @@ def render_industry(ind: dict) -> str:
                 <div class="system-stats">
                   <div><strong>{esc(stat_val)}</strong><span>{esc(stat_label)}</span></div>
                   <div><strong>2 wks</strong><span>typical build time</span></div>
-                  <div><strong>From $1,500</strong><span>one-time, you own it</span></div>
+                  <div><strong>$3,500/mo</strong><span>all-inclusive plan</span></div>
                 </div>
               </div>
             </article>""")
@@ -312,15 +312,20 @@ def render_industry(ind: dict) -> str:
         {"q": "What if AI isn't the right answer for my problem?",
          "a": "We'll tell you. Honestly — plenty of our first calls end with us saying "
               "“you don't need AI for that, you need a better process” or "
-              "“this is a $200 Zapier zap, not a $5k build.” We make our money on "
+              "“this is a $200 Zapier zap, not something you need us for.” We make our money on "
               "great fits, not by selling everyone an automation. The 15-minute call is "
               "free either way."},
         {"q": "What happens if the tool breaks or makes a mistake?",
          "a": "Every build has approval gates wherever the stakes are real — sending a "
               "customer message, processing a payment, booking a job. The tool drafts, you "
-              "approve. For the first 30 days after launch we monitor it daily and fix "
-              "anything that drifts. After that you can keep us on retainer or take it fully "
-              "in-house — your call."},
+              "approve. Monitoring, daily checks, and fixes are all part of your "
+              "$3,500/month — there's no separate retainer and no per-fix invoice for as "
+              "long as you're on the plan."},
+        {"q": "Unlimited agents — what's the catch?",
+         "a": "No catch — there's no cap and no per-agent fee. The only real limit is "
+              "throughput: we keep one or two builds in flight at a time and work through "
+              "your list in priority order. As one goes live, the next one starts — and the "
+              "price never moves."},
     ]
     all_faq = list(ind["faq"]) + UNIVERSAL_FAQ
     faq_items = []
@@ -351,8 +356,14 @@ def render_industry(ind: dict) -> str:
         "offers": {
             "@type": "Offer",
             "priceCurrency": "USD",
-            "price": "1500",
-            "description": "Custom AI tool builds for service businesses, starting at $1,500.",
+            "price": "3500",
+            "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "3500",
+                "priceCurrency": "USD",
+                "unitText": "MONTH",
+            },
+            "description": "Unlimited custom AI agents, unlimited revisions, everything done for you — one flat $3,500/month.",
         },
     }
     breadcrumb_ld = {
@@ -457,12 +468,12 @@ def render_industry(ind: dict) -> str:
               <a href="#tools" class="button button-ghost">See the tools</a>
             </div>
             <div class="fact-row">
-              <div><strong>2 wks</strong><span>from first call to live</span></div>
-              <div><strong>$1,500</strong><span>starting price</span></div>
-              <div><strong>90-day</strong><span>earns-its-keep promise</span></div>
-              <div><strong>0</strong><span>long-term contracts</span></div>
+              <div><strong>$3,500</strong><span>flat per month</span></div>
+              <div><strong>Unlimited</strong><span>agents &amp; revisions</span></div>
+              <div><strong>2 wks</strong><span>to your first build</span></div>
+              <div><strong>$0</strong><span>setup &middot; cancel anytime</span></div>
             </div>
-            <p class="hero-note">Built in two weeks. $1,500 to $6,000. No retainers, no long contracts &mdash; and a real person who knows your world.</p>
+            <p class="hero-note">Unlimited agents, unlimited revisions, everything done for you &mdash; one flat $3,500/month. No setup fees, no long contracts, and a real person who knows your world.</p>
           </div>
         </div>
       </section>
@@ -534,7 +545,7 @@ def render_industry(ind: dict) -> str:
           <div class="section-head reveal">
             <p class="kicker">How it works</p>
             <h2>From first call to <span class="grad-text">working tool</span> in two weeks.</h2>
-            <p>No long discovery process, no 80-page proposals. We talk, we agree on a small first project, and we build it.</p>
+            <p>No long discovery process, no 80-page proposals. We talk, we pick your first build, and we get to work &mdash; the price is already set.</p>
           </div>
           <div class="process-rail reveal">
             <div class="process-step">
@@ -546,7 +557,7 @@ def render_industry(ind: dict) -> str:
             <div class="process-step">
               <div class="step-marker"><span>02</span><div class="step-line"></div></div>
               <h3>We scope it</h3>
-              <p>If there's a fit, you get a one-page proposal: what we'll build, what it costs, when it's done. No deck, no upsell.</p>
+              <p>If there's a fit, you get a one-page plan: what we'll build first and when it's live. The price is already set &mdash; $3,500/month, everything in.</p>
               <p class="step-time">Days 2&ndash;3</p>
             </div>
             <div class="process-step">
@@ -557,61 +568,53 @@ def render_industry(ind: dict) -> str:
             </div>
             <div class="process-step">
               <div class="step-marker"><span>04</span><div class="step-line"></div></div>
-              <h3>It runs</h3>
-              <p>We hand you the keys and stay close for 30 days while it gets real-world testing. Then you decide what's next.</p>
+              <h3>It runs &mdash; and we keep building</h3>
+              <p>We hand you the keys, then start the next agent. New builds, revisions, fixes &mdash; all part of the same flat monthly price.</p>
               <p class="step-time">Day 13 &rarr; onward</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- PRICING RECAP -->
-      <section class="section section-pricing">
+      <!-- THE OFFER -->
+      <section class="section section-pricing" id="pricing">
         <div class="container">
-          <div class="section-head reveal">
-            <p class="kicker">Pricing</p>
-            <h2>Simple, project-based pricing. <span class="grad-text">No surprises.</span></h2>
-            <p>You pay once, you own the tool, and we stay on for a month to make sure it runs the way you need it to.</p>
+          <div class="section-head section-head--center reveal">
+            <p class="kicker">The offer</p>
+            <h2>One price. <span class="grad-text">Everything unlimited.</span></h2>
+            <p>No tiers, no per-project quotes, no setup fees. One flat monthly price covers every agent we build for you, every revision you ask for, and everything in between.</p>
           </div>
-          <div class="pricing-grid reveal">
-            <article class="price-card">
-              <p class="price-tag">Start small</p>
-              <h3>One Quick Win</h3>
-              <p class="price-amount"><span class="price-from">from</span> $1,500</p>
-              <p class="price-blurb">Pick the one thing draining your week. We build a focused tool that handles it end-to-end.</p>
-              <ul>
-                <li>One workflow automated end-to-end</li>
-                <li>Built and live in 1&ndash;2 weeks</li>
-                <li>30 days of post-launch tuning included</li>
-                <li>You own everything we build</li>
-              </ul>
-            </article>
-            <article class="price-card price-card-featured">
-              <p class="price-tag">Most owners start here</p>
-              <h3>The Operating Bundle</h3>
-              <p class="price-amount"><span class="price-from">from</span> $4,500</p>
-              <p class="price-blurb">A connected set of tools &mdash; usually lead follow-up, a daily owner brief, and one back-office automation.</p>
-              <ul>
-                <li>2&ndash;3 workflows automated and connected</li>
-                <li>Built and live in 2&ndash;3 weeks</li>
-                <li>60 days of post-launch tuning</li>
-                <li>Team onboarding + walkthrough video</li>
-              </ul>
-            </article>
-            <article class="price-card">
-              <p class="price-tag">When you're ready</p>
-              <h3>Ongoing Partner</h3>
-              <p class="price-amount"><span class="price-from">from</span> $750<span class="price-period">/mo</span></p>
-              <p class="price-blurb">We keep your tools running, fix anything that breaks, and add new automations as you grow.</p>
-              <ul>
-                <li>We monitor and maintain everything</li>
-                <li>One new automation per quarter included</li>
-                <li>Priority response if anything breaks</li>
-                <li>Cancel anytime &mdash; no contracts</li>
-              </ul>
-            </article>
+          <div class="offer-card reveal">
+            <div class="offer-glow" aria-hidden="true"></div>
+            <div class="offer-inner">
+              <div class="offer-left">
+                <p class="offer-eyebrow">Everything, done for you</p>
+                <p class="offer-price">
+                  <span class="offer-currency">$</span><span class="offer-num">3,500</span><span class="offer-period">/month</span>
+                </p>
+                <p class="offer-sub">Flat. All-inclusive. Cancel anytime.</p>
+                <a href="{CALENDLY}" target="_blank" rel="noreferrer" class="button button-electric button-lg offer-cta">
+                  <span>Book a free 15-min call</span>
+                  <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h10M8 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="square"/></svg>
+                </a>
+                <p class="offer-fineprint">No setup fee &middot; No contract &middot; First build live in ~2 weeks</p>
+              </div>
+              <div class="offer-right">
+                <p class="offer-includes-label">What's included &mdash; all of it</p>
+                <ul class="offer-list">
+                  <li><strong>Unlimited AI agents</strong> &mdash; as many as your business needs, no cap, no per-agent fee</li>
+                  <li><strong>Unlimited revisions</strong> &mdash; we tune every build until it's exactly right</li>
+                  <li><strong>Everything done for you</strong> &mdash; we build it start to finish; you never touch code</li>
+                  <li><strong>Ongoing monitoring &amp; maintenance</strong> &mdash; if a tool drifts, we catch it and fix it</li>
+                  <li><strong>New automations as you grow</strong> &mdash; your needs change, the tools keep up</li>
+                  <li><strong>A real person on call</strong> &mdash; a direct line to the team, not a ticket queue</li>
+                  <li><strong>You own everything</strong> &mdash; code, accounts, keys &mdash; all handed to you</li>
+                  <li><strong>Cancel anytime</strong> &mdash; month to month, no long contract</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <p class="price-footnote">Our promise: if the first build doesn't earn its keep within 90 days of going live, we refund the difference. No fine print.</p>
+          <p class="price-footnote">Our promise: if your first month doesn't earn its keep, the next one's on us. No fine print.</p>
         </div>
       </section>
 
@@ -641,7 +644,7 @@ def render_industry(ind: dict) -> str:
               <div class="cta-left">
                 <p class="kicker">Book a free call</p>
                 <h2>Let's find the one tool worth building <span class="grad-text">for your {esc(name)} business.</span></h2>
-                <p class="cta-lede">15 minutes. No deck, no pressure. We'll listen, ask the right questions, and tell you honestly whether AI can help &mdash; and what a first project would look like.</p>
+                <p class="cta-lede">15 minutes. No deck, no pressure. We'll listen, ask the right questions, and tell you honestly whether AI can help &mdash; and what your first build would be on the $3,500/month plan.</p>
                 <ul class="cta-list">
                   <li>You'll talk to Ricky, our founder &mdash; not a salesperson</li>
                   <li>If we can't help, we'll tell you in the first 10 minutes</li>
@@ -733,11 +736,11 @@ def render_hub(industries: list[dict]) -> str:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Industries We Build AI Tools For | Turnkey AI</title>
-  <meta name="description" content="Turnkey AI builds custom AI tools for 30+ service trades — HVAC, plumbing, roofing, salons, auto repair, and more. Built in two weeks from $1,500.">
+  <meta name="description" content="Turnkey AI builds unlimited custom AI agents for 30+ service trades — HVAC, plumbing, roofing, salons, auto repair, and more. One flat $3,500/month, everything done for you.">
   <link rel="canonical" href="{canonical}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Industries We Build AI Tools For | Turnkey AI">
-  <meta property="og:description" content="Custom AI tools for 30+ service trades. Built in two weeks, starting at $1,500.">
+  <meta property="og:description" content="Custom AI agents for 30+ service trades. Unlimited builds, unlimited revisions — one flat $3,500/month.">
   <meta property="og:url" content="{canonical}">
   <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">

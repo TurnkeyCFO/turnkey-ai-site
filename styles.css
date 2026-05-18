@@ -1267,134 +1267,147 @@ img { max-width: 100%; display: block; }
    ============================================================ */
 
 .section-pricing { padding: 110px 0 80px; }
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-bottom: 32px;
-  align-items: stretch;
-}
 
-.price-card {
+.section-head--center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.section-head--center p { margin-left: auto; margin-right: auto; }
+
+/* THE OFFER — single unlimited plan, dark showcase card */
+.offer-card {
   position: relative;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 36px 30px;
+  background: linear-gradient(180deg, #050708 0%, #0A1220 100%);
+  border: 1px solid rgba(125, 224, 255, 0.22);
+  border-radius: 28px;
+  overflow: hidden;
+  margin-bottom: 28px;
+  box-shadow:
+    0 1px 2px rgba(10, 18, 32, 0.06),
+    0 40px 90px rgba(0, 94, 255, 0.20),
+    0 70px 130px rgba(10, 18, 32, 0.14);
+}
+.offer-glow {
+  position: absolute;
+  top: -200px;
+  left: -140px;
+  right: -140px;
+  height: 460px;
+  background: radial-gradient(ellipse at center, rgba(0, 94, 255, 0.36), transparent 68%);
+  pointer-events: none;
+  filter: blur(30px);
+}
+.offer-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+}
+.offer-left {
+  padding: 56px 48px;
+  border-right: 1px solid rgba(125, 224, 255, 0.16);
   display: flex;
   flex-direction: column;
-  box-shadow: var(--shadow-card);
 }
-.price-card-featured {
-  background: linear-gradient(180deg, #FFFFFF, #F0F6FF);
-  border: 2px solid var(--electric);
-  box-shadow: var(--shadow-feature);
-  transform: translateY(-12px);
-  position: relative;
-}
-.price-card-featured::before {
-  content: 'Most popular';
-  position: absolute;
-  top: -14px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: linear-gradient(180deg, #005EFF, #0037C9);
-  color: #fff;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  padding: 6px 14px;
-  border-radius: 100px;
-  box-shadow: 0 4px 12px rgba(0, 94, 255, 0.3);
-}
-
-.price-tag {
+.offer-eyebrow {
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--electric);
-  margin-bottom: 14px;
+  color: #7DE0FF;
+  margin-bottom: 20px;
 }
-.price-card h3 {
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: -0.015em;
-  margin-bottom: 18px;
-  color: var(--text);
-}
-.price-amount {
-  font-size: 40px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  color: var(--text);
-  margin-bottom: 14px;
+.offer-price {
   display: flex;
-  align-items: baseline;
-  gap: 6px;
+  align-items: flex-start;
+  gap: 2px;
+  margin-bottom: 12px;
 }
-.price-from {
-  font-size: 13px;
+.offer-currency {
+  font-size: 38px;
+  font-weight: 800;
+  color: #8EC6FF;
+  margin-top: 12px;
+}
+.offer-num {
+  font-size: clamp(78px, 9vw, 120px);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  background: linear-gradient(180deg, #FFFFFF 0%, #8EC6FF 55%, #2C7DFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.offer-period {
+  font-size: 21px;
   font-weight: 600;
-  color: var(--text-mute);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-.price-period {
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--text-mute);
-}
-.price-choose {
-  font-size: 14px;
-  color: var(--text);
-  line-height: 1.5;
+  color: #C8D2E4;
+  align-self: flex-end;
   margin-bottom: 18px;
-  padding: 12px 14px;
-  background: var(--icy-soft);
-  border-radius: 8px;
-  border-left: 3px solid var(--electric);
+  margin-left: 4px;
 }
-.price-choose span {
-  font-weight: 700;
-  color: var(--electric);
-  display: block;
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-bottom: 4px;
+.offer-sub {
+  font-size: 16px;
+  color: #C8D2E4;
+  margin-bottom: 30px;
 }
-
-.price-blurb {
-  font-size: 15px;
-  color: var(--text-soft);
-  line-height: 1.55;
-  margin-bottom: 22px;
+.offer-cta {
+  align-self: flex-start;
+  margin-bottom: 20px;
 }
-.price-card ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-top: 20px;
-  border-top: 1px solid var(--line);
+.offer-fineprint {
+  font-size: 13px;
+  color: #8B97AC;
   margin-top: auto;
 }
-.price-card li {
-  font-size: 14.5px;
-  color: var(--text-soft);
-  padding-left: 24px;
-  position: relative;
-  line-height: 1.45;
+.offer-right { padding: 52px 48px; }
+.offer-includes-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #7DE0FF;
+  margin-bottom: 22px;
 }
-.price-card li::before {
-  content: '✓';
+.offer-list {
+  list-style: none;
+  display: grid;
+  gap: 15px;
+}
+.offer-list li {
+  position: relative;
+  padding-left: 34px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #C8D2E4;
+}
+.offer-list li strong {
+  color: #F4F7F8;
+  font-weight: 700;
+}
+.offer-list li::before {
+  content: '';
   position: absolute;
   left: 0;
-  top: -1px;
-  color: var(--electric);
-  font-weight: 700;
+  top: 0;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #005EFF, #0037C9);
+  box-shadow: 0 0 14px rgba(0, 94, 255, 0.55);
+}
+.offer-list li::after {
+  content: '';
+  position: absolute;
+  left: 6.5px;
+  top: 6.5px;
+  width: 8px;
+  height: 4px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg);
 }
 
 .price-footnote {
@@ -1846,8 +1859,9 @@ img { max-width: 100%; display: block; }
   .hero-layout { grid-template-columns: 1fr; gap: 56px; }
   .who-grid { grid-template-columns: 1fr; gap: 40px; }
   .capability-grid { grid-template-columns: 1fr; }
-  .pricing-grid { grid-template-columns: 1fr; max-width: 520px; margin-left: auto; margin-right: auto; }
-  .price-card-featured { transform: none; }
+  .offer-inner { grid-template-columns: 1fr; }
+  .offer-left { border-right: none; border-bottom: 1px solid rgba(125, 224, 255, 0.16); padding: 44px 32px; }
+  .offer-right { padding: 40px 32px; }
   .process-rail { grid-template-columns: 1fr 1fr; gap: 40px; }
   .step-line { display: none; }
   .proof-grid { grid-template-columns: 1fr; }
@@ -2060,6 +2074,7 @@ img { max-width: 100%; display: block; }
   .industry-card-grid { grid-template-columns: 1fr; }
   .industry-hero { padding: 40px 0 48px; }
 }
+
 
 /* === TK AI BRAND LOCKUP ===================================
    Real TK AI logo (TK Brand Files / TK AI, photoroom lockup),
