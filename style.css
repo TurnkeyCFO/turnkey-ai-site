@@ -288,12 +288,65 @@ h1,h2,h3,.hero-sub,.stat .num,.metric{
   margin-left:1px;background:var(--brand);animation:blink 1s steps(2) infinite;}
 @keyframes blink{50%{opacity:0;}}
 .strat-cta{margin-top:13px;}
-.strat-skel .sb{position:relative;color:transparent;
-  background:linear-gradient(90deg,
-    rgba(10,18,36,.05) 0%, rgba(0,55,201,.18) 50%, rgba(10,18,36,.05) 100%);
-  background-size:240% 100%;border-radius:6px;min-height:14px;
-  animation:skel 1.4s linear infinite;}
-@keyframes skel{0%{background-position:140% 50%}100%{background-position:-40% 50%}}
+/* ─── Thinker — fun "Sonnet is sketching your wedge" loader ──────── */
+.thinker{display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:30px 12px 22px;text-align:center;
+  animation:thinker-fade .35s ease-out both;}
+@keyframes thinker-fade{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
+.thinker-orb{position:relative;width:96px;height:96px;margin-bottom:18px;}
+.thinker-orb .ring{position:absolute;inset:0;border-radius:50%;
+  border:1.5px solid rgba(0,55,201,.18);}
+.thinker-orb .ring.r1{animation:ring-pulse 2.4s ease-in-out infinite;}
+.thinker-orb .ring.r2{inset:14px;border-color:rgba(0,55,201,.28);
+  animation:ring-pulse 2.4s ease-in-out infinite .6s;}
+@keyframes ring-pulse{
+  0%,100%{transform:scale(.92);opacity:.45;}
+  50%   {transform:scale(1.06);opacity:1;}
+}
+.thinker-orb .core{position:absolute;left:50%;top:50%;width:14px;height:14px;
+  margin:-7px 0 0 -7px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%, #5FB1FF 0%, #0037C9 70%, #001B66 100%);
+  box-shadow:0 0 22px rgba(0,55,201,.55), 0 0 8px rgba(95,177,255,.7);
+  animation:core-breathe 1.6s ease-in-out infinite;}
+@keyframes core-breathe{
+  0%,100%{transform:scale(.85);opacity:.85;}
+  50%   {transform:scale(1.15);opacity:1;}
+}
+.thinker-orb .dot{position:absolute;left:50%;top:50%;width:8px;height:8px;
+  margin:-4px 0 0 -4px;border-radius:50%;background:#0037C9;
+  box-shadow:0 0 10px rgba(0,55,201,.65);
+  transform-origin:0 0;}
+.thinker-orb .dot.d1{animation:orbit-a 2.1s linear infinite;}
+.thinker-orb .dot.d2{background:#5FB1FF;box-shadow:0 0 10px rgba(95,177,255,.7);
+  animation:orbit-b 2.1s linear infinite;}
+.thinker-orb .dot.d3{background:#1B6BFF;box-shadow:0 0 10px rgba(27,107,255,.65);
+  animation:orbit-c 2.1s linear infinite;}
+@keyframes orbit-a{
+  0%  {transform:rotate(0deg)   translateX(40px) rotate(0deg);}
+  100%{transform:rotate(360deg) translateX(40px) rotate(-360deg);}
+}
+@keyframes orbit-b{
+  0%  {transform:rotate(120deg) translateX(40px) rotate(-120deg);}
+  100%{transform:rotate(480deg) translateX(40px) rotate(-480deg);}
+}
+@keyframes orbit-c{
+  0%  {transform:rotate(240deg) translateX(40px) rotate(-240deg);}
+  100%{transform:rotate(600deg) translateX(40px) rotate(-600deg);}
+}
+.thinker-phase{font-family:'Inter',system-ui,sans-serif;font-weight:600;font-size:15px;
+  letter-spacing:-.01em;color:var(--fg);min-height:22px;
+  transition:opacity .22s ease, transform .22s ease;}
+.thinker-phase.swap{opacity:0;transform:translateY(-3px);}
+.thinker-sub{margin-top:6px;font-size:12px;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--fg-faint);font-weight:500;}
+@media (prefers-reduced-motion: reduce){
+  .thinker-orb .ring,.thinker-orb .core,.thinker-orb .dot{animation:none !important;}
+  .thinker-orb .core{opacity:1;}
+}
+
+.contact-link{color:inherit;text-decoration:none;border-bottom:1px solid var(--hair);
+  transition:color .2s, border-color .2s;}
+.contact-link:hover{color:var(--brand);border-color:var(--brand);}
 
 /* ─── 05 · Proof ────────────────────────────────────────────────── */
 .proof-lead{margin:13px 0 26px;}

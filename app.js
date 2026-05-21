@@ -267,9 +267,10 @@
       if (withCTA) {
         var cta = document.createElement('a');
         cta.className = 'cta book-cta strat-cta';
-        cta.href = '#c6';
-        cta.setAttribute('data-jump', '6');
-        cta.innerHTML = '<span>Book the call</span><span class="cta-arrow">→</span>';
+        cta.href = 'https://calendly.com/ricky-turnkeycfo/15min-intro-call';
+        cta.target = '_blank';
+        cta.rel = 'noopener';
+        cta.innerHTML = '<span>Book the 15-minute intro call</span><span class="cta-arrow">→</span>';
         aiOut.appendChild(cta);
       }
     }
@@ -321,24 +322,53 @@
     typing = true;
     setState('Thinking');
     aiOut.innerHTML = '';
-    // skeleton blocks so the card has shape while waiting
-    var skel = document.createElement('div');
-    skel.className = 'strat-skel';
-    skel.innerHTML =
-      '<div class="strat-block"><div class="sh">Wedge</div><div class="sb">...</div></div>' +
-      '<div class="strat-block"><div class="sh">Quick win — week 1–2</div><div class="sb">...</div></div>' +
-      '<div class="strat-block"><div class="sh">Agent — month 1–3</div><div class="sb">...</div></div>' +
-      '<div class="strat-block"><div class="sh">What you’ll feel</div><div class="sb">...</div></div>';
-    aiOut.appendChild(skel);
+    // fun thinking animation — orbiting brand-blue dots + rotating phase copy
+    var thinker = document.createElement('div');
+    thinker.className = 'thinker';
+    thinker.setAttribute('aria-live', 'polite');
+    thinker.innerHTML =
+      '<div class="thinker-orb">' +
+        '<span class="ring r1"></span>' +
+        '<span class="ring r2"></span>' +
+        '<span class="dot d1"></span>' +
+        '<span class="dot d2"></span>' +
+        '<span class="dot d3"></span>' +
+        '<span class="core"></span>' +
+      '</div>' +
+      '<div class="thinker-phase">Reading your business…</div>' +
+      '<div class="thinker-sub">Sonnet 4.6 is sketching your wedge live</div>';
+    aiOut.appendChild(thinker);
+
+    var phases = [
+      'Reading your business…',
+      'Finding where the hours bleed…',
+      'Naming the wedge…',
+      'Sketching the two-week win…',
+      'Designing the agent…',
+      'Writing it up…'
+    ];
+    var phaseEl = thinker.querySelector('.thinker-phase');
+    var pIdx = 0;
+    var phaseTimer = setInterval(function () {
+      pIdx = (pIdx + 1) % phases.length;
+      if (!phaseEl) return;
+      phaseEl.classList.add('swap');
+      setTimeout(function () {
+        phaseEl.textContent = phases[pIdx];
+        phaseEl.classList.remove('swap');
+      }, 220);
+    }, 1600);
 
     var done = false;
+    function stopThinker() { clearInterval(phaseTimer); }
     var safety = setTimeout(function () {
       if (done) return;
       done = true;
       typing = false;
+      stopThinker();
       aiOut.innerHTML = '';
       showStrategy(CUSTOM, true);
-    }, 11000);
+    }, 16000);
 
     fetch('/api/strategize', {
       method: 'POST',
@@ -350,6 +380,7 @@
       if (done) return;
       done = true;
       clearTimeout(safety);
+      stopThinker();
       typing = false;
       aiOut.innerHTML = '';
       if (res.ok && res.j && Array.isArray(res.j.blocks) && res.j.blocks.length) {
@@ -362,6 +393,7 @@
       if (done) return;
       done = true;
       clearTimeout(safety);
+      stopThinker();
       typing = false;
       aiOut.innerHTML = '';
       showStrategy(CUSTOM, true);
