@@ -312,19 +312,69 @@
       showStrategy(STRATEGIES[key], false);
     });
   }
+  // POST the free-text input to /api/strategize (Cloudflare Pages
+  // Function → OpenRouter Sonnet 4.6) and render the 4-block sketch.
+  // On any failure, fall back to the deterministic CUSTOM block so the
+  // section always says something useful.
+  function liveStrategize(business) {
+    if (typing) return;
+    typing = true;
+    setState('Thinking');
+    aiOut.innerHTML = '';
+    // skeleton blocks so the card has shape while waiting
+    var skel = document.createElement('div');
+    skel.className = 'strat-skel';
+    skel.innerHTML =
+      '<div class="strat-block"><div class="sh">Wedge</div><div class="sb">...</div></div>' +
+      '<div class="strat-block"><div class="sh">Quick win — week 1–2</div><div class="sb">...</div></div>' +
+      '<div class="strat-block"><div class="sh">Agent — month 1–3</div><div class="sb">...</div></div>' +
+      '<div class="strat-block"><div class="sh">What you’ll feel</div><div class="sb">...</div></div>';
+    aiOut.appendChild(skel);
+
+    var done = false;
+    var safety = setTimeout(function () {
+      if (done) return;
+      done = true;
+      typing = false;
+      aiOut.innerHTML = '';
+      showStrategy(CUSTOM, true);
+    }, 11000);
+
+    fetch('/api/strategize', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ business: business })
+    })
+    .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+    .then(function (res) {
+      if (done) return;
+      done = true;
+      clearTimeout(safety);
+      typing = false;
+      aiOut.innerHTML = '';
+      if (res.ok && res.j && Array.isArray(res.j.blocks) && res.j.blocks.length) {
+        showStrategy(res.j.blocks, true);
+      } else {
+        showStrategy(CUSTOM, true);
+      }
+    })
+    .catch(function () {
+      if (done) return;
+      done = true;
+      clearTimeout(safety);
+      typing = false;
+      aiOut.innerHTML = '';
+      showStrategy(CUSTOM, true);
+    });
+  }
+
   if (aiForm) {
     aiForm.addEventListener('submit', function (e) {
       e.preventDefault();
       if (typing) return;
-      var v = (aiText.value || '').trim().toLowerCase();
+      var v = (aiText.value || '').trim();
       if (!v) return;
-      // light keyword routing into a real example, else the honest sketch
-      var key = null;
-      if (/dent|ortho|clinic/.test(v)) key = 'dental';
-      else if (/coffee|roast|caf|food|bever/.test(v)) key = 'roaster';
-      else if (/law|legal|attorney|firm.*case|immigration/.test(v)) key = 'law';
-      else if (/hvac|plumb|electric|contractor|home service|trades/.test(v)) key = 'hvac';
-      showStrategy(key ? STRATEGIES[key] : CUSTOM, !key);
+      liveStrategize(v);
     });
   }
 

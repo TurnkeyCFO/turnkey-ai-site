@@ -146,13 +146,24 @@ h1,h2,h3{letter-spacing:-.025em;line-height:1.04;font-weight:700;}
 h1{font-size:clamp(42px,6.6vw,98px);}
 h2{font-size:clamp(29px,3.7vw,50px);font-weight:600;}
 h3{font-size:clamp(19px,1.7vw,23px);font-weight:600;}
-.em{font-style:italic;font-weight:600;
-  background:linear-gradient(108deg,#001B66 0%,#001B66 22%,#0037C9 50%,#001B66 78%,#001B66 100%);
-  background-size:240% 100%;
+/* Shimmer: dark text on light bg with a moving blue gradient swept
+   through it. The gradient stops use opaque colors so the dark phase
+   reads as a solid dark glyph; the text-shadow halo from h1/h2 is
+   neutralised here so it doesn't fringe the glyph edges to gray. */
+.em{font-style:normal;font-weight:700;
+  background:linear-gradient(108deg,
+    #08111f 0%, #08111f 40%,
+    #1B6BFF 48%, #5FB1FF 50%, #1B6BFF 52%,
+    #08111f 60%, #08111f 100%);
+  background-size:260% 100%;
   -webkit-background-clip:text;background-clip:text;
   -webkit-text-fill-color:transparent;color:transparent;
-  animation:shimmer 6s linear infinite;}
-@keyframes shimmer{to{background-position:240% 50%;}}
+  text-shadow:none;
+  animation:shimmer 5s linear infinite;}
+@keyframes shimmer{
+  0%   {background-position:-30% 50%;}
+  100% {background-position:130% 50%;}
+}
 p{font-size:17px;line-height:1.58;color:var(--fg-dim);max-width:56ch;}
 p.lg{font-size:19px;max-width:52ch;}
 
@@ -277,6 +288,12 @@ h1,h2,h3,.hero-sub,.stat .num,.metric{
   margin-left:1px;background:var(--brand);animation:blink 1s steps(2) infinite;}
 @keyframes blink{50%{opacity:0;}}
 .strat-cta{margin-top:13px;}
+.strat-skel .sb{position:relative;color:transparent;
+  background:linear-gradient(90deg,
+    rgba(10,18,36,.05) 0%, rgba(0,55,201,.18) 50%, rgba(10,18,36,.05) 100%);
+  background-size:240% 100%;border-radius:6px;min-height:14px;
+  animation:skel 1.4s linear infinite;}
+@keyframes skel{0%{background-position:140% 50%}100%{background-position:-40% 50%}}
 
 /* ─── 05 · Proof ────────────────────────────────────────────────── */
 .proof-lead{margin:13px 0 26px;}
