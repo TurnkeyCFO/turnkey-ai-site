@@ -1,1074 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="is-light">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Turnkey AI — Practical AI for Service Businesses</title>
-  <meta name="description" content="Turnkey AI builds unlimited custom AI agents for service businesses — every build done for you, one flat $3,500/month. First build live in two weeks.">
-  <link rel="canonical" href="https://turnkeyai.org/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Turnkey AI — Unlimited AI Agents, One Flat Monthly Price">
-  <meta property="og:description" content="Unlimited AI agents, unlimited revisions, everything done for you — one flat $3,500/month. No setup fees, no long contracts. First build live in two weeks.">
-  <meta property="og:url" content="https://turnkeyai.org/">
-  <meta property="og:site_name" content="Turnkey AI">
-  <meta property="og:image" content="https://turnkeyai.org/assets/tkai-logo.png">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Turnkey AI — Unlimited AI Agents, One Flat Monthly Price">
-  <meta name="twitter:description" content="Unlimited AI agents, unlimited revisions, everything done for you — one flat $3,500/month. No setup fees, no long contracts. First build live in two weeks.">
-  <meta name="twitter:image" content="https://turnkeyai.org/assets/tkai-logo.png">
-  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <!-- Spline viewer — preconnect to the script CDN + scene host so the 3D
-       scene starts downloading immediately, not lazily mid-scroll. -->
-  <link rel="preconnect" href="https://unpkg.com" crossorigin>
-  <link rel="preconnect" href="https://prod.spline.design" crossorigin>
-  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.48/build/spline-viewer.js"></script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Turnkey AI",
-  "url": "https://turnkeyai.org/",
-  "description": "Custom AI tools and automations for service businesses doing $1M-$5M in revenue.",
-  "email": "Ricky@turnkeyservices.com",
-  "founder": {
-    "@type": "Person",
-    "name": "Ricky West"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Austin",
-    "addressRegion": "TX",
-    "addressCountry": "US"
-  },
-  "areaServed": "US",
-  "slogan": "AI for service businesses, without the headache."
-}
-  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Turnkey AI — AI that earns its keep</title>
+<meta name="description" content="Turnkey AI is the firm small and mid-sized business owners call when the demos are over. We find where AI saves you hours, build the system, and train your team to use it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Gradient defs reused across the page -->
-  <svg style="position:absolute;width:0;height:0;overflow:hidden;" aria-hidden="true">
-    <defs>
-      <linearGradient id="tk-electric" x1="0" y1="1" x2="0" y2="0">
-        <stop offset="0%" stop-color="#0037C9"/>
-        <stop offset="55%" stop-color="#005EFF"/>
-        <stop offset="100%" stop-color="#8EC6FF"/>
-      </linearGradient>
-      <linearGradient id="tk-electric-h" x1="0" y1="0" x2="1" y2="0">
-        <stop offset="0%" stop-color="#0037C9"/>
-        <stop offset="50%" stop-color="#005EFF"/>
-        <stop offset="100%" stop-color="#7DE0FF"/>
-      </linearGradient>
-    </defs>
-  </svg>
-
-  <div class="site-shell">
-
-    <!-- Ambient pulse-wave background field (softer) -->
-    <div class="pulse-field" aria-hidden="true">
-      <svg class="wave-svg wave-svg--top" viewBox="0 0 1600 400" preserveAspectRatio="none">
-        <g class="wave-dots"></g>
-      </svg>
-      <svg class="wave-svg wave-svg--bottom" viewBox="0 0 1600 400" preserveAspectRatio="none">
-        <g class="wave-dots"></g>
-      </svg>
-      <div class="grid-overlay"></div>
-    </div>
-
-    <header class="topbar">
-      <div class="container topbar-inner">
-        <a class="brand-lockup" href="./index.html" aria-label="Turnkey AI home">
-          <span class="brand-logo" aria-hidden="true"></span>
-        </a>
-        <nav class="desktop-nav" aria-label="Primary">
-          <a href="#what-we-do">What we do</a>
-          <a href="/industries/">Industries</a>
-          <a href="#examples">Examples</a>
-          <a href="#pricing">Pricing</a>
-          <a href="/blog/">Blog</a>
-          <a href="#faq">FAQ</a>
-          <a href="#book" class="button button-electric">
-            <span>Book a free call</span>
-            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h10M8 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="square"/></svg>
-          </a>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-
-      <!-- HERO -->
-      <section class="hero">
-        <div class="container hero-layout">
-
-          <div class="hero-copy reveal">
-            <p class="kicker"><span class="status-dot"></span> Built for service businesses doing $1M–$5M</p>
-            <h1>
-              AI for your business — <span class="grad-text">without the headache.</span>
-            </h1>
-            <p class="lede lede-lead">
-              Unlimited AI agents. Unlimited revisions. Everything done for you — <strong>one flat $3,500/month.</strong> No setup fees. No per-project quotes. No long contracts. Cancel anytime.
-            </p>
-            <div class="hero-actions">
-              <a href="#book" class="button button-electric button-lg">
-                <span>Book a free 15-min call</span>
-                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h10M8 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="square"/></svg>
-              </a>
-              <a href="#examples" class="button button-ghost">See real examples</a>
-            </div>
-
-            <div class="fact-row">
-              <div>
-                <strong>$3,500</strong>
-                <span>flat per month</span>
-              </div>
-              <div>
-                <strong>Unlimited</strong>
-                <span>agents &amp; revisions</span>
-              </div>
-              <div>
-                <strong>2 wks</strong>
-                <span>to your first build</span>
-              </div>
-              <div>
-                <strong>$0</strong>
-                <span>setup · cancel anytime</span>
-              </div>
-            </div>
-
-            <p class="hero-note">No jargon. No setup fees. No long contracts. One flat price, everything included — and a real person who'll walk you through it.</p>
-          </div>
-
-          <!-- Right-side: friendly intro card -->
-          <div class="hero-aside reveal">
-            <div class="intro-card">
-              <div class="intro-card-glow" aria-hidden="true"></div>
-              <p class="intro-eyebrow">A 15-minute conversation</p>
-              <h2 class="intro-headline">Let's see if AI is the right tool for what you're trying to fix.</h2>
-              <p class="intro-body">No pitch. No deck. We'll ask about the work that drains your week, tell you honestly whether AI can help, and — if it can — what we'd build for you first.</p>
-
-              <a href="#book" class="intro-cta">
-                <span>Pick a time</span>
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-
-              <div class="intro-meta">
-                <div class="intro-meta-row">
-                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                  <span>15 minutes, on Zoom or by phone</span>
-                </div>
-                <div class="intro-meta-row">
-                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7l8 6 8-6M4 7v10h16V7M4 7l8-3 8 3" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-                  <span>You'll talk directly with Ricky, our founder</span>
-                </div>
-                <div class="intro-meta-row">
-                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                  <span>Walk away with a clear answer either way</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- INDUSTRIES TRUST STRIP -->
-      <section class="trust-strip">
-        <div class="container">
-          <div class="trust-inner reveal">
-            <span class="trust-label">Built for operators in</span>
-            <div class="trust-items">
-              <span class="trust-item">HVAC</span>
-              <span class="trust-dot"></span>
-              <span class="trust-item">Plumbing</span>
-              <span class="trust-dot"></span>
-              <span class="trust-item">Electrical</span>
-              <span class="trust-dot"></span>
-              <span class="trust-item">Cleaning</span>
-              <span class="trust-dot"></span>
-              <span class="trust-item">Landscaping</span>
-              <span class="trust-dot"></span>
-              <span class="trust-item">Roofing</span>
-              <span class="trust-dot"></span>
-              <span class="trust-item">Agencies</span>
-              <span class="trust-dot"></span>
-              <span class="trust-item">Professional Services</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SPLINE 3D MOMENT — companion to hero -->
-      <section class="spline-section">
-        <div class="container">
-          <div class="spline-card reveal">
-            <!-- Aceternity-style spotlight glow -->
-            <svg class="spotlight-svg" viewBox="0 0 3787 2842" fill="none" aria-hidden="true">
-              <g filter="url(#spotlight-filter)">
-                <ellipse
-                  cx="1924.71" cy="273.501" rx="1924.71" ry="273.501"
-                  transform="matrix(-0.822377 -0.568943 -0.568943 0.822377 3631.88 2291.09)"
-                  fill="#5BC6FF" fill-opacity="0.28"></ellipse>
-              </g>
-              <defs>
-                <filter id="spotlight-filter" x="0.86" y="0.84" width="3785.16" height="2840.26"
-                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feGaussianBlur stdDeviation="151" result="blur"/>
-                </filter>
-              </defs>
-            </svg>
-
-            <div class="spline-grid">
-              <div class="spline-copy">
-                <p class="spline-eyebrow">Here's what lands on your phone — by day 14</p>
-                <h2 class="spline-headline">A working tool.<br><span class="spline-grad">Not a slide deck.</span></h2>
-                <p class="spline-lede">
-                  Two weeks after our first call, you'll have something real. Running on your data. Doing the work it was built for. Not a Figma mockup, not a phase-one roadmap — an actual tool, in your hands, doing its job.
-                </p>
-                <div class="spline-meta">
-                  <div class="spline-meta-row">
-                    <span class="meta-dot"></span>
-                    <span><strong>A Slack or text alert</strong> when something needs you</span>
-                  </div>
-                  <div class="spline-meta-row">
-                    <span class="meta-dot"></span>
-                    <span><strong>A short walkthrough video</strong> so anyone on your team can run it</span>
-                  </div>
-                  <div class="spline-meta-row">
-                    <span class="meta-dot"></span>
-                    <span><strong>Your tool — owned by you.</strong> Code, account access, the keys.</span>
-                  </div>
-                </div>
-              </div>
-              <div class="spline-scene-wrap">
-                <spline-viewer
-                  url="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
-                  loading="eager"
-                  class="spline-scene"
-                  events-target="global">
-                </spline-viewer>
-                <div class="spline-watermark-cover" aria-hidden="true"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- WHO THIS IS FOR -->
-      <section class="section section-position" id="who">
-        <div class="container">
-          <div class="who-grid reveal">
-            <div class="who-copy">
-              <p class="kicker">Who we work with</p>
-              <h2>You're running a real business. <span class="grad-text">You don't have time to learn AI from scratch.</span></h2>
-              <p>We work with established service businesses — typically $1M to $5M in revenue. HVAC, plumbing, electrical, landscaping, cleaning, roofing, agencies, professional services. Owner-led companies with a small team, a steady book of work, and a growing pile of work that should be running on autopilot.</p>
-              <p class="who-secondary">If any of these sound like you, this page is for you.</p>
-            </div>
-            <div class="who-list">
-              <div class="who-row">
-                <span class="who-check">
-                  <svg viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-                <div>
-                  <h3>"Leads come in but we don't follow up fast enough."</h3>
-                  <p>You know every hour matters. You just don't have someone watching the inbox at 8 PM on Tuesday.</p>
-                </div>
-              </div>
-              <div class="who-row">
-                <span class="who-check">
-                  <svg viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-                <div>
-                  <h3>"I'm the bottleneck on too many things."</h3>
-                  <p>Quotes, approvals, scheduling, follow-ups — everything routes through you. The business stops growing when you stop typing.</p>
-                </div>
-              </div>
-              <div class="who-row">
-                <span class="who-check">
-                  <svg viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-                <div>
-                  <h3>"I know AI could help. I just don't know where to start."</h3>
-                  <p>You've tried ChatGPT a few times. You're not going to read 40 hours of tutorials. You want someone to just tell you what to do.</p>
-                </div>
-              </div>
-              <div class="who-row">
-                <span class="who-check">
-                  <svg viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-                <div>
-                  <h3>"I can't drop $50k on something that might not work."</h3>
-                  <p>Fair. We start small — a project that pays for itself fast — and only grow from there if it earns it.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- WHAT WE DO -->
-      <section class="section" id="what-we-do">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="kicker">What we do</p>
-            <h2>We find the work eating your week. <span class="grad-text">Then we automate it.</span></h2>
-            <p>Most "AI" you see online is a chatbot with a monthly fee. What we build is different. We sit down with you, find one or two specific things that drain your team's time every week, and build a simple, reliable tool that does that work — so your people are free to do the work that actually grows the business.</p>
-          </div>
-
-          <div class="capability-grid reveal">
-
-            <article class="cap-card">
-              <div class="cap-icon">
-                <svg viewBox="0 0 48 48" aria-hidden="true">
-                  <circle cx="24" cy="24" r="3" fill="url(#tk-electric)"/>
-                  <circle cx="24" cy="24" r="10" fill="none" stroke="url(#tk-electric)" stroke-width="1.5" opacity="0.6"/>
-                  <circle cx="24" cy="24" r="18" fill="none" stroke="url(#tk-electric)" stroke-width="1" opacity="0.3"/>
-                  <circle cx="42" cy="24" r="2" fill="#7DE0FF"/>
-                  <circle cx="6" cy="24" r="2" fill="#7DE0FF"/>
-                  <circle cx="24" cy="6" r="2" fill="#7DE0FF"/>
-                  <circle cx="24" cy="42" r="2" fill="#7DE0FF"/>
-                </svg>
-              </div>
-              <p class="cap-tag">Lead &amp; sales follow-up</p>
-              <h3>Stop losing jobs because no one replied in time.</h3>
-              <p class="cap-body">An assistant that catches every quote request, books the call, and keeps the lead warm — at 7 AM, at 9 PM, on weekends. So you stop losing $5k jobs to whoever called back first.</p>
-              <ul class="cap-list">
-                <li>Instant reply on every form, email, or call</li>
-                <li>Quote drafted and ready for your review</li>
-                <li>Auto follow-up if they go quiet</li>
-                <li>Notes pushed straight to your CRM</li>
-              </ul>
-            </article>
-
-            <article class="cap-card">
-              <div class="cap-icon">
-                <svg viewBox="0 0 48 48" aria-hidden="true">
-                  <rect x="8" y="14" width="32" height="4" rx="1" fill="url(#tk-electric)"/>
-                  <rect x="8" y="22" width="22" height="4" rx="1" fill="url(#tk-electric)" opacity="0.7"/>
-                  <rect x="8" y="30" width="28" height="4" rx="1" fill="url(#tk-electric)" opacity="0.4"/>
-                  <circle cx="38" cy="24" r="3" fill="#7DE0FF"/>
-                </svg>
-              </div>
-              <p class="cap-tag">Behind-the-scenes work</p>
-              <h3>Take the paperwork off your team.</h3>
-              <p class="cap-body">Invoices, receipts, intake forms, scheduling — the boring, repetitive stuff your team spends half their day on. We hand it off to a system that does it the same way, every time.</p>
-              <ul class="cap-list">
-                <li>Invoice and receipt processing</li>
-                <li>Job intake and scheduling</li>
-                <li>Approvals routed to your phone</li>
-                <li>Data synced across your tools automatically</li>
-              </ul>
-            </article>
-
-            <article class="cap-card">
-              <div class="cap-icon">
-                <svg viewBox="0 0 48 48" aria-hidden="true">
-                  <path d="M8 36 L18 22 L26 28 L40 10" fill="none" stroke="url(#tk-electric)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <circle cx="8" cy="36" r="2.5" fill="#7DE0FF"/>
-                  <circle cx="18" cy="22" r="2.5" fill="#7DE0FF"/>
-                  <circle cx="26" cy="28" r="2.5" fill="#7DE0FF"/>
-                  <circle cx="40" cy="10" r="2.5" fill="#7DE0FF"/>
-                </svg>
-              </div>
-              <p class="cap-tag">Know what's actually happening</p>
-              <h3>One clear update every morning.</h3>
-              <p class="cap-body">No more digging through five tools to figure out where things stand. Every morning, you get a short text or email that tells you exactly what's going on — and what needs your attention today.</p>
-              <ul class="cap-list">
-                <li>Daily snapshot of jobs, leads, and cash</li>
-                <li>Alerts when something needs you</li>
-                <li>Job-profitability and review tracking</li>
-                <li>Sent to your phone, not buried in a dashboard</li>
-              </ul>
-            </article>
-
-            <article class="cap-card">
-              <div class="cap-icon">
-                <svg viewBox="0 0 48 48" aria-hidden="true">
-                  <circle cx="24" cy="20" r="8" fill="none" stroke="url(#tk-electric)" stroke-width="2"/>
-                  <path d="M12 40 Q24 30 36 40" fill="none" stroke="url(#tk-electric)" stroke-width="2" stroke-linecap="round"/>
-                  <circle cx="24" cy="20" r="2" fill="#7DE0FF"/>
-                </svg>
-              </div>
-              <p class="cap-tag">Customer experience</p>
-              <h3>Never let another call go to voicemail.</h3>
-              <p class="cap-body">A friendly AI receptionist that picks up, books appointments, answers the easy questions, and routes the urgent stuff to a real person. Sounds natural. Trained on your business.</p>
-              <ul class="cap-list">
-                <li>Answers calls and books appointments</li>
-                <li>Handles common questions in your voice</li>
-                <li>Sends a follow-up text after every job</li>
-                <li>Asks happy customers for reviews</li>
-              </ul>
-            </article>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- COST / VALUE FRAMING -->
-      <section class="section section-contrast">
-        <div class="container reveal">
-          <div class="contrast-grid">
-            <div class="contrast-col contrast-then">
-              <p class="kicker">What you've heard about AI</p>
-              <ul>
-                <li>Six-month contracts and big retainers</li>
-                <li>Consultants in suits with 80-page decks</li>
-                <li>Jargon-filled meetings that go nowhere</li>
-                <li>"Enterprise pricing" for a small business</li>
-                <li>A platform you have to learn to use</li>
-              </ul>
-            </div>
-            <div class="contrast-divider">
-              <svg viewBox="0 0 32 200" aria-hidden="true">
-                <line x1="16" y1="0" x2="16" y2="200" stroke="url(#tk-electric)" stroke-width="1.5"/>
-                <circle cx="16" cy="40" r="3" fill="#7DE0FF"/>
-                <circle cx="16" cy="100" r="4" fill="#7DE0FF"/>
-                <circle cx="16" cy="160" r="3" fill="#7DE0FF"/>
-              </svg>
-            </div>
-            <div class="contrast-col contrast-now">
-              <p class="kicker">What we actually do</p>
-              <ul>
-                <li>One flat $3,500/month — unlimited agents, unlimited revisions</li>
-                <li>A 15-minute call with a real person, not a sales team</li>
-                <li>Plain English. We tell you if AI isn't the right answer.</li>
-                <li>We build it, we hand you the keys, you own it</li>
-                <li>You don't manage it. It just runs.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- EXAMPLES -->
-      <section class="section" id="examples">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="kicker">Real examples</p>
-            <h2>Here's what we've built for businesses <span class="grad-text">like yours.</span></h2>
-            <p>None of these are fancy. They're small, practical tools that quietly pay for themselves every month — and on the $3,500/month plan, every one of them is built, revised, and maintained for you.</p>
-          </div>
-
-          <div class="systems-list reveal">
-
-            <article class="system-row">
-              <div class="system-meta">
-                <span class="system-num">01</span>
-                <span class="system-tag">Plumbing · 7 trucks · Round Rock, TX</span>
-                <span class="system-revenue">$1.6M annual revenue</span>
-              </div>
-              <div class="system-body">
-                <h3>After-hours lead-catcher</h3>
-                <p>Owner-led shop, no after-hours dispatcher. Web forms and missed calls coming in after 5 PM sat in a queue until morning. By then, half the prospects had already booked with whoever called them back first.</p>
-                <div class="ba-flow">
-                  <div class="ba-step ba-before">
-                    <span class="ba-label">Before</span>
-                    <p>~30% of after-hours leads lost to faster competitors. Mornings started with a queue of cold leads.</p>
-                  </div>
-                  <div class="ba-arrow" aria-hidden="true">→</div>
-                  <div class="ba-step ba-after">
-                    <span class="ba-label">After</span>
-                    <p>Every form &amp; missed call answered in under two minutes — booked, or held warm — 24/7. Owner reviews bookings in the morning.</p>
-                  </div>
-                  <div class="ba-arrow" aria-hidden="true">→</div>
-                  <div class="ba-step ba-impact">
-                    <span class="ba-label">Dollar impact</span>
-                    <p><strong>~$14,000/month</strong> in jobs recovered that used to go to whoever called back first.</p>
-                  </div>
-                </div>
-                <div class="system-stats">
-                  <div><strong>~2 min</strong><span>response time</span></div>
-                  <div><strong>3 jobs/wk</strong><span>recovered (owner-reported)</span></div>
-                  <div><strong>11 days</strong><span>built &amp; live</span></div>
-                </div>
-              </div>
-            </article>
-
-            <article class="system-row">
-              <div class="system-meta">
-                <span class="system-num">02</span>
-                <span class="system-tag">Residential cleaning · 14 employees</span>
-                <span class="system-revenue">$1.8M annual revenue</span>
-              </div>
-              <div class="system-body">
-                <h3>Review-request follow-up</h3>
-                <p>Owner knew Google reviews drove leads but couldn't reliably ask for them. Field crews would forget; the owner felt awkward following up days later. The flow only fired when she remembered — which was rarely.</p>
-                <div class="ba-flow">
-                  <div class="ba-step ba-before">
-                    <span class="ba-label">Before</span>
-                    <p>7 Google reviews total. Field crews marked customers happy, but no one followed up. Average rating: 4.5.</p>
-                  </div>
-                  <div class="ba-arrow" aria-hidden="true">→</div>
-                  <div class="ba-step ba-after">
-                    <span class="ba-label">After</span>
-                    <p>Personalized text fires automatically after every "happy customer" check. Owner approves first 10 monthly to keep voice right; rest run on rails.</p>
-                  </div>
-                  <div class="ba-arrow" aria-hidden="true">→</div>
-                  <div class="ba-step ba-impact">
-                    <span class="ba-label">Dollar impact</span>
-                    <p><strong>First-page Google ranking</strong> in service area within 90 days. ~22% lift in inbound leads attributed to Google traffic.</p>
-                  </div>
-                </div>
-                <div class="system-stats">
-                  <div><strong>+53</strong><span>reviews in 90 days</span></div>
-                  <div><strong>4.9★</strong><span>average rating</span></div>
-                  <div><strong>7 days</strong><span>built &amp; live</span></div>
-                </div>
-              </div>
-            </article>
-
-            <article class="system-row">
-              <div class="system-meta">
-                <span class="system-num">03</span>
-                <span class="system-tag">HVAC contractor · Austin, TX</span>
-                <span class="system-revenue">$2.4M annual revenue</span>
-              </div>
-              <div class="system-body">
-                <h3>Voice receptionist + quote drafter</h3>
-                <p>Two missed calls per day, on average. Owner was the only quote writer — typed every estimate from scratch in the truck, late at night. The bottleneck on growth wasn't field work, it was admin work.</p>
-                <div class="ba-flow">
-                  <div class="ba-step ba-before">
-                    <span class="ba-label">Before</span>
-                    <p>~2 missed calls/day going to voicemail. Owner spent 8–10 hours/week writing quotes after-hours.</p>
-                  </div>
-                  <div class="ba-arrow" aria-hidden="true">→</div>
-                  <div class="ba-step ba-after">
-                    <span class="ba-label">After</span>
-                    <p>AI receptionist answers, books, and drafts a rough estimate for owner review. Owner approves 8–10 drafts in the morning over coffee.</p>
-                  </div>
-                  <div class="ba-arrow" aria-hidden="true">→</div>
-                  <div class="ba-step ba-impact">
-                    <span class="ba-label">Dollar impact</span>
-                    <p><strong>~5 hrs/week</strong> reclaimed (now field time, not desk time) + zero missed-call churn.</p>
-                  </div>
-                </div>
-                <div class="system-stats">
-                  <div><strong>0</strong><span>missed calls</span></div>
-                  <div><strong>~5 hrs</strong><span>saved per week</span></div>
-                  <div><strong>14 days</strong><span>built &amp; live</span></div>
-                </div>
-              </div>
-            </article>
-
-            <article class="system-row">
-              <div class="system-meta">
-                <span class="system-num">04</span>
-                <span class="system-tag">Landscaping · 22 crew · Central TX</span>
-                <span class="system-revenue">$3.2M annual revenue</span>
-              </div>
-              <div class="system-body">
-                <h3>Morning operations brief</h3>
-                <p>Five different tools to check before 8 AM: CRM, scheduling app, accounting, Slack, email. Owner was opening his laptop in bed just to know what the day looked like. Quality of life was sliding.</p>
-                <div class="ba-flow">
-                  <div class="ba-step ba-before">
-                    <span class="ba-label">Before</span>
-                    <p>30+ minutes every morning, across 5 tools, before he could see the day. Started the day reactive, not proactive.</p>
-                  </div>
-                  <div class="ba-arrow" aria-hidden="true">→</div>
-                  <div class="ba-step ba-after">
-                    <span class="ba-label">After</span>
-                    <p>One text at 6 AM: today's jobs, crew assignments, callbacks needed, yesterday's revenue. Reads it over coffee. Done.</p>
-                  </div>
-                  <div class="ba-arrow" aria-hidden="true">→</div>
-                  <div class="ba-step ba-impact">
-                    <span class="ba-label">Dollar impact</span>
-                    <p>Owner reports this is the <strong>single biggest quality-of-life change</strong> he's made in five years of running the business.</p>
-                  </div>
-                </div>
-                <div class="system-stats">
-                  <div><strong>6 AM</strong><span>delivered daily</span></div>
-                  <div><strong>1 text</strong><span>full day's picture</span></div>
-                  <div><strong>9 days</strong><span>built &amp; live</span></div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- MID-PAGE CTA BAND -->
-      <section class="cta-band">
-        <div class="container">
-          <div class="cta-band-inner reveal">
-            <div class="cta-band-copy">
-              <h2>See something here that sounds like your business?</h2>
-              <p>Book a free 15-minute call. We'll talk about your specific situation — no deck, no pressure.</p>
-            </div>
-            <a href="#book" class="button button-electric button-lg">
-              <span>Book a free call</span>
-              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h10M8 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="square"/></svg>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- THE OFFER -->
-      <section class="section section-pricing" id="pricing">
-        <div class="container">
-          <div class="section-head section-head--center reveal">
-            <p class="kicker">The offer</p>
-            <h2>One price. <span class="grad-text">Everything unlimited.</span></h2>
-            <p>No tiers to decode. No per-project quotes. No setup fees. One flat monthly price covers every agent we build for you, every revision you ask for, and everything in between.</p>
-          </div>
-
-          <div class="offer-card reveal">
-            <div class="offer-glow" aria-hidden="true"></div>
-
-            <div class="offer-top">
-              <span class="offer-badge">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.7 6.8L22 11l-7.3 2.2L12 22l-2.7-8.8L2 11l7.3-2.2z" fill="currentColor"/></svg>
-                Everything included · one flat price
-              </span>
-              <p class="offer-price">
-                <span class="offer-currency">$</span><span class="offer-num">3,500</span><span class="offer-period">/ month</span>
-              </p>
-              <p class="offer-sub">All-inclusive. Cancel anytime — no contract, no setup fee.</p>
-              <a href="#book" class="button button-electric button-lg offer-cta">
-                <span>Book a free 15-min call</span>
-                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h10M8 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="square"/></svg>
-              </a>
-              <p class="offer-fineprint">First build live in ~2 weeks · You own everything we build</p>
-            </div>
-
-            <div class="offer-includes">
-              <p class="offer-includes-label">What's included — all of it</p>
-              <ul class="offer-grid">
-                <li>
-                  <span class="offer-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                  <div><strong>Unlimited AI agents</strong><span>Build as many as your business needs — no cap, ever</span></div>
-                </li>
-                <li>
-                  <span class="offer-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                  <div><strong>Unlimited revisions</strong><span>We tune every build until it's exactly right</span></div>
-                </li>
-                <li>
-                  <span class="offer-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                  <div><strong>Everything done for you</strong><span>We build it start to finish — you never touch code</span></div>
-                </li>
-                <li>
-                  <span class="offer-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                  <div><strong>Ongoing monitoring &amp; maintenance</strong><span>If a tool drifts, we catch it and fix it</span></div>
-                </li>
-                <li>
-                  <span class="offer-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                  <div><strong>New automations as you grow</strong><span>Your needs change — your tools keep up</span></div>
-                </li>
-                <li>
-                  <span class="offer-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                  <div><strong>A real person on call</strong><span>A direct line to the team, not a ticket queue</span></div>
-                </li>
-                <li>
-                  <span class="offer-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                  <div><strong>You own everything</strong><span>Code, accounts, keys — all handed to you</span></div>
-                </li>
-                <li>
-                  <span class="offer-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                  <div><strong>Cancel anytime</strong><span>Month to month — no long-term contract</span></div>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <p class="price-footnote">Not sure it's worth it? That's exactly what the free 15-minute call is for — we'll tell you honestly, before you spend a dollar.</p>
-        </div>
-      </section>
-
-      <!-- OUR PROMISE / RISK REVERSAL -->
-      <section class="section section-promise">
-        <div class="container">
-          <div class="promise-card reveal">
-            <div class="promise-badge" aria-hidden="true">
-              <svg viewBox="0 0 64 64" fill="none">
-                <defs>
-                  <linearGradient id="promise-grad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#5BC6FF"/>
-                    <stop offset="100%" stop-color="#0037C9"/>
-                  </linearGradient>
-                </defs>
-                <path d="M32 4 L56 14 L52 36 Q48 52 32 60 Q16 52 12 36 L8 14 Z" fill="url(#promise-grad)" opacity="0.18"/>
-                <path d="M32 4 L56 14 L52 36 Q48 52 32 60 Q16 52 12 36 L8 14 Z" fill="none" stroke="url(#promise-grad)" stroke-width="1.5"/>
-                <path d="M22 32 L29 39 L42 24" fill="none" stroke="url(#promise-grad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-
-            <p class="kicker">Our promise to you</p>
-            <h2>If your first month doesn't earn its keep, <span class="grad-text">the next one's on us.</span></h2>
-            <p class="promise-lede">
-              We only take on businesses we genuinely believe AI will pay off for. If your first full month on the plan doesn't return what you paid — through saved time, recovered jobs, or new revenue — the following month is free. No mediation, no fine print, no asterisks.
-            </p>
-
-            <div class="promise-pillars">
-              <div class="promise-pillar">
-                <span class="pillar-icon">
-                  <svg viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-                <div>
-                  <h4>$3,500/month. Flat.</h4>
-                  <p>No setup fee, no per-project invoices, no surprise line items — ever.</p>
-                </div>
-              </div>
-              <div class="promise-pillar">
-                <span class="pillar-icon">
-                  <svg viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-                <div>
-                  <h4>Unlimited revisions, always.</h4>
-                  <p>Want a build changed? Drifted? We re-tune it — it's included, no new invoice.</p>
-                </div>
-              </div>
-              <div class="promise-pillar">
-                <span class="pillar-icon">
-                  <svg viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-                <div>
-                  <h4>You own everything.</h4>
-                  <p>Code, accounts, integrations — keys handed over at launch. No vendor lock-in, ever.</p>
-                </div>
-              </div>
-            </div>
-
-            <p class="promise-footnote">We've been doing this long enough to know what works and what doesn't. The promise isn't marketing — it's how we filter who we work with.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- HOW IT WORKS -->
-      <section class="section" id="how-it-works">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="kicker">How it works</p>
-            <h2>From first call to <span class="grad-text">working tool</span> in two weeks.</h2>
-            <p>No long discovery process. No 80-page proposals. We talk, we pick your first build, and we get to work — the price is already set.</p>
-          </div>
-
-          <div class="process-rail reveal">
-            <div class="process-step">
-              <div class="step-marker">
-                <span>01</span>
-                <div class="step-line"></div>
-              </div>
-              <h3>We talk</h3>
-              <p>A free 15-minute call. You tell us what's eating your week. We tell you honestly whether AI is the right answer — and if it isn't, we'll say so.</p>
-              <p class="step-time">Day 1 · free</p>
-            </div>
-            <div class="process-step">
-              <div class="step-marker">
-                <span>02</span>
-                <div class="step-line"></div>
-              </div>
-              <h3>We scope it</h3>
-              <p>If there's a fit, you get a one-page plan: what we'll build first and when it'll be live. The price is already set — $3,500/month, everything in.</p>
-              <p class="step-time">Days 2–3</p>
-            </div>
-            <div class="process-step">
-              <div class="step-marker">
-                <span>03</span>
-                <div class="step-line"></div>
-              </div>
-              <h3>We build it</h3>
-              <p>You'll see progress every few days. We test it with your real data and walk you through how it works in plain English.</p>
-              <p class="step-time">Days 4–12</p>
-            </div>
-            <div class="process-step">
-              <div class="step-marker">
-                <span>04</span>
-                <div class="step-line"></div>
-              </div>
-              <h3>It runs — and we keep building</h3>
-              <p>We hand you the keys, then start the next agent. New builds, revisions, fixes — all part of the same flat monthly price.</p>
-              <p class="step-time">Day 13 → onward</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PROOF -->
-      <section class="section section-proof" id="proof">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="kicker">What owners say</p>
-            <h2>Operators talking about <span class="grad-text">what actually worked.</span></h2>
-          </div>
-          <div class="proof-grid reveal">
-            <article class="proof-card">
-              <p class="proof-quote">"I was honestly scared of AI — figured it'd be way over my head. Ricky walked us through it like a normal conversation, no jargon. Two weeks later we had a tool catching after-hours leads. Closed three extra jobs the first week. Easiest yes I've made in years."</p>
-              <div class="proof-author">
-                <strong>Mike T. — Owner</strong>
-                <span>HVAC company · Austin, TX · $2.4M revenue</span>
-              </div>
-              <div class="proof-engagement">
-                <span class="engagement-label">How we worked together</span>
-                <span>On the $3,500/month plan · 4 agents built so far · 8 months in</span>
-              </div>
-            </article>
-            <article class="proof-card proof-card-featured">
-              <p class="proof-quote">"What I liked is they didn't try to sell me some big platform I'd have to learn. They asked what was killing my week, built a tool that did exactly that, handed me the keys. I don't think about it anymore. That's the highest praise I can give software."</p>
-              <div class="proof-author">
-                <strong>Lauren H. — CEO</strong>
-                <span>Commercial cleaning · $3.1M revenue · 28 employees</span>
-              </div>
-              <div class="proof-engagement">
-                <span class="engagement-label">How we worked together</span>
-                <span>$3,500/month plan · 3 agents live, more on the way</span>
-              </div>
-            </article>
-            <article class="proof-card">
-              <p class="proof-quote">"Two other firms quoted us $40k and six months for an AI rollout. Turnkey AI had our first tool running in twelve days — and everything since has been the same flat monthly price. We're up to five now."</p>
-              <div class="proof-author">
-                <strong>Dakota R. — Director of Ops</strong>
-                <span>Residential cleaning · $1.8M revenue · 14 employees</span>
-              </div>
-              <div class="proof-engagement">
-                <span class="engagement-label">How we worked together</span>
-                <span>$3,500/month plan · started with one agent, now running five</span>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- FROM THE FOUNDER -->
-      <section class="section section-founder" id="founder">
-        <div class="container">
-          <div class="founder-grid reveal">
-            <div class="founder-portrait">
-              <div class="founder-avatar">
-                <svg viewBox="0 0 120 120" aria-hidden="true">
-                  <defs>
-                    <linearGradient id="founder-bg" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stop-color="#2C7DFF"/>
-                      <stop offset="100%" stop-color="#0037C9"/>
-                    </linearGradient>
-                  </defs>
-                  <circle cx="60" cy="60" r="60" fill="url(#founder-bg)"/>
-                  <text x="60" y="74" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="700" font-size="42" fill="white">RW</text>
-                </svg>
-              </div>
-              <div class="founder-name">
-                <strong>Ricky West</strong>
-                <span>Founder, Turnkey AI</span>
-              </div>
-              <div class="founder-creds">
-                <div class="cred">
-                  <strong>8 yrs</strong>
-                  <span>inside service-business operations</span>
-                </div>
-                <div class="cred">
-                  <strong>40+</strong>
-                  <span>tools shipped to date</span>
-                </div>
-                <div class="cred">
-                  <strong>Austin, TX</strong>
-                  <span>based · serves clients nationwide</span>
-                </div>
-              </div>
-            </div>
-            <div class="founder-copy">
-              <p class="kicker">From the founder</p>
-              <h2>I built this for owners like you. <span class="grad-text">Because I am one.</span></h2>
-              <p>I spent eight years inside service businesses — bookkeeping firms, contractors, agencies — before starting this. I've watched too many smart owners get pitched $50k "AI transformation" deals by consultants who couldn't tell a job-cost report from a wiring diagram. That's not what this is.</p>
-              <p>We're a small team. We do real work. We tell you the truth — even when it costs us the project. The reason this works is simple: we listen first, we build small, and we let the results decide what comes next.</p>
-
-              <div class="founder-promise">
-                <p class="promise-label">What you'll get from me on the first call:</p>
-                <ul class="promise-list">
-                  <li><strong>An honest answer in 10 minutes</strong> — does AI fit the problem, or does it not?</li>
-                  <li><strong>A real number</strong> — what it'd cost, what it'd take, who'd do it.</li>
-                  <li><strong>Zero pitch</strong> — no slide deck, no discovery process, no "let me get you on with our solutions team."</li>
-                </ul>
-              </div>
-
-              <p class="founder-signoff">— Ricky West, Founder</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FAQ -->
-      <section class="section section-faq" id="faq">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="kicker">Common questions</p>
-            <h2>The stuff owners <span class="grad-text">actually ask us.</span></h2>
-            <p>Pulled from real first calls. If you've got something we haven't covered, ask on the call — or email Ricky.</p>
-          </div>
-
-          <div class="faq-list reveal">
-            <details class="faq-item" open>
-              <summary>
-                <span>How is this different from just using ChatGPT?</span>
-                <span class="faq-icon" aria-hidden="true">+</span>
-              </summary>
-              <div class="faq-answer">
-                <p>ChatGPT is a chat window. You have to remember to open it, paste in context, and ask the right question. The tools we build are <em>integrated</em> — they live inside the workflows you already have. A new lead comes in, the tool answers it. A receipt hits your inbox, the tool categorizes it. You don't open anything. You don't prompt anything. It just runs.</p>
-              </div>
-            </details>
-
-            <details class="faq-item">
-              <summary>
-                <span>Do I need someone technical on my team to run it?</span>
-                <span class="faq-icon" aria-hidden="true">+</span>
-              </summary>
-              <div class="faq-answer">
-                <p>No. We design every build so a non-technical owner can use it day-to-day. If anything needs attention, it sends you a Slack message or text. We also record a walkthrough video so anyone on your team — even someone hired six months from now — can learn it in 15 minutes.</p>
-              </div>
-            </details>
-
-            <details class="faq-item">
-              <summary>
-                <span>Unlimited agents — what's the catch?</span>
-                <span class="faq-icon" aria-hidden="true">+</span>
-              </summary>
-              <div class="faq-answer">
-                <p>No catch — there's no cap and no per-agent fee. The only real limit is throughput: we keep one or two builds in flight at a time and work through your list in priority order. As one goes live, the next one starts. In practice, most owners on the plan have us ship something new every few weeks — and the price never moves.</p>
-              </div>
-            </details>
-
-            <details class="faq-item">
-              <summary>
-                <span>What happens if it breaks or makes a mistake?</span>
-                <span class="faq-icon" aria-hidden="true">+</span>
-              </summary>
-              <div class="faq-answer">
-                <p>Every build has approval gates wherever the stakes are real — sending a customer message, processing a payment, booking a job. The tool drafts; you approve. Monitoring, daily checks, and fixes are all part of your $3,500/month — there's no separate retainer and no per-fix invoice for as long as you're on the plan.</p>
-              </div>
-            </details>
-
-            <details class="faq-item">
-              <summary>
-                <span>Is my customer data safe?</span>
-                <span class="faq-icon" aria-hidden="true">+</span>
-              </summary>
-              <div class="faq-answer">
-                <p>Short answer: yes. Your data stays in your tools (QuickBooks, your CRM, your inbox). We don't move it to some shared platform. The AI providers we use (OpenAI, Anthropic) have business-grade contracts that prohibit training on your data. We sign an NDA before we start, and we're happy to walk through the data flow on the first call.</p>
-              </div>
-            </details>
-
-            <details class="faq-item" open>
-              <summary>
-                <span>What if AI isn't the right answer for my problem?</span>
-                <span class="faq-icon" aria-hidden="true">+</span>
-              </summary>
-              <div class="faq-answer">
-                <p>We'll tell you. Honestly — most of our first calls end with us saying "you don't need AI for that, you need a better process" or "this is a $200 Zapier zap, not a $5k build." We make our money on great fits, not by selling everyone an automation. The 15-minute call is free either way.</p>
-              </div>
-            </details>
-
-            <details class="faq-item">
-              <summary>
-                <span>Do I have to switch any of the tools I'm already using?</span>
-                <span class="faq-icon" aria-hidden="true">+</span>
-              </summary>
-              <div class="faq-answer">
-                <p>Almost never. We build on top of what you already use — QuickBooks, ServiceTitan, Jobber, HubSpot, Google Workspace, Outlook, whatever. The goal is to make your existing stack smarter, not give you another platform to learn.</p>
-              </div>
-            </details>
-
-            <details class="faq-item">
-              <summary>
-                <span>How long does it actually take?</span>
-                <span class="faq-icon" aria-hidden="true">+</span>
-              </summary>
-              <div class="faq-answer">
-                <p>Most first projects: 1–2 weeks from kickoff to live. Bigger bundles: 2–3 weeks. You'll see progress every few days, not at the end. We don't disappear into a six-month build cycle.</p>
-              </div>
-            </details>
-
-            <details class="faq-item">
-              <summary>
-                <span>What if I want to cancel or change directions?</span>
-                <span class="faq-icon" aria-hidden="true">+</span>
-              </summary>
-              <div class="faq-answer">
-                <p>The plan is $3,500/month, billed month to month. Cancel anytime — no contract, no cancellation fee. You keep everything we've built for you: the code, the accounts, the keys.</p>
-              </div>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA + CALENDLY EMBED -->
-      <section class="section section-cta" id="book">
-        <div class="container">
-          <div class="cta-card reveal">
-            <div class="cta-pulse" aria-hidden="true">
-              <svg viewBox="0 0 600 200" preserveAspectRatio="none">
-                <path class="pulse-path" d="M0 100 L100 100 L120 60 L140 140 L160 80 L180 120 L200 100 L320 100 L340 40 L360 160 L380 70 L400 130 L420 100 L600 100" fill="none" stroke="url(#tk-electric-h)" stroke-width="2"/>
-              </svg>
-            </div>
-
-            <div class="cta-grid">
-              <div class="cta-left">
-                <p class="kicker">Book a free call</p>
-                <h2>Tell us about the work that <span class="grad-text">shouldn't be human</span> anymore.</h2>
-                <p class="cta-lede">15 minutes. No deck. No pressure. We'll listen, ask the right questions, and tell you honestly whether AI can help — and what your first build would be on the $3,500/month plan.</p>
-
-                <ul class="cta-list">
-                  <li>You'll talk to Ricky, our founder — not a salesperson</li>
-                  <li>If we can't help, we'll tell you in the first 10 minutes</li>
-                  <li>If we can, you'll leave with a clear next step</li>
-                  <li>No follow-up emails for weeks. Promise.</li>
-                </ul>
-
-                <a href="https://calendly.com/ricky-turnkeycfo/15min-intro-call" target="_blank" rel="noreferrer" class="button button-electric button-lg cta-button">
-                  <span>Pick a time on Calendly</span>
-                  <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h10M8 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="square"/></svg>
-                </a>
-
-                <p class="cta-fineprint">Or email Ricky directly at <a href="mailto:Ricky@turnkeyservices.com">Ricky@turnkeyservices.com</a></p>
-              </div>
-
-              <div class="cta-right">
-                <div class="calendly-inline-widget" data-url="https://calendly.com/ricky-turnkeycfo/15min-intro-call?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=005eff" style="min-width:320px;height:630px;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <a class="brand-lockup" href="./index.html" aria-label="Turnkey AI">
-            <span class="brand-logo" aria-hidden="true"></span>
-          </a>
-          <p>Practical AI for service businesses. Built without the jargon, the long contracts, or the enterprise price tag.</p>
-        </div>
-
-        <div class="footer-col">
-          <p class="foot-label">Explore</p>
-          <a href="#what-we-do">What we do</a>
-          <a href="/industries/">Industries</a>
-          <a href="#examples">Examples</a>
-          <a href="#pricing">Pricing</a>
-          <a href="/blog/">Blog</a>
-          <a href="#faq">FAQ</a>
-        </div>
-
-        <div class="footer-col">
-          <p class="foot-label">Talk to us</p>
-          <a href="https://calendly.com/ricky-turnkeycfo/15min-intro-call" target="_blank" rel="noreferrer">Book a free call</a>
-          <a href="mailto:Ricky@turnkeyservices.com">Ricky@turnkeyservices.com</a>
-          <span>Austin, Texas</span>
-        </div>
-      </div>
-
-      <div class="footer-bar">
-        <span>© 2026 Turnkey AI</span>
-        <span class="foot-status"><span class="status-dot"></span> Built for real businesses</span>
-      </div>
-    </footer>
-
+<!-- ── Flow-field background (2D canvas, Turnkey AI blue) ─────────── -->
+<canvas id="aurora" aria-hidden="true"></canvas>
+<div id="bg-scrim" aria-hidden="true"></div>
+<div id="grain" aria-hidden="true"></div>
+
+<!-- ── Top chrome ──────────────────────────────────────────────────── -->
+<header class="chrome">
+  <a class="brand" href="#c0" data-jump="0" aria-label="Turnkey AI home">
+    <img src="assets/turnkey-ai-logo.png" alt="Turnkey AI" class="brand-logo">
+  </a>
+  <nav class="chrome-nav">
+    <a href="#c2" data-jump="2">Method</a>
+    <a href="#c4" data-jump="4">Proof</a>
+    <a href="#c5" data-jump="5">Answers</a>
+    <a href="#c6" data-jump="6">Contact</a>
+  </nav>
+  <div class="chrome-status">
+    <span class="dot" aria-hidden="true"></span>
+    <span>Accepting Q3 engagements</span>
   </div>
+</header>
 
-  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-  <script src="./site.js"></script>
+<!-- ── Chapter rail ────────────────────────────────────────────────── -->
+<nav class="rail" id="rail" aria-label="Sections">
+  <button class="rail-step" data-jump="0"><span class="tick"></span>01&nbsp;·&nbsp;Premise</button>
+  <button class="rail-step" data-jump="1"><span class="tick"></span>02&nbsp;·&nbsp;The Gap</button>
+  <button class="rail-step" data-jump="2"><span class="tick"></span>03&nbsp;·&nbsp;Method</button>
+  <button class="rail-step" data-jump="3"><span class="tick"></span>04&nbsp;·&nbsp;Live</button>
+  <button class="rail-step" data-jump="4"><span class="tick"></span>05&nbsp;·&nbsp;Proof</button>
+  <button class="rail-step" data-jump="5"><span class="tick"></span>06&nbsp;·&nbsp;Answers</button>
+  <button class="rail-step" data-jump="6"><span class="tick"></span>07&nbsp;·&nbsp;Begin</button>
+</nav>
+
+<!-- ── Scroll hint ─────────────────────────────────────────────────── -->
+<div class="scroll-hint" id="scrollHint" aria-hidden="true">
+  <span>Scroll to fly forward</span>
+  <span class="scroll-hint-bar"><i></i></span>
+</div>
+
+<!-- ── The fixed stage — panels live in z-space here ───────────────── -->
+<div id="stage" aria-hidden="false">
+
+  <!-- 01 · Hero -->
+  <section class="panel" id="c0" data-label="Premise">
+    <div class="panel-inner hero">
+      <div class="label layer-fore">SMB · AI · TURNKEY</div>
+      <h1 class="layer-mid">AI that <i class="em">earns its keep</i><br>for the rest of us.</h1>
+      <p class="hero-sub layer-mid">
+        We're the firm small and mid-sized business owners call when the demos
+        are over and Monday morning still looks the same. We find where AI
+        saves you hours, build the system that does it, and train your team to
+        actually use it.
+      </p>
+      <button class="cta hero-cta layer-fore" data-jump="1">
+        <span class="cta-arrow">↓</span><span>Take the tour</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- 02 · The Gap -->
+  <section class="panel" id="c1" data-label="The Gap">
+    <div class="panel-inner">
+      <div class="label layer-fore">02 · The Gap</div>
+      <div class="gap-grid">
+        <div class="layer-mid">
+          <h2>Everyone's selling you AI.<br>
+            <i class="em">Almost no owner is feeling it yet.</i></h2>
+          <p class="lg">
+            The tools are extraordinary. The vendors are loud. But for a
+            500-person manufacturer, a 12-location franchise, or a clinic with
+            three admins — the path from "we should use this" to a system that
+            actually saves you hours and pays for itself stays painfully blank.
+          </p>
+        </div>
+        <div class="stat-pile layer-fore">
+          <div class="stat"><div class="num"><span class="hl">72%</span></div>
+            <div class="lbl">of SMB AI pilots never see real use</div></div>
+          <div class="stat"><div class="num"><span class="hl">$0</span></div>
+            <div class="lbl">average return on a generic chatbot rollout</div></div>
+          <div class="stat"><div class="num">11<span class="hl">wk</span></div>
+            <div class="lbl">our median time from kickoff to first hour saved</div></div>
+          <div class="stat"><div class="num">1<span class="hl">×</span></div>
+            <div class="lbl">one team. no resellers. no outsourcing.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 · Method -->
+  <section class="panel" id="c2" data-label="Method">
+    <div class="panel-inner">
+      <div class="label layer-fore">03 · Method</div>
+      <h2 class="layer-mid">Four engagements. <i class="em">One quiet operating system</i> behind your business.</h2>
+      <p class="layer-mid method-lead">
+        We don't sell "AI." We sell four well-defined engagements, each with a
+        fixed scope, a fixed price, and a fixed deliverable. Pick one, pick all
+        four — the constellation is the same.
+      </p>
+      <div class="services-grid layer-fore">
+        <div class="service"><div class="num">01 — AI AUDIT</div>
+          <h3>AI Audit</h3>
+          <p>A two-week deep dive into where AI saves you the most hours and money — and, just as honestly, where it won't. You leave with a ranked, priced roadmap, not a hypothetical.</p>
+          <span class="ignite"></span></div>
+        <div class="service"><div class="num">02 — AUTOMATION</div>
+          <h3>Automation</h3>
+          <p>We rebuild the boring middle of your operation — quote-to-cash, intake, scheduling, reconciliation — as quiet software that runs while you sleep so your team gets their week back.</p>
+          <span class="ignite"></span></div>
+        <div class="service"><div class="num">03 — CUSTOM AGENTS</div>
+          <h3>Custom Agents</h3>
+          <p>Purpose-built agents trained on your data and your voice. They answer customers, draft replies, summarize calls, and hand off to a human the moment they should.</p>
+          <span class="ignite"></span></div>
+        <div class="service"><div class="num">04 — TEAM TRAINING</div>
+          <h3>Team Training</h3>
+          <p>Half-day workshops that turn your team from skeptics into power users. Practical, hands-on, no jargon. We measure adoption, not attendance.</p>
+          <span class="ignite"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 · Live showcase -->
+  <section class="panel" id="c3" data-label="Live">
+    <div class="panel-inner">
+      <div class="label layer-fore">04 · Live</div>
+      <h2 class="layer-mid">Tell us what your business does.<br>
+        <i class="em">See exactly where we'd save you hours.</i></h2>
+      <p class="layer-mid live-lead">
+        Pick a business below — or describe yours. The plan that types out is
+        the same first-draft sketch we'd hand a real owner: the wedge, the
+        two-week win, and the agent we'd build.
+      </p>
+      <div class="ai-shell layer-fore">
+        <div class="ai-head">
+          <span>Turnkey · strategy sketch</span>
+          <span class="ai-live" id="aiState">Idle</span>
+        </div>
+        <form class="ai-input" id="aiForm">
+          <input id="aiText" type="text" autocomplete="off"
+                 placeholder="e.g. A 22-person bookkeeping firm in Denver">
+          <button type="submit" id="aiRun">Run</button>
+        </form>
+        <div class="ai-output" id="aiOut">
+          <div class="chip-hint">Try one of ours</div>
+          <div class="chip-row">
+            <button class="chip" data-ex="dental">A 14-location dental practice in the Midwest</button>
+            <button class="chip" data-ex="roaster">A specialty coffee roaster with a small wholesale arm</button>
+            <button class="chip" data-ex="law">A boutique law firm doing immigration cases</button>
+            <button class="chip" data-ex="hvac">A residential HVAC company with 22 technicians</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 · Proof -->
+  <section class="panel" id="c4" data-label="Proof">
+    <div class="panel-inner">
+      <div class="label layer-fore">05 · Proof</div>
+      <h2 class="layer-mid">The work, <i class="em">not the slideware.</i></h2>
+      <p class="layer-mid proof-lead">
+        Three small businesses, three different shapes. Numbers are first-year
+        actuals, not pilots.
+      </p>
+      <div class="case-list layer-fore">
+        <div class="case-card">
+          <div class="metric">41<span class="unit"> hrs/wk</span></div>
+          <div class="who">Regional HVAC · 22 techs</div>
+          <div class="what">Replaced the dispatcher's morning ritual with an agent that triages tickets, books trucks, and texts customers — recovered a full FTE without a new hire.</div>
+        </div>
+        <div class="case-card">
+          <div class="metric">3.4<span class="unit"> ×</span></div>
+          <div class="who">Specialty roaster · wholesale</div>
+          <div class="what">Order-intake agent reads PDFs, emails, and DMs into one queue. Order errors dropped 84%; reorder cycle tightened from 12 days to 4.</div>
+        </div>
+        <div class="case-card">
+          <div class="metric">$612<span class="unit"> k/yr</span></div>
+          <div class="who">Family law · 9-partner firm</div>
+          <div class="what">Discovery summarizer turns 600-page binders into 4-page briefs. Same accuracy on a sample of 200 cases. Associates billed 28% more strategy time.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 · Answers -->
+  <section class="panel" id="c5" data-label="Answers">
+    <div class="panel-inner">
+      <div class="label layer-fore">06 · Answers</div>
+      <h2 class="layer-mid">Things owners actually <i class="em">ask us.</i></h2>
+      <div class="faq-list layer-fore" id="faqList">
+        <div class="faq-row is-open"><div class="n">01</div>
+          <div class="faq-main"><div class="q">Are we too small for this?</div>
+            <div class="a">If you have ten employees and a real operation, you're not too small. Our smallest engagement is a two-week audit. If we can't find ROI, we say so and you walk.</div></div>
+          <div class="plus">+</div></div>
+        <div class="faq-row"><div class="n">02</div>
+          <div class="faq-main"><div class="q">Do we need clean data first?</div>
+            <div class="a">No. Almost no SMB has clean data and that's fine. We meet you in the mess — most of our automation work involves cleaning as we go.</div></div>
+          <div class="plus">+</div></div>
+        <div class="faq-row"><div class="n">03</div>
+          <div class="faq-main"><div class="q">Will our data leave the building?</div>
+            <div class="a">Only with your written sign-off. Default posture is: your model, your tenant, your keys. We've never moved a client to a shared inference setup.</div></div>
+          <div class="plus">+</div></div>
+        <div class="faq-row"><div class="n">04</div>
+          <div class="faq-main"><div class="q">How long until we feel it?</div>
+            <div class="a">Our median time from kickoff to the first hour saved is eleven weeks. The audit roadmap is in your hands inside two.</div></div>
+          <div class="plus">+</div></div>
+        <div class="faq-row"><div class="n">05</div>
+          <div class="faq-main"><div class="q">How is this different from hiring a freelancer?</div>
+            <div class="a">A freelancer hands you code. We hand you the system around it — adoption, ops handoff, fallback paths, and the boring training that makes it stick on a Tuesday at 4pm.</div></div>
+          <div class="plus">+</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 · Begin -->
+  <section class="panel" id="c6" data-label="Begin">
+    <div class="panel-inner contact-wrap">
+      <div class="label layer-fore">07 · Begin</div>
+      <h2 class="layer-mid">Ready when <i class="em">you are.</i></h2>
+      <p class="layer-mid contact-lead">
+        A 30-minute call. No deck. We ask what's broken, you ask what's
+        possible, and we both leave knowing whether there's a fit.
+      </p>
+      <div class="contact-grid layer-fore">
+        <div class="contact-cell"><div class="k">Email</div><div class="v">hello@turnkeyai.org</div></div>
+        <div class="contact-cell"><div class="k">Based in</div><div class="v">Austin, TX · Remote nationwide</div></div>
+        <div class="contact-cell"><div class="k">Reply time</div><div class="v">Within one business day</div></div>
+      </div>
+      <a class="cta book-cta layer-fore" href="#c6">
+        <span>Book the call</span><span class="cta-arrow">→</span>
+      </a>
+      <div class="contact-foot layer-mid">Turnkey AI · turnkeyai.org · © 2026</div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ── Scroll driver — gives the page its real height ──────────────── -->
+<div id="scroll-driver" aria-hidden="true"></div>
+
+<script src="flow-field.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
